@@ -29,7 +29,7 @@ pages:
 - ['Networking/Ethernet.md', 'Networking - Ethernet', 'Ethernet']
 - ['Networking/EthernetInterface.md', 'Networking - Ethernet', 'The Ethernet Interface']
 - ['Networking/TCP_UDP_Socket.md', 'Networking - Ethernet', 'TCP/UDP Socket']
-- ['Networking/TCP_IP_Protocols.md.md', 'Networking - Ethernet', 'TCP/IP Protocols']
+- ['Networking/TCP_IP_Protocols.md', 'Networking - Ethernet', 'TCP/IP Protocols']
 - ['RTOS/mbed_RTOS.md', 'Real-Time Operating System', 'RTOS']
 - ['File_System/index.md', 'File Systems', 'File Systems']
 - ['File_System/LocalFileSystem.md', 'File Systems', 'Local File System']
@@ -48,7 +48,7 @@ pages:
 - ['USBDevice/USBMSD.md', 'USB Device', 'USBMSD']
 - ['USBHost/USBHostMouse.md', 'USB Host', 'USBHostMouse']
 - ['USBHost/USBHostKeyboard.md', 'USB Host', 'USBHostKeyboard']
-- ['USBHost/USBHostMSDe.md', 'USB Host', 'USBHostMSD']
+- ['USBHost/USBHostMSD.md', 'USB Host', 'USBHostMSD']
 - ['USBHost/USBHostSerial.md', 'USB Host', 'USBHostSerial']
 - ['USBHost/USBHostHub.md', 'USB Host', 'USBHostHub']
 
