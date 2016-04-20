@@ -4,10 +4,10 @@ docs_dir: docs
 
 pages:
 - ['index.md','Introduction to the API reference']
-- ['Analog_IO/index.md', 'Inputs and Outputs - Analog', 'Analog IO']
+- ['Analog_IO/index.md', 'Inputs and Outputs - Analog', 'Analog Inputs and Outputs']
 - ['Analog_IO/AnalogIn.md', 'Inputs and Outputs - Analog', 'AnalogIn']
 - ['Analog_IO/AnalogOut.md', 'Inputs and Outputs - Analog', 'AnalogOut']
-- ['Digital_IO/index.md', 'Inputs and Outputs - Digital', 'Digital IO']
+- ['Digital_IO/index.md', 'Inputs and Outputs - Digital', 'Digital Inputs and Outputs']
 - ['Digital_IO/DigitalIn.md', 'Inputs and Outputs - Digital', 'Digital - DigitalIN']
 - ['Digital_IO/DigitalOut.md', 'Inputs and Outputs - Digital', 'Digital - DigitalOut']
 - ['Digital_IO/DigitalInOut.md', 'Inputs and Outputs - Digital', 'Digital - DigitalInOut']
