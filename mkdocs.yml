@@ -1,0 +1,6 @@
+site_name: mbed OS API reference
+
+docs_dir: docs
+
+pages:
+- ['index.md','Introduction to the API reference']
