@@ -19,4 +19,4 @@ pages:
 - ['Digital_IO/PortInOut.md', 'Inputs and Outputs - Digital', 'Port - PortInOut']
 - ['Digital_IO/PwmOut.md', 'Inputs and Outputs - Digital', 'PwmOut']
 - ['Digital_IO/InterruptIn.md', 'Inputs and Outputs - Digital', 'InterruptIn']
-- ['Digital_Interfaces/index.md', 'Inputs and Outputs - Digital', 'Digital Interfaces']
+- ['Digital_Interfaces/index.md', 'Digital Interfaces', 'Digital Interfaces']
