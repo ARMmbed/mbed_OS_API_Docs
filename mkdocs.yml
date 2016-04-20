@@ -22,7 +22,7 @@ pages:
 - ['Digital_Interfaces/index.md', 'Digital Interfaces', 'Digital Interfaces']
 - ['Timers/index.md', 'Timing Operations', 'Timing Operations']
 - ['Timers/Timer.md', 'Timing Operations', 'Timer']
-- ['Timers/Timeout.md', 'Timing Operations', 'Timeout']
+- ['Timers/TimeOut.md', 'Timing Operations', 'TimeOut']
 - ['Timers/Ticker.md', 'Timing Operations', 'Ticker']
 - ['Timers/Wait.md', 'Timing Operations', 'Wait']
 - ['Timers/Time.md', 'Timing Operations', 'Time']
