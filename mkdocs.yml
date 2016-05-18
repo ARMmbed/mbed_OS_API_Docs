@@ -31,6 +31,8 @@ pages:
 - ['Networking/EhternetInterface.md', 'Networking - Ethernet', 'The Ethernet Interface']
 - ['Networking/TCP_UDP_Socket.md', 'Networking - Ethernet', 'TCP/UDP Socket']
 - ['Networking/TCP_IP_Protocols.md', 'Networking - Ethernet', 'TCP/IP Protocols']
+- ['Networking/TLS.md', 'Networking - security', 'Networking security with mbed TLS']
+- ['uvisor/uvisor.md', 'mbed OS uVisor', 'Device security with uVisor']
 - ['RTOS/mbed_RTOS.md', 'Real-Time Operating System', 'RTOS']
 - ['File_System/index.md', 'File Systems', 'File Systems']
 - ['File_System/LocalFileSystem.md', 'File Systems', 'Local File System']
