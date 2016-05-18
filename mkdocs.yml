@@ -44,14 +44,14 @@ pages:
 - ['USB/USBDevice/USBMouseKeyboard.md', 'USB Devices and Hosts', 'Device - USBMouseKeyboard']
 - ['USB/USBDevice/USBHID.md', 'USB Devices and Hosts', 'Device - USBHID']
 - ['USB/USBDevice/USBMIDI.md', 'USB Devices and Hosts', 'Device - USBMIDI']
-- ['USB/USBDevice/USBSerial.md', 'USB Device and Hosts', 'Device - USBSerial']
-- ['USB/USBDevice/USBAudio.md', 'USB Device and Hosts', 'Device - USBAudio']
-- ['USB/USBDevice/USBMSD.md', 'USB Device and Hosts', 'Device - USBMSD']
-- ['USB/USBHost/USBHostMouse.md', 'USB Device and Host', 'Host - USBHostMouse']
-- ['USB/USBHost/USBHostKeyboard.md', 'USB Device and Host', 'Host - USBHostKeyboard']
-- ['USB/USBHost/USBHostMSD.md', 'USB Device and Host', 'Host - USBHostMSD']
-- ['USB/USBHost/USBHostSerial.md', 'USB Device and Host', 'Host - USBHostSerial']
-- ['USB/USBHost/USBHostHub.md', 'USB Device and Host', 'Host - USBHostHub']
+- ['USB/USBDevice/USBSerial.md', 'USB Devices and Hosts', 'Device - USBSerial']
+- ['USB/USBDevice/USBAudio.md', 'USB Devices and Hosts', 'Device - USBAudio']
+- ['USB/USBDevice/USBMSD.md', 'USB Devices and Hosts', 'Device - USBMSD']
+- ['USB/USBHost/USBHostMouse.md', 'USB Devices and Hosts', 'Host - USBHostMouse']
+- ['USB/USBHost/USBHostKeyboard.md', 'USB Devices and Hosts', 'Host - USBHostKeyboard']
+- ['USB/USBHost/USBHostMSD.md', 'USB Devices and Hosts', 'Host - USBHostMSD']
+- ['USB/USBHost/USBHostSerial.md', 'USB Devices and Hosts', 'Host - USBHostSerial']
+- ['USB/USBHost/USBHostHub.md', 'USB Devices and Hosts', 'Host - USBHostHub']
 
 
 
