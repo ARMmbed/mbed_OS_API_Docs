@@ -1,3 +1,5 @@
+# DigitalOut
+
 The DigitalOut interface is used to configure and control a digital output pin. 
 
 ## Hello World!
@@ -16,6 +18,4 @@ The DigitalOut Interface can be used on any pin with a blue label, and also with
 
 The DigitalOut Interface can be used to set the state of the output pin, and also read back the current output state. Set the DigitalOut to zero to turn it off, or 1 to turn it on.
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)
+<span class="images">![](../Images/pin_out.jpeg)</span>
