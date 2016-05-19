@@ -1,8 +1,12 @@
+# PwmOut
+
 The PwmOut interface is used to control the frequency and mark-space ratio of a digital pulse train.
 
 ## Hello World!
 
-This code example uses the default period of 0.020s and ramps the duty cycle from 0% to 100% in incriments of 10%. <repo code="" file="" main.cpp="" mbed="" pwmout_helloworld="" teams="" tip="">
+This code example uses the default period of 0.020s and ramps the duty cycle from 0% to 100% in incriments of 10%. 
+
+** MISSING ** 
 
 ## API
 
@@ -97,4 +101,4 @@ int main() {
         }
     }
 }
-```</repo>
+```
