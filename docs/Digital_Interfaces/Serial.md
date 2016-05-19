@@ -28,10 +28,10 @@ Note that USBTX/USBRX are not DIP pins; they represent the pins that route to th
 
 Serial channels have a number of configurable parameters:
 
-  * _Baud Rate_ \- There are a number of standard baud rates ranging from a few hundred bits per seconds, to megabits per second. The default setting for a Serial connection on the mbed Microcontroller is 9600 baud.
-  * _Data length_ \- Data transferred can be either 7 or 8 bits long. The default setting for a Serial connection on the mbed Microcontroller is 8 bits.
-  * _Parity_ \- An optional parity bit can be added. The parity bit will be automatically set to make the number of 1's in the data either odd or even. Parity settings are Odd, Even or None. The default setting for a Serial connection on the mbed microcontroller is for the parity to be set to None.
-  * _Stop Bits_ \- After data and parity bits have been transmitted, 1 or 2 stop bit is inserted to "frame" the data. The default setting for a Serial connection on the mbed microcontroller is for one stop bit to be added.
+  * _Baud Rate_ - There are a number of standard baud rates ranging from a few hundred bits per seconds, to megabits per second. The default setting for a Serial connection on the mbed Microcontroller is 9600 baud.
+  * _Data length_ - Data transferred can be either 7 or 8 bits long. The default setting for a Serial connection on the mbed Microcontroller is 8 bits.
+  * _Parity_ - An optional parity bit can be added. The parity bit will be automatically set to make the number of 1's in the data either odd or even. Parity settings are Odd, Even or None. The default setting for a Serial connection on the mbed microcontroller is for the parity to be set to None.
+  * _Stop Bits_ - After data and parity bits have been transmitted, 1 or 2 stop bit is inserted to "frame" the data. The default setting for a Serial connection on the mbed microcontroller is for one stop bit to be added.
 
 The default settings for the mbed microcontroller are described as _9600 8N1_, and this is common notation for Serial port settings.
 
@@ -45,8 +45,9 @@ The default settings for the mbed microcontroller are described as _9600 8N1_, a
 
 ## Examples
 
-```
+### Example one
 
+```
 #include "mbed.h"
 
 Serial device(p9, p10);  // tx, rx
@@ -56,9 +57,9 @@ int main() {
     device.printf("Hello World\n");
 }
 ```
+### Example two
 
 ```
-
 #include "mbed.h"
 
 Serial pc(USBTX, USBRX); // tx, rx
@@ -75,6 +76,8 @@ int main() {
     }
 }
 ```
+
+### Example three
 
 ```
 #include "mbed.h"
@@ -100,4 +103,4 @@ int main() {
 }
 ```
 
-  * See [the full attach API](http://mbed.org/projects/libraries/api/mbed/trunk/Serial#Serial.attach)
+See [the full attach API](http://mbed.org/projects/libraries/api/mbed/trunk/Serial#Serial.attach)
