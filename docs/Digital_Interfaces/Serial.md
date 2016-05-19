@@ -1,3 +1,5 @@
+# Serial
+
 Serial is a generic protocol used by computers and electronic modules to send and receive control information and data. The Serial link has two unidirection channels, one for sending and one for receiving. The link is asynchronous, and so both ends of the serial link must be configured to use the same settings.
 
 One of the Serial connections goes via the mbed USB port, allowing you to easily communicate with your host PC.
@@ -16,19 +18,13 @@ API summary
 
 The Serial Interface can be used on supported pins and USBTX/USBRX
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
+<span class="images">![](../Images/pin_out.jpeg)</span>
   
 Note that USBTX/USBRX are not DIP pins; they represent the pins that route to the interface USB Serial port so you can communicate with a host PC.
 
-<note> If you want to send data to a host PC, take a look at:
+<span class="tips">**Tip:** If you want to send data to a host PC, take a look at [SerialPC](Serial.md) </span>
 
-  * [SerialPC](SerialPC) \- Communicating between mbed and a host PC
-
-Note that on a windows machine, you will need to install a USB Serial driver, see:
-
-  * [Windows serial configuration](Windows serial configuration) </note>
+<span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](Windows serial configuration) **MISSING LINK** </span>
 
 Serial channels have a number of configurable parameters:
 
@@ -41,7 +37,7 @@ The default settings for the mbed microcontroller are described as _9600 8N1_, a
 
 ## See Also
 
-  * [Communication with a PC](SerialPC)
+  * [Communication with a PC](Serial.md)
 
 ## Reference
 
@@ -104,4 +100,4 @@ int main() {
 }
 ```
 
-  * See [full attach API](http://mbed.org/projects/libraries/api/mbed/trunk/Serial#Serial.attach)
+  * See [the full attach API](http://mbed.org/projects/libraries/api/mbed/trunk/Serial#Serial.attach)
