@@ -1,3 +1,5 @@
+#DigitalIn
+
 The DigitalIn interface is used to read the value of a digital input pin.
 
 Any of the numbered mbed pins can be used as a DigitalIn. 
@@ -20,15 +22,13 @@ The DigitalIn Interface can be used on any pin with a blue label.
 
 The pin input is logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the DigitalIn is setup with an internal pull-down resistor.
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
+<span class="images">![](../Images/pin_out.jpeg)</span>
+
 ## Related
 
-To handle an interrupt, see [InterruptIn](InterruptIn)
+To handle an interrupt, see [InterruptIn](InterruptIn.md).
 
-Examples of logical functions
+Examples of logical functions:
 
 ```
 #include "mbed.h"
