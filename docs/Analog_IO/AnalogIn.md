@@ -1,25 +1,15 @@
-The AnalogIn API is used to read an external voltage applied to an analog input pin. Only certain pins are capable of making these measurement so check the documentation for compatible pins. For more information on what it takes to convert an analog signal to its digital representation see: <http://en.wikipedia.org/wiki/Analog-to-digital_converter>   
+# AnalogIn
 
-
-* * *
+The AnalogIn API is used to read an external voltage applied to an analog input pin. Only certain pins are capable of making these measurement so check the documentation for compatible pins. For more information on what it takes to convert an analog signal to its digital representation see [http://en.wikipedia.org/wiki/Analog-to-digital_converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter).   
 
 ## API
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1AnalogIn.html) 
 
-  
-
-
-* * *
-
 ## Hello World!
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/file/tip/main.cpp) 
 
-  
-
-
-* * *
 
 ## Examples
 
