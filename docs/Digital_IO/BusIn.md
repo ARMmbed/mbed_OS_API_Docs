@@ -16,9 +16,8 @@ API summary
 
 ## Interface
 
-The BusIn Interface can use any pins with a blue label.
+The BusIn Interface can use any pin with a blue label.
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
+<span class="images">![](../Images/pin_out.jpeg)</span>
+
 
