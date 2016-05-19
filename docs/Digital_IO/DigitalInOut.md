@@ -1,3 +1,5 @@
+# DigitialInOut
+
 The DigitalInOut interface is used as a bi-directional digital pin, used to read the value of a digital pin when set as an input, or write the value when set as an output.
 
 Any of the numbered mbed pins can be used as a DigitalInOut. 
@@ -18,11 +20,4 @@ API summary
 
 The DigitalInOut Interface can be used on any pin with a blue label.
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
-## Related
-
-  * [DigitalIn](DigitalIn)
-  * [DigitalOut](DigitalOut)
+<span class="images">![](../Images/pin_out.jpeg)</span>  
