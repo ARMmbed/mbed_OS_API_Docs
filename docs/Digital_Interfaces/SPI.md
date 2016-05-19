@@ -1,4 +1,6 @@
-The SPI Interface provides a "Serial Peripheral Interface" Master. 
+# SPI
+
+The SPI Interface provides a Serial Peripheral Interface Master. 
 
 This interface can be used for communication with SPI slave devices, such as FLASH memory, LCD screens and other modules or integrated circuits.
 
@@ -12,9 +14,7 @@ This interface can be used for communication with SPI slave devices, such as FLA
 
 ## Interface
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
+<span class="images">![](../Images/pin_out.jpeg)</span>
   
 The default settings of the SPI interface are 1MHz, 8-bit, Mode 0
 
