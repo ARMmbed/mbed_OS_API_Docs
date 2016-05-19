@@ -1,3 +1,5 @@
+# PortOut
+
 The PortInOut interface is used to read and write an underlying GPIO port as one value. This is much faster than [BusInOut](BusInOut) as you can write a port in one go, but much less flexible as you are constrained by the port and bit layout of the underlying GPIO ports.
 
 A mask can be supplied so only certain bits of a port are used, allowing other bits to be used for other interfaces. 
@@ -14,11 +16,4 @@ A mask can be supplied so only certain bits of a port are used, allowing other b
 
 The PortInOut Interface can use any pins with a blue label, as long as they are in the same port.
 
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
-## Related
-
-  * [BusInOut](BusInOut)
-  * [DigitalInOut](DigitalInOut)
+<span class="images">![](../Images/pin_out.jpeg)</span>
