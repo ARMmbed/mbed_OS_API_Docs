@@ -1,3 +1,5 @@
+# InterruptIn
+
 The InterruptIn interface is used to trigger an event when a [digital input pin](DigitalIn) changes.
 
 ## Hello World!
@@ -12,17 +14,20 @@ API summary
 
 ## Interface
 
-<div class="alert-box warning" title="Certain pins cannot be used for InterruptIn">
+<span class="warnings">**Warning:** Certain pins cannot be used for InterruptIn
+</br>
+* mbed NXP LPC1768: Any of the numbered mbed pins can be used as an InterruptIn, except p19 and p20.
+* mbed FRDM KL25Z: Only the pins of port A and D can be used. (PTA[0-31] and PTD[0-31]). </div>
+</span>
 
-  * mbed NXP LPC1768: Any of the numbered mbed pins can be used as an InterruptIn, except p19 and p20.
-  * mbed FRDM KL25Z: Only the pins of port A and D can be used. (PTA[0-31] and PTD[0-31]). </div>
-[![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
+<span class="images">![](../Images/pin_out.jpeg)</span>
+
 The pin input will be logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the InterruptIn is setup with an internal pull-down resistor.
 
-<div class="alert-box warning" title="No blocking code in ISR"> In ISR you should avoid any call to wait, infinitive while loop, or blocking calls in general. </div> <div class="alert-box warning" title="No printf, malloc, or new in ISR"> In ISR you should avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behaviour could be corrupted when called from an ISR. </div>
+<span class="warning">**Warnings:** No blocking code in ISR
+</br>In ISR you should avoid any call to wait, infinitive while loop, or blocking calls in general. 
+</br>**Warning:** No printf, malloc, or new in ISR
+</br>In ISR you should avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behaviour could be corrupted when called from an ISR.</span>
 
 ## Examples
 
@@ -61,6 +66,6 @@ int main() {
 
 ## Related
 
-To read an input, see [DigitalIn](DigitalIn)
+To read an input, see [DigitalIn](DigitalIn.md).
 
-For timer-based interrupts, see [Ticker](Ticker) (repeating interrupt) and [Timeout](Timeout) (one-time interrupt)
+For timer-based interrupts, see [Ticker](Ticker.md) (repeating interrupt) and [Timeout](Timeout.md) (one-time interrupt).
