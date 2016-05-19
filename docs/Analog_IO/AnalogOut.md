@@ -1,25 +1,15 @@
-The AnalogOut Interface is used to set the voltage of an analog output pin. The AnalogOut Interface can be used to set a voltage on pin somewhere in the range of VSS to VCC. Not all pins are capable of being AnalogOut so check the documentation. For more information on what it takes to convert an digital value to its analog representation see: <http://en.wikipedia.org/wiki/Digital-to-analog_converter>   
+# AnalogOut
 
-
-* * *
+The AnalogOut Interface is used to set the voltage of an analog output pin. The AnalogOut Interface can be used to set a voltage on pin somewhere in the range of VSS to VCC. Not all pins are capable of being AnalogOut so check the documentation. For more information on what it takes to convert an digital value to its analog representation see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
 
 ## API
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1AnalogOut.html) 
 
-  
-
-
-* * *
-
 ## Hello World!
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/file/tip/main.cpp) 
 
-  
-
-
-* * *
 
 ## Example
 
@@ -48,6 +38,3 @@ int main()
 }
  
 ```   
-
-
-* * *
