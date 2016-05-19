@@ -1,6 +1,8 @@
-The BusInOut interface is used as a bi-directional bus that collects together a number of [DigitalInOut](DigitalInOut) pins that can be read and written as one value.
+#BusInOut
 
-Any of the numbered mbed pins can be used as a [DigitalInOut](DigitalInOut). 
+The BusInOut interface is used as a bi-directional bus that collects together a number of [DigitalInOut](DigitalInOut.md) pins that can be read and written as one value.
+
+Any of the numbered mbed pins can be used as a [DigitalInOut](DigitalInOut.md). 
 
 ## Hello World!
 
@@ -11,9 +13,3 @@ Any of the numbered mbed pins can be used as a [DigitalInOut](DigitalInOut).
 API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1BusInOut.html) 
-
-## Related
-
-  * [BusIn](BusIn)
-  * [BusOut](BusOut)
-  * [DigitalInOut](DigitalInOut)
