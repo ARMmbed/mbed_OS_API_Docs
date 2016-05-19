@@ -1,3 +1,5 @@
+#BusIn
+
 The BusIn interface is used to create a number of DigitalIn pins that can be read as one value.
 
 Any of the numbered mbed pins can be used as a DigitalIn in the BusIn. 
@@ -19,7 +21,4 @@ The BusIn Interface can use any pins with a blue label.
 [![/media/uploads/chris/pinout-thumbnails.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails.jpg)](https://developer.mbed.org/handbook/Pinouts)  
 ---  
 [See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
-## Related
 
-  * [DigitalIn](DigitalIn)
