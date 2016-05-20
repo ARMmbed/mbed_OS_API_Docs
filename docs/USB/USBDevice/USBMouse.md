@@ -1,7 +1,6 @@
 # USBMouse
 
 <span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
-P6E7RV4) </div>
 
 The USBMouse interface is used to emulate a mouse over the USB port. You can choose relative or absolute co-ordinates, and send clicks, button state and scroll wheel movements.
 
