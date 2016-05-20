@@ -42,11 +42,11 @@ An audio packet is received each millisecond. So let's say that a frequency of 4
 
 The read() function fills an uint8_t array. But these data has to be interpreted as 16 bits signed data (PCM). Then PCM values can be handled according to the number of channels.
 
-** MONO: single channel **
+### MONO: single channel
 
 <span class="images">![](../../Images/mono.png)</span>
 
-** STEREO: 2 channels **
+### STEREO: 2 channels
 
 When there are 2 channels, values for channel 1 and values for channel 2 will alternate as explained in the following diagram:
 
