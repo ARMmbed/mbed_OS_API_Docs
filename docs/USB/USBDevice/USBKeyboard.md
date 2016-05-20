@@ -1,11 +1,13 @@
-<div side style="float: right"> ![http://www.youtube.com/watch?v=NKSlkUcoOjY](http://www.youtube.com/watch?v=NKSlkUcoOjY) </div>
+# USBKeyboard
+
+<span class="images"> ![http://www.youtube.com/watch?v=NKSlkUcoOjY](http://www.youtube.com/watch?v=NKSlkUcoOjY) </span>
 
 The USBKeyboard interface is used to emulate a keyboard over the USB port. You can type strings and send keycodes, send keys with modifiers (e.g. CTRL + 's'), function keys and also the media control keys
 
 The USB connector should be attached to 
 
-  * **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-  * The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
+* The on-board USB connector of the **FRDM-KL25Z**
 
 ## Hello World
 
@@ -54,13 +56,3 @@ int main(void) {
     }
 }
 ```
-
-## Related
-
-  * [USBHID](USBHID)
-  * [USBMouse](USBMouse)
-  * [USBMouseKeyboard](USBMouseKeyboard)
-  * [USBMIDI](USBMIDI)
-  * [USBSerial](USBSerial)
-  * [USBAudio](USBAudio)
-  * [USBMSD](USBMSD)
