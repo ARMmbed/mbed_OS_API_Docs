@@ -6,7 +6,7 @@ Any number of Ticker objects can be created, allowing multiple outstanding inter
 
 ## Hello World!
 
-A simple program to setup a Ticker to invert an LED repeatedly...
+A simple program to setup a Ticker to invert an LED repeatedly:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/file/5014bf742e9b/main.cpp) 
 
