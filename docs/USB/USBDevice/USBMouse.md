@@ -1,11 +1,14 @@
-<div side style="float: right"> ![http://www.youtube.com/watch?v=1lSjP6E7RV4](http://www.youtube.com/watch?v=1lSjP6E7RV4) </div>
+# USBMouse
+
+<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
+P6E7RV4) </div>
 
 The USBMouse interface is used to emulate a mouse over the USB port. You can choose relative or absolute co-ordinates, and send clicks, button state and scroll wheel movements.
 
 The USB connector should be attached to 
 
-  * **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-  * The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
+* The on-board USB connector of the **FRDM-KL25Z**
 
 ## Hello World
 
@@ -50,13 +53,3 @@ You can choose either a relative mouse or an absolute mouse. By default, a USBMo
    }
  }
 ```
-
-## Related
-
-  * [USBKeyboard](USBKeyboard)
-  * [USBMouseKeyboard](USBMouseKeyboard)
-  * [USBHID](USBHID)
-  * [USBMIDI](USBMIDI)
-  * [USBSerial](USBSerial)
-  * [USBAudio](USBAudio)
-  * [USBMSD](USBMSD)
