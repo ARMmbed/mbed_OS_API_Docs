@@ -38,7 +38,7 @@ An audio packet is received each millisecond. So let's say that a frequency of 4
 
 <span class="tips">**Tip:** Compute the length packet </br>``AUDIO_LENGTH_PACKET = (FREQ / 500) * nb_channel``</span>
 
-### How to interpret an audio packet ?
+### How to interpret an audio packet
 
 The read() function fills an uint8_t array. But these data has to be interpreted as 16 bits signed data (PCM). Then PCM values can be handled according to the number of channels.
 
