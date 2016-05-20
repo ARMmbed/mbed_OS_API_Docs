@@ -1,6 +1,7 @@
 # USBKeyboard
 
-<span class="images"> ![http://www.youtube.com/watch?v=NKSlkUcoOjY](http://www.youtube.com/watch?v=NKSlkUcoOjY) </span>
+
+<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/NKSlkUcoOjY/0.jpg)](http://www.youtube.com/watch?v=NKSlkUcoOjY)</span>
 
 The USBKeyboard interface is used to emulate a keyboard over the USB port. You can type strings and send keycodes, send keys with modifiers (e.g. CTRL + 's'), function keys and also the media control keys
 
