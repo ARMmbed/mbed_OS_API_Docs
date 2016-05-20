@@ -1,9 +1,4 @@
-<div side style="float: right"> <div class="alert-box info" title="Memory Model">
-
-  1. **_mbed Memory Model_**  
-
-  2. [RTOS Memory Model](https://developer.mbed.org/handbook/RTOS-Memory-Model)  
-</div> </div>
+# mbed Memory Model
 
 This is a basic overview of the memory model used by mbed.
 
@@ -11,13 +6,13 @@ This is a basic overview of the memory model used by mbed.
 
 A single-chip microcontroller contains two types of memory:
 
-[FLASH](http://en.wikipedia.org/wiki/Flash_memory) \- This is the [non-volatile](http://en.wikipedia.org/wiki/Non-volatile_memory) memory that primarily stores the program's instructions, and also any "constant" data values. In general, you only read from this memory, and it is only written when you download new code to the mbed.
+[FLASH](http://en.wikipedia.org/wiki/Flash_memory) - This is the [non-volatile](http://en.wikipedia.org/wiki/Non-volatile_memory) memory that primarily stores the program's instructions, and also any "constant" data values. In general, you only read from this memory, and it is only written when you download new code to the mbed.
 
-[RAM](http://en.wikipedia.org/wiki/Static_random_access_memory) \- This is the [volatile](http://en.wikipedia.org/wiki/Volatile_memory) memory that is the working data space for storing all variables whilst the program is running. In C, this is static variables, the heap, and the stack.
+[RAM](http://en.wikipedia.org/wiki/Static_random_access_memory) - This is the [volatile](http://en.wikipedia.org/wiki/Volatile_memory) memory that is the working data space for storing all variables whilst the program is running. In C, this is static variables, the heap, and the stack.
 
 RAM is therefore much more scarce and valuable than FLASH, so it is worth understanding a little about the memory model to help make best use of the memory.
 
-[EEPROM](http://en.wikipedia.org/wiki/EEPROM) \- Some microcontrollers have special non-volatile memory that can be erased and written byte for byte rather than in blocks or sectors. This memory is typically used by the application to store special data or configuration. This memory requires special access by a peripheral and is not directly addressable.
+[EEPROM](http://en.wikipedia.org/wiki/EEPROM) - Some microcontrollers have special non-volatile memory that can be erased and written byte for byte rather than in blocks or sectors. This memory is typically used by the application to store special data or configuration. This memory requires special access by a peripheral and is not directly addressable.
 
 ## C Memory Model
 
@@ -71,19 +66,20 @@ If there is a piece of unused memory in the heap which is big enough for what yo
 
 The information in your program is made up of several sorts based on the memory model:
 
-  * Executable code 
-  * Constants and other read-only data
-  * Initialised global/static variables
-  * Uninitialised global/static variables
-  * Local variables
-  * Dynamically created data
+* Executable code 
+* Constants and other read-only data
+* Initialised global/static variables
+* Uninitialised global/static variables
+* Local variables
+* Dynamically created data
 
 Each of these groups get allocated to a region of the memory space called a section. 
 
 The executable code, constants and other read-only data get put in a section called "RO" (for read-only), which is stored in the FLASH memory of the device. Initialised static and global variables go into a section called "RW" (read-write), and the uninitialised ones in to one called "ZI" (Zero Initialise). I'll come on to the local and dynamic data in a bit, but these along with RW and ZI need to live in RAM.
 
 On reset, the RAM is an undefined state and those initialised variables have to be setup for your program to work correctly. This setup is actually part of your program binary, as the compiler automatically inserts some housework code before main() as part of setting up the C environment which copies from FLASH to RAM what these variables should be initialised to; this becomes the runtime RW section. One of the other things it does is to zero fill the next section of RAM, which is where the ZI section lives.
-    
+
+```    
     
     	Loaded		After startup
           +--------+        +--------+    High Address
@@ -101,12 +97,15 @@ On reset, the RAM is an undefined state and those initialised variables have to 
           +--------+        +--------+         |
           |Program |        |Program |         |
           +--------+        +--------+     Low Address
+```
 
 ### Heap and Stack
 
 The last two sorts of information are the local variables which will exist on the stack, and the dynamically created data which will exist in the heap. 
 
 The sizes of these two regions vary during program execution, and only have fixed starting points. We use the single memory space shared stack/heap model which allows flexibility in the size of each, limited only by our available RAM. What this means is that the heap starts at the first address after the end of ZI, growing up into higher memory addresses, and the stack starts at the last memory address of RAM, and grows downwards into lower memory addresses:
+
+```
     
     
           +--------+   Last Address of RAM
@@ -127,6 +126,7 @@ The sizes of these two regions vary during program execution, and only have fixe
           +========+  First Address of RAM
           |        |
     Flash |        |
+```
 
 ### Collisions
 
