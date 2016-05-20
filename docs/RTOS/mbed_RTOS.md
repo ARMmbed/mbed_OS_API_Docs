@@ -46,7 +46,7 @@ A *``Mutex`` is used to synchronize the execution of threads, for example to pro
 
 A ``Semaphore`` is particularly useful to manage thread access to a pool of shared resources of a certain type.
 
-<span class="images">![](../Images/Semaphore.jpeg)</span>
+<span class="images">![](../Images/Semaphore.png)</span>
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_semaphore/)](https://developer.mbed.org/users/mbed_official/code/rtos_semaphore/file/tip/main.cpp) 
 
@@ -62,7 +62,7 @@ Each ``Thread`` can be notified and wait for signals:
 
 A ``Queue`` allows you to queue pointers to data from producers threads to consumers threads:
 
-![https://developer.mbed.org/media/uploads/emilmont/messagequeue.png](https://developer.mbed.org/media/uploads/emilmont/messagequeue.png)
+<span class="images">![](../Images/queue.jpeg)</span>
 
 ```
 Queue queue;
@@ -74,7 +74,9 @@ queue.put(message);
 osEvent evt = queue.get();
 if (evt.status == osEventMessage) {
     message_t *message = (message_t*)evt.value.p;
-``` [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_queue/)](https://developer.mbed.org/users/mbed_official/code/rtos_queue/file/tip/main.cpp) 
+``` 
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_queue/)](https://developer.mbed.org/users/mbed_official/code/rtos_queue/file/tip/main.cpp) 
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Queue.html) 
 
@@ -88,15 +90,17 @@ MemoryPool mpool;
 message_t *message = mpool.alloc();
 
 mpool.free(message);
-``` [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_queue/)](https://developer.mbed.org/users/mbed_official/code/rtos_queue/file/tip/main.cpp) 
+``` 
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_queue/)](https://developer.mbed.org/users/mbed_official/code/rtos_queue/file/tip/main.cpp) 
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1MemoryPool.html) 
 
 ## Mail
 
-A **##Mail##** works like a queue with the added benefit of providing a memory pool for allocating messages (not only pointers).
+A ``Mail`` works like a queue with the added benefit of providing a memory pool for allocating messages (not only pointers).
 
-![https://developer.mbed.org/media/uploads/emilmont/mailqueue.png](https://developer.mbed.org/media/uploads/emilmont/mailqueue.png)
+<span class="images">![](../Images/mail_queue.png)</span>
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_mail/)](https://developer.mbed.org/users/mbed_official/code/rtos_mail/file/tip/main.cpp) 
 
@@ -104,9 +108,9 @@ A **##Mail##** works like a queue with the added benefit of providing a memory p
 
 ## RTOS Timer
 
-The **##RtosTimer##** class allows creating and and controlling of timer functions in the system. A timer function is called when a time period expires whereby both one-shot and periodic timers are possible. A timer can be started, restarted, or stopped. Timers are handled in the thread **##osTimerThread##**. Callback functions run under control of this thread and may use CMSIS-RTOS API calls.
+The ``RtosTimer`` class allows creating and and controlling of timer functions in the system. A timer function is called when a time period expires whereby both one-shot and periodic timers are possible. A timer can be started, restarted, or stopped. Timers are handled in the thread ``osTimerThread``. Callback functions run under control of this thread and may use CMSIS-RTOS API calls.
 
-![https://developer.mbed.org/media/uploads/emilmont/rtostimer.png](https://developer.mbed.org/media/uploads/emilmont/rtostimer.png)
+<span class="images">![](../Images/rtos_timer.png)</span>
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_timer/)](https://developer.mbed.org/users/mbed_official/code/rtos_timer/file/tip/main.cpp) 
 
@@ -116,44 +120,44 @@ The **##RtosTimer##** class allows creating and and controlling of timer functio
 
 The same RTOS API can be used in ISR. The only two warnings are:
 
-  * **##Mutex##** can not be used.
-  * Wait in ISR is not allowed: all the timeouts in method parameters have to be set to 0 (no wait).
+* ``Mutex`` can not be used.
+* Wait in ISR is not allowed: all the timeouts in method parameters have to be set to 0 (no wait).
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_isr/)](https://developer.mbed.org/users/mbed_official/code/rtos_isr/file/tip/main.cpp) 
 
 ## Default Timeouts
 
-The mbed rtos API has made the choice of defaulting to **##0##** timeout (no wait) for the producer methods, and **##osWaitForever##** (infinitive wait) for the consumer methods.
+The mbed rtos API has made the choice of defaulting to ``0`` timeout (no wait) for the producer methods, and ``osWaitForever`` (infinitive wait) for the consumer methods.
 
 A typical scenario for a producer could be a peripheral triggering an interrupt to notify an event: in the corresponding interrupt service routine you cannot wait (this would deadlock the entire system). On the other side, the consumer could be a background thread waiting for events: in this case the desired default behaviour is not using CPU cycles until this event is produced, hence the osWaitForever.
 
-<div class="alert-box warning" title="No wait in ISR"> When calling an rtos object method in an ISR all the timeout parameters have to be set to 0 (no wait): waiting in ISR is not allowed. </div>
+<span class="warnings">**Warning**: No wait in ISR</br> When calling an rtos object method in an ISR all the timeout parameters have to be set to 0 (no wait): waiting in ISR is not allowed. </span>
 
 ## Status and Error Codes
 
 The Status and Error Codes section lists all the return values that the CMSIS-RTOS functions will return:
 
-  * **##osOK##**: function completed; no event occurred.
-  * **##osEventSignal##**: function completed; signal event occurred.
-  * **##osEventMessage##**: function completed; message event occurred.
-  * **##osEventMail##**: function completed; mail event occurred.
-  * **##osEventTimeout##**: function completed; timeout occurred.
-  * **##osErrorParameter##**: parameter error: a mandatory parameter was missing or specified an incorrect object.
-  * **##osErrorResource##**: resource not available: a specified resource was not available.
-  * **##osErrorTimeoutResource##**: resource not available within given time: a specified resource was not available within the timeout period.
-  * **##osErrorISR##**: not allowed in ISR context: the function cannot be called from interrupt service routines.
-  * **##osErrorISRRecursive##**: function called multiple times from ISR with same object.
-  * **##osErrorPriority##**: system cannot determine priority or thread has illegal priority.
-  * **##osErrorNoMemory##**: system is out of memory: it was impossible to allocate or reserve memory for the operation.
-  * **##osErrorValue##**: value of a parameter is out of range.
-  * **##osErrorOS##**: unspecified RTOS error: run-time error but no other error message fits.
+* ``osOK``: function completed; no event occurred.
+* ``osEventSignal``: function completed; signal event occurred.
+* ``osEventMessage``: function completed; message event occurred.
+* ``osEventMail``: function completed; mail event occurred.
+* ``osEventTimeout``: function completed; timeout occurred.
+* ``osErrorParameter``: parameter error: a mandatory parameter was missing or specified an incorrect object.
+* ``osErrorResource``: resource not available: a specified resource was not available.
+* ``osErrorTimeoutResource``: resource not available within given time: a specified resource was not available within the timeout period.
+* ``osErrorISR``: not allowed in ISR context: the function cannot be called from interrupt service routines.
+* ``osErrorISRRecursive``: function called multiple times from ISR with same object.
+* ``osErrorPriority``: system cannot determine priority or thread has illegal priority.
+* ``osErrorNoMemory``: system is out of memory: it was impossible to allocate or reserve memory for the operation.
+* ``osErrorValue``: value of a parameter is out of range.
+* ``osErrorOS``: unspecified RTOS error: run-time error but no other error message fits.
 
 ## osEvent
 
-The **##osEvent##** data structure is returned by ##get## methods of **##Queue##** and **##Mail##** objects. This data structure contains both an error code and a pointer to the actual data:
+The ``osEvent`` data structure is returned by ``get`` methods of ``Queue`` and ``Mail`` objects. This data structure contains both an error code and a pointer to the actual data:
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/rtx/docs/tip/structosEvent.html) 
 
 ## Implementation
 
-The mbed RTOS is based on the [CMSIS RTOS](https://developer.mbed.org/handbook/CMSIS-RTOS).
+The mbed RTOS is based on the [CMSIS RTOS](CMSIS-RTOS). ** MISSING LINK **
