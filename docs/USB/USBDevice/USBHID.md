@@ -1,9 +1,11 @@
+# USBHID
+
 The USBHID class can be used to send and receive messages over USB. For instance, you can define your own protocol and communicate between your computer and the Mbed with all capabilities of a USB communication. To use USBHID, you need a script running on the host side (computer). For instance on a 32 bits Windows 7 machine, you can use [pywinusb](http://code.google.com/p/pywinusb/).
 
 The USB connector should be attached to 
 
-  * **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-  * The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
+* The on-board USB connector of the **FRDM-KL25Z**
 
 ## Hello World
 
@@ -16,7 +18,6 @@ The USB connector should be attached to
 ## Details
 
 You can choose the length of exchanged packets. In this example, mbed leds are controlled by four switches. When you press a button, there is a message sent containing buttons state. According to this message, the mbed will receive back a new message to light on leds.   
-  
 We need one byte to control leds and one byte to send buttons state.
 
 ```
@@ -60,13 +61,3 @@ int main(void) {
 ## Contribute to the USBHID bindings webpage!
 
 A great thing would be to develop in several languages running on different platforms, programs able to communicate with the mbed over USB. Visit the [USBHID bindings webpage](http://mbed.org/cookbook/USBHID-bindings-) and develop your own USBHID device!
-
-## Related
-
-  * [USBMouse](USBMouse)
-  * [USBKeyboard](USBKeyboard)
-  * [USBMouseKeyboard](USBMouseKeyboard)
-  * [USBMIDI](USBMIDI)
-  * [USBSerial](USBSerial)
-  * [USBAudio](USBAudio)
-  * [USBMSD](USBMSD)
