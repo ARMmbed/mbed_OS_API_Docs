@@ -26,10 +26,10 @@ A ``Thread`` can be in the following states:
 
 ## Mutex
 
-A *``Mutex`` is used to synchronize the execution of threads, for example to protect the access to a shared resource.
+A ``Mutex`` is used to synchronize the execution of threads, for example to protect the access to a shared resource.
 
 <span class="warnings"> **Warning:** ISR
-</br>The **##Mutex##** methods cannot be called from interrupt service routines (ISR). </span>
+</br>The ``Mutex`` methods cannot be called from interrupt service routines (ISR). </span>
 
 <span class="images">![](../Images/Mutex.png)</span>
 
@@ -62,7 +62,7 @@ Each ``Thread`` can be notified and wait for signals:
 
 A ``Queue`` allows you to queue pointers to data from producers threads to consumers threads:
 
-<span class="images">![](../Images/queue.jpeg)</span>
+<span class="images">![](../Images/queue.png)</span>
 
 ```
 Queue queue;
