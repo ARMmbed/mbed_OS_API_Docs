@@ -1,41 +1,52 @@
+# mbed-rtos
+
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/latest) 
 
 ## Thread
 
-The **##Thread##** class allows defining, creating, and controlling thread functions in the system. The function **##main##** is a special thread function that is started at system initialization and has the initial priority ##osPriorityNormal##.
+The ``Thread`` class allows defining, creating, and controlling thread functions in the system. The function ``main`` is a special thread function that is started at system initialization and has the initial priority ##osPriorityNormal##.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_basic/)](https://developer.mbed.org/users/mbed_official/code/rtos_basic/file/tip/main.cpp) 
 
-<div class="alert-box info" title="main"> The **##main##** function is already the first thread scheduled by the rtos. </div> [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Thread.html) 
+<span class="notes">**Note:** The ``main`` function is already the first thread scheduled by the rtos. </span> 
 
-![https://developer.mbed.org/media/uploads/JimCarver/thread_priority.png](https://developer.mbed.org/media/uploads/JimCarver/thread_priority.png)
+[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Thread.html) 
 
-A ##Thread## can be in the following states:
+<span class="images">![](../Images/thread_priority.png)</span>
 
-  * **RUNNING**: The thread that is currently running is in the RUNNING state. Only one thread at a time can be in this state.
-  * **READY**: Threads which are ready to run are in the READY state. Once the RUNNING thread has terminated or is WAITING the next READY thread with the highest priority becomes the RUNNING thread.
-  * **WAITING**: Threads that are waiting for an event to occur are in the WAITING state.
-  * **INACTIVE**: Threads that are not created or terminated are in the INACTIVE state. These threads typically consume no system resources.
 
-![https://developer.mbed.org/media/uploads/emilmont/threadstatus.png](https://developer.mbed.org/media/uploads/emilmont/threadstatus.png)
+A ``Thread`` can be in the following states:
+
+* **RUNNING**: The thread that is currently running is in the RUNNING state. Only one thread at a time can be in this state.
+* **READY**: Threads which are ready to run are in the READY state. Once the RUNNING thread has terminated or is WAITING the next READY thread with the highest priority becomes the RUNNING thread.
+* **WAITING**: Threads that are waiting for an event to occur are in the WAITING state.
+* **INACTIVE**: Threads that are not created or terminated are in the INACTIVE state. These threads typically consume no system resources.
+
+<span class="images">![](../Images/thread_status.png)</span>
 
 ## Mutex
 
-A **##Mutex##** is used to synchronize the execution of threads: for example to protect the access to a shared resource.
+A *``Mutex`` is used to synchronize the execution of threads, for example to protect the access to a shared resource.
 
-<div class="alert-box warning" title="ISR"> The **##Mutex##** methods cannot be called from interrupt service routines (ISR). </div>
+<span class="warnings"> **Warning:** ISR
+</br>The **##Mutex##** methods cannot be called from interrupt service routines (ISR). </span>
 
-![https://developer.mbed.org/media/uploads/emilmont/mutex.png](https://developer.mbed.org/media/uploads/emilmont/mutex.png)
+<span class="images">![](../Images/Mutex.png)</span>
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_mutex/)](https://developer.mbed.org/users/mbed_official/code/rtos_mutex/file/tip/main.cpp) 
 
-<div class="alert-box info" title="C standard library mutexes"> The ARM C standard library has already mutexes in place to protect the access to stdio, therefore on the M3 mbed the above example is not necessary. On the contrary, ARM microlib (used on the M0 mbed) does not provide default stdio mutexes making the above example a necessity. </div> <div class="alert-box warning" title="stdio (printf, putc, getc, etc), malloc &amp; new in ISR"> Because of the mutexes in the ARM C standard library you cannot use stdio (**##printf##**, **##putc##**, **##getc##**, etc), **##malloc##** and **##new##** in ISR! </div> [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Mutex.html) 
+<span class="notes">**Note:** C standard library mutexes
+</br>The ARM C standard library has already mutexes in place to protect the access to stdio, therefore on the M3 mbed the above example is not necessary. On the contrary, ARM microlib (used on the M0 mbed) does not provide default stdio mutexes making the above example a necessity. </span> 
+<span class="warnings">**Warning:** stdio (printf, putc, getc, etc), malloc &amp; new in ISR
+</br>Because of the mutexes in the ARM C standard library you cannot use stdio (**##printf##**, **##putc##**, **##getc##**, etc), **##malloc##** and **##new##** in ISR! </span> 
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Mutex.html) 
 
 ## Semaphore
 
-A **##Semaphore##** is particularly useful to manage thread access to a pool of shared resources of a certain type.
+A ``Semaphore`` is particularly useful to manage thread access to a pool of shared resources of a certain type.
 
-![https://developer.mbed.org/media/uploads/emilmont/semaphore.png](https://developer.mbed.org/media/uploads/emilmont/semaphore.png)
+<span class="images">![](../Images/Semaphore.jpeg)</span>
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_semaphore/)](https://developer.mbed.org/users/mbed_official/code/rtos_semaphore/file/tip/main.cpp) 
 
@@ -43,11 +54,13 @@ A **##Semaphore##** is particularly useful to manage thread access to a pool of 
 
 ## Signals
 
-Each **##Thread##** can be notified and wait for signals: [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_signals/)](https://developer.mbed.org/users/mbed_official/code/rtos_signals/file/tip/main.cpp) 
+Each ``Thread`` can be notified and wait for signals: 
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_signals/)](https://developer.mbed.org/users/mbed_official/code/rtos_signals/file/tip/main.cpp) 
 
 ## Queue
 
-A **##Queue##** allows you to queue pointers to data from producers threads to consumers threads:
+A ``Queue`` allows you to queue pointers to data from producers threads to consumers threads:
 
 ![https://developer.mbed.org/media/uploads/emilmont/messagequeue.png](https://developer.mbed.org/media/uploads/emilmont/messagequeue.png)
 
