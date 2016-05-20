@@ -1,3 +1,5 @@
+# Time
+
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/time_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/time_HelloWorld/file/b3b93997a0a6/main.cpp) 
 
 ```
@@ -48,4 +50,6 @@
  * }
  * @endcode
  */
-``` <div class="alert-box warning" title="Time with the FRDM-KL25Z"> For the FRDM-KL25Z board, the on-board oscillator does not allow to use the RTC module. We instead **generate the RTC clock from the interface chip on the RTC_CLKIN pin** (PTC1). That is why the PTC1 pin is not available for other purpose. </div>
+``` 
+
+<span class="warnings">**Warning:** Time with the FRDM-KL25Z </br>For the FRDM-KL25Z board, the on-board oscillator does not allow to use the RTC module. We instead **generate the RTC clock from the interface chip on the RTC_CLKIN pin** (PTC1). That is why the PTC1 pin is not available for other purpose. </span>
