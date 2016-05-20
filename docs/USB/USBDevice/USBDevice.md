@@ -10,8 +10,8 @@ LPC1768 | LPC11U24 | FRDM-KL25Z
 ---|---|---  
 ![](../../Images/lpc1768_usb.jpg) | ![](../../Images/LPC11U24_usb.jpg) | ![](../../Images/FRDM_KL25Z.jpg)  |
 
-![USB 200, 180](../../Images/mbed_usb_drawing.jpg)  
-  
+<span class="images">![](../../Images/mbed_usb_drawing.jpg)</span>
+
 # mbed as a USB device
 
 <span class="images">![](../../Images/capa2.png)</span>
