@@ -44,10 +44,10 @@ The read() function fills an uint8_t array. But these data has to be interpreted
 
 ** MONO: single channel **
 
-<span class="images">![](../Images/mono.png)</span>
+<span class="images">![](../../Images/mono.png)</span>
 
 ** STEREO: 2 channels **
 
 When there are 2 channels, values for channel 1 and values for channel 2 will alternate as explained in the following diagram:
 
-<span class="images">![](../Images/stereo.png)</span>
+<span class="images">![](../../Images/stereo.png)</span>
