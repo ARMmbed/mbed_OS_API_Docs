@@ -8,12 +8,13 @@ A USB device stack has been developed in order to provide all the great capabili
 
 LPC1768 | LPC11U24 | FRDM-KL25Z   
 ---|---|---  
-![150, 160](../../Images/lpc1768_usb.jpg) | ![USB 170, 200](../../Images/LPC11U24.jpg) | ![150, 160](../../Images/FRDM-KL25Z.jpg)  |
-![USB 200, 180](../../Images/mbed_usb_drawing.jpg) |   
+![](../../Images/lpc1768_usb.jpg) | ![](../../Images/LPC11U24_usb.jpg) | ![](../../Images/FRDM_KL25Z.jpg)  |
+
+![USB 200, 180](../../Images/mbed_usb_drawing.jpg)  
   
 # mbed as a USB device
 
-![800|600](https://developer.mbed.org/media/uploads/samux/usb_capa2.png)
+<span class="images">![](../../Images/capa2.png)</span>
 
 ## Mouse
 
