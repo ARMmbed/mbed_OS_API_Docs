@@ -1,4 +1,6 @@
-<div class="alert-box info" title="Ethernet Network Interface"> The Ethernet peripheral is of little use without an IP networking stack on top of it. You could be interested in the [Ethernet Interface](https://developer.mbed.org/handbook/Ethernet-Interface) library. </div>
+# Ethernet Network Interface
+
+The Ethernet peripheral is of little use without an IP networking stack on top of it. You could be interested in the [Ethernet Interface](EthernetInterface.md) library.
 
 The Ethernet Interface allows the mbed Microcontroller to connect and communicate with an Ethernet network. This can therefore be used to talk to other devices on a network, including communication with other computers such as web and email servers on the internet, or act as a webserver.
 
@@ -36,10 +38,8 @@ API summary
 
 ## Interface
 
-[![/media/uploads/chris/pinout-thumbnails_lpc.jpg](https://developer.mbed.org/media/uploads/chris/pinout-thumbnails_lpc.jpg)](https://developer.mbed.org/handbook/Pinouts)  
----  
-[See the Pinout page for more details](https://developer.mbed.org/handbook/Pinouts)  
-  
+<span class="images">![](../Images/two_pinouts.jpeg)</span>
+
 All of the required passive termination circuits are implemented on the mbed Microcontoller, allowing direct connection to the ethernet network.
 
 The Ethernet library sets the MAC address by calling a weak function `extern "C" void mbed_mac_address(char * mac);` to copy in a 6 character MAC address. This in turn performs a semihosting request to the mbed interface to get the serial number, which contains a MAC address unique to every mbed device. If you are using this library on your own board (i.e. not an mbed board), you should implement your own `extern "C" void mbed_mac_address(char * mac);` function, to overwrite the existing one and avoid a call to the interface.
