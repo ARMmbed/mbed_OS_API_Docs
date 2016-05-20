@@ -1,9 +1,11 @@
+# USBMouseKeyboard
+
 The USBMouseKeyboard interface is used to emulate a mouse and a keyboard at the same time over the USB port.
 
 The USB connector should be attached to 
 
-  * **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-  * The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
+* The on-board USB connector of the **FRDM-KL25Z**
 
 ## Hello World
 
@@ -17,12 +19,3 @@ The USB connector should be attached to
 
 You can choose either a relative mouse or an absolute mouse with the keyboard. By default, a USBMouseKeyboard is a relative mouse and a keyboard
 
-## Related
-
-  * [USBHID](USBHID)
-  * [USBKeyboard](USBKeyboard)
-  * [USBMouse](USBMouse)
-  * [USBMIDI](USBMIDI)
-  * [USBSerial](USBSerial)
-  * [USBAudio](USBAudio)
-  * [USBMSD](USBMSD)
