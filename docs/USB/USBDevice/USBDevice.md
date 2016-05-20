@@ -8,8 +8,8 @@ A USB device stack has been developed in order to provide all the great capabili
 
 LPC1768 | LPC11U24 | FRDM-KL25Z   
 ---|---|---  
-![150, 160](https://developer.mbed.org/media/uploads/samux/lpc1768_usbdevice.jpg) | ![USB| 170, 200](https://developer.mbed.org/media/uploads/samux/img_0082.jpg) | ![150, 160](https://developer.mbed.org/media/uploads/samux/kl25z_usbdevice.jpg)  
-![USB| 200, 180](https://developer.mbed.orghttps://developer.mbed.org/media/uploads/samux/img_0080.jpg) | ![USB| 200, 180](https://developer.mbed.orghttps://developer.mbed.org/media/uploads/samux/img_0080.jpg) |   
+![150, 160](https://developer.mbed.org/media/uploads/samux/lpc1768_usbdevice.jpg) | ![USB 170, 200](https://developer.mbed.org/media/uploads/samux/img_0082.jpg) | ![150, 160](https://developer.mbed.org/media/uploads/samux/kl25z_usbdevice.jpg)  
+![USB 200, 180](https://developer.mbed.orghttps://developer.mbed.org/media/uploads/samux/img_0080.jpg) | ![USB 200, 180](https://developer.mbed.orghttps://developer.mbed.org/media/uploads/samux/img_0080.jpg) |   
   
 # mbed as a USB device
 
