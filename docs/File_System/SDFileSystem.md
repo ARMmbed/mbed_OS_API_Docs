@@ -1,11 +1,13 @@
-A library to allow SD Cards to be accessed as a filesystem, using a SPI interface.
+#SDFileSystem
+
+A library to allow SD Cards to be accessed as a filesystem, using an SPI interface.
 
 This library supports:
 
-  * FAT12 / FAT16 / FAT32
-  * SD / SDHC cards up to 32Gb
-  * long filenames
-  * time stamp
+* FAT12 / FAT16 / FAT32
+* SD / SDHC cards up to 32Gb
+* long filenames
+* time stamp
 
 ## Hello World!
 
@@ -13,7 +15,9 @@ This library supports:
 
 ## Library
 
-The SDFileSystem library, for accessing SD Cards using fopen, fprintf, etc. [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/SDFileSystem/latest) 
+The SDFileSystem library, for accessing SD Cards using fopen, fprintf, etc. 
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/SDFileSystem/latest) 
 
 ## Details
 
@@ -25,7 +29,9 @@ SD Cards are block devices. That means you read/write data in multiples of the b
 
 Based on a SparkFun MicroSD Breakout Board, here is the wiring that will work (you can obviously use either SPI port, and any DigitalOut):
 
-![https://developer.mbed.org/media/uploads/simon/usd-breakout_i_ma.jpg](https://developer.mbed.org/media/uploads/simon/usd-breakout_i_ma.jpg)
+<span class="images">![](../Images/microSD.jpeg)</span>
+
+
     
     
     SparkFun MicroSD Breakout Board
@@ -38,12 +44,12 @@ Based on a SparkFun MicroSD Breakout Board, here is the wiring that will work (y
        DO  o-------------o 6    (SPI miso)
        CD  o
 
-<div class="alert-box warning"> Note that VCC is 3.3V from mbed's VOUT pin. Do not use 5V from mbed's VU pin. 5V power may damage the SD card. </div>   
-The CD (card detect) pin is optional and not used in the example program, but it can be used to detect a card in the micro SD socket. CD connects to ground when no card is present. No connection is made once a card is inserted. It can be read using a DigitalIn pin, if the mode is set to PullUp.  
+<span class="warnings">**Warning:** Note that VCC is 3.3V from mbed's VOUT pin. Do not use 5V from mbed's VU pin. 5V power may damage the SD card. </span>   
 
+The CD (card detect) pin is optional and not used in the example program, but it can be used to detect a card in the micro SD socket. CD connects to ground when no card is present. No connection is made once a card is inserted. It can be read using a DigitalIn pin, if the mode is set to PullUp.  
 
 ## Reference
 
-  * [SD Card Specification](http://www.sdcard.org/developers/tech/sdcard/pls/Simplified_Physical_Layer_Spec.pdf)
-  * Notes on the development of this library: [SDCards!](https://developer.mbed.org/users/simon/notebook/sdcards/)
-  * [SD association SD Card Formatter](https://www.sdcard.org/downloads/formatter_4/) \- SD cards come formatted, use this to reformat an SD card when needed
+* [SD Card Specification](http://www.sdcard.org/developers/tech/sdcard/pls/Simplified_Physical_Layer_Spec.pdf)
+* Notes on the development of this library: [SDCards!](https://developer.mbed.org/users/simon/notebook/sdcards/)
+* [SD association SD Card Formatter](https://www.sdcard.org/downloads/formatter_4/) \- SD cards come formatted, use this to reformat an SD card when needed
