@@ -9,11 +9,11 @@ The USB connector should be attached to
 
 <span class="notes">**Note:** On Windows, you need a configuration file. You can download this [archive](https://developer.mbed.org/media/uploads/samux/serial.zip) containing a .inf file. Extract it.   
 When you plug your USBSerial serial device, Windows will try to find an existing driver for it without success. After this step, go into the device manager to find the unknown device:</br>
-* Right click on the device
-* Update driver software
-* Click on "Browse my computer for driver software"
-* Indicate the path of serial.inf extracted previously and click next.
-* Accept the warning and you should have a virtual port (called Mbed Virtual Serial Port in device manager) over USB!</br>
+- Right click on the device
+- Update driver software
+- Click on "Browse my computer for driver software"
+- Indicate the path of serial.inf extracted previously and click next.
+- Accept the warning and you should have a virtual port (called Mbed Virtual Serial Port in device manager) over USB!</br>
 As _product_id_ and _vendor_id_ are hardcoded in the .inf file, if you don't want to use default values, you will have to change them in your program _AND_ in the .inf file.
 </span>
 
