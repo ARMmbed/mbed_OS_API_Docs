@@ -2,8 +2,8 @@
 
 The mbed team is officially maintaining a TCP/IP stack and [Socket API](https://developer.mbed.orghttps://developer.mbed.org/handbook/Socket) running on top of multiple transports (Ethernet, WiFi and 3G). This page stores a list of libraries and applications, developed by mbed users, implementing different protocols and services API:
 
-Protocol | Library | Example Application |  Documentation |     
----|---|---|---|  
+Protocol | Library | Example Application |  Documentation |
+---|---|---|---|
 [HTTP Client](http://tools.ietf.org/html/rfc2616) | [HTTPClient](https://developer.mbed.org/users/donatien/code/HTTPClient/) | [HTTPClient_HelloWorld](https://developer.mbed.org/users/donatien/code/HTTPClient_HelloWorld/) | [Documentation](https://developer.mbed.orghttps://developer.mbed.org/users/donatien/code/HTTPClient/docs/tip/)  
 [HTTP Client](http://tools.ietf.org/html/rfc2616) | [TinyHTTP_b](https://developer.mbed.orghttps://developer.mbed.org/users/okini3939/code/denki-yohou_b/) | [denki-yohou_b](https://developer.mbed.orghttps://developer.mbed.org/users/okini3939/code/denki-yohou_b/) | [Documentation](https://developer.mbed.orghttps://developer.mbed.orghttps://developer.mbed.org/users/okini3939/code/denki-yohou_b/docs/tip/)  
 [NTP Client](http://tools.ietf.org/html/rfc1305) | [NTPClient](https://developer.mbed.org/users/donatien/code/NTPClient/) | [NTPClient_HelloWorld](https://developer.mbed.org/users/donatien/code/NTPClient_HelloWorld/) | [Documentation](http://mbed.orghttps://developer.mbed.org/users/donatien/code/NTPClient/docs/tip/)  
