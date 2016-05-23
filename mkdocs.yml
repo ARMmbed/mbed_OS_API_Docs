@@ -28,7 +28,7 @@ pages:
 - ['Timers/Time.md', 'Timing Operations', 'Time']
 - ['Networking/BLE.md', 'Networking - BLE', 'BLE']
 - ['Networking/Ethernet.md', 'Networking - Ethernet', 'Ethernet']
-- ['Networking/EhternetInterface.md', 'Networking - Ethernet', 'The Ethernet Interface']
+- ['Networking/EthernetInterface.md', 'Networking - Ethernet', 'The Ethernet Interface']
 - ['Networking/TCP_UDP_Socket.md', 'Networking - Ethernet', 'TCP/UDP Socket']
 - ['Networking/TCP_IP_Protocols.md', 'Networking - Ethernet', 'TCP/IP Protocols']
 - ['Networking/TLS.md', 'Networking - security', 'Networking security with mbed TLS']
