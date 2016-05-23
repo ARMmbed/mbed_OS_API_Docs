@@ -1,6 +1,6 @@
 # mbed-rtos
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/latest) 
+** MISSING LINK **
 
 ## Thread
 
