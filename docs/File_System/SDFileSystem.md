@@ -29,7 +29,7 @@ SD Cards are block devices. That means you read/write data in multiples of the b
 
 Based on a SparkFun MicroSD Breakout Board, here is the wiring that will work (you can obviously use either SPI port, and any DigitalOut):
 
-<span class="images">![](../Images/microSD.jpeg)</span>
+<span class="images">![](../Images/microSD.png)</span>
 
 
     
