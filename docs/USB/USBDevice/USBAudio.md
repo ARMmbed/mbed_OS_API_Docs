@@ -8,7 +8,7 @@ The USB connector should be attached to
 * The on-board USB connector of the **FRDM-KL25Z**
 
 <span class="warnings">**Warning:** Change the default sound board </br>To send audio packets to the mbed, you have to change the default sound board used by the Operating system.</br>
-On Windows, you can do this by clicking on: **Control panel** > *Hardware and Sound** > **Manage audio device** in the Sound section > Select the mbed Audio device and press **Set default** </span>
+On Windows, you can do this by clicking on: **Control panel** > **Hardware and Sound** > **Manage audio device** in the Sound section > Select the mbed Audio device and press **Set default** </span>
 
 ## Hello World
 
