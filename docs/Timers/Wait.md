@@ -44,5 +44,5 @@ void wait_us(int us);
 <span class="notes">**Note:** OS delay </br>When you call ``wait`` the CPU of your mbed will be busy spinning in a loop waiting for the required time to pass. Using the [mbed RTOS](../RTOS/mbed_RTOS.md) you can make a call to ``Thread::wait`` instead. In this way the OS scheduler will put the current thread in ``waiting state`` and it will allow another thread to execute, or even better, if there are not other threads in ``ready state``, it can put the whole microcontroller to ``sleep`` saving energy. </span> 
 
 <span class="notes">**Note:** Implementation </br>The timer used to implement this functionality is:
-* On the **LPC1768**: ``Timer 3 (LPC_TIM3)``
-* On the **LPC11U24**: ``32-bit Counter/Timer B1 (LPC_CT32B1)`` </span>
+</br>On the **LPC1768**: ``Timer 3 (LPC_TIM3)``
+</br>On the **LPC11U24**: ``32-bit Counter/Timer B1 (LPC_CT32B1)`` </span>
