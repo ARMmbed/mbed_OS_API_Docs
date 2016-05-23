@@ -6,7 +6,7 @@ First of all you have to connect your mbed to a RJ45 jack: [Ethernet RJ45](https
 
 ## Software
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/EthernetInterface/latest) 
+** MISSING LINK **
 
 The EthernetInterface library provides you with a simple API to connect to the internet. 
 
@@ -31,8 +31,6 @@ These examples demonstrate how to get started with the Socket API &amp; Ethernet
 Running this example the mbed will output something similar from the serial port:
 
 ```
-    
-    
     IP Address is 10.2.131.195
     Received 293 chars from server:
     HTTP/1.1 200 OK
