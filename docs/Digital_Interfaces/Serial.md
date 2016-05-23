@@ -18,7 +18,7 @@ API summary
 
 The Serial Interface can be used on supported pins and USBTX/USBRX
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
   
 Note that USBTX/USBRX are not DIP pins; they represent the pins that route to the interface USB Serial port so you can communicate with a host PC.
 

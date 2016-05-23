@@ -18,6 +18,6 @@ API summary
 
 The BusIn Interface can use any pin with a blue label.
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
 
 

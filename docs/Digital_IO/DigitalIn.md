@@ -22,7 +22,7 @@ The DigitalIn Interface can be used on any pin with a blue label.
 
 The pin input is logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the DigitalIn is setup with an internal pull-down resistor.
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
 
 ## Related
 

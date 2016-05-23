@@ -12,9 +12,9 @@ A USB host stack has been developed in order to be communicate with USB devices.
 
 **LPC1768** 
  
-<span class="images">![](../../Images/LPC1768_pic.jpeg)</span>
+<span class="images">![](../../Images/LPC1768_pic.png)</span>
 
-<span class="images">![](../../Images/LPC1768_drawing.jpeg)</span>
+<span class="images">![](../../Images/LPC1768_drawing.png)</span>
 
 # Mbed as USB Host
 

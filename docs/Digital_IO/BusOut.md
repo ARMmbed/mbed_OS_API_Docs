@@ -18,4 +18,4 @@ The BusOut Interface can be used on any pin with a blue label, and also with the
 
 The BusOut Interface can be used to set the state of the output pin, and also read back the current output state. Set the BusOut to zero to turn it off, or 1 to turn it on.
 
-<span class="images">![](../Images/pin_out.jpeg)</span> 
+<span class="images">![](../Images/pin_out.png)</span> 

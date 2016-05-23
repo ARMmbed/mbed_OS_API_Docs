@@ -19,7 +19,7 @@ All drivers on the I2C bus are required to be open collector, and so it is neces
 
 ## Interface
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
 
 The default frequency of the I2C interface is 100KHz.
 

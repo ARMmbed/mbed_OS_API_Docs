@@ -8,9 +8,9 @@ A USB device stack has been developed in order to provide all the great capabili
 
 LPC1768 | LPC11U24 | FRDM-KL25Z   
 ---|---|---  
-![](../../Images/lpc1768_usb.jpg) | ![](../../Images/LPC11U24_usb.jpg) | ![](../../Images/FRDM_KL25Z.jpg)  |
+![](../../Images/lpc1768_usb.png) | ![](../../Images/LPC11U24_usb.png) | ![](../../Images/FRDM_KL25Z.png)  |
 
-<span class="images">![](../../Images/mbed_usb_drawing.jpg)</span>
+<span class="images">![](../../Images/mbed_usb_drawing.png)</span>
 
 # mbed as a USB device
 

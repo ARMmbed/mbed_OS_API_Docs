@@ -11,7 +11,7 @@ The USB connector should be attached to
 
 LPC1768 | LPC11U24| FRDM-KL25Z   
 ---|---|---  
-![](../../Images/lpc1768_usbmsd.jpg) | ![](../../Images/lpc11us4_usbmsd.jpg) | ![](../../Images/kl25z_usbmsd.jpg)  
+![](../../Images/lpc1768_usbmsd.png) | ![](../../Images/lpc11us4_usbmsd.png) | ![](../../Images/kl25z_usbmsd.png)  
 
 ## Hello World! with an SD card
 

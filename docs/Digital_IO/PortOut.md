@@ -16,4 +16,4 @@ A mask can be supplied so only certain bits of a port are used, allowing other b
 
 The PortOut Interface can use any pins with a blue label, as long as they are in the same GPIO port.
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>

@@ -16,4 +16,4 @@ A mask can be supplied so only certain bits of a port are used, allowing other b
 
 The PortIn Interface can use any pin with a blue label, as long as all the pins used are in the same GPIO port
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>

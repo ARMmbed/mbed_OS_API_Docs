@@ -20,7 +20,7 @@ API summary
 * mbed FRDM KL25Z: Only the pins of port A and D can be used. (PTA[0-31] and PTD[0-31]). </div>
 </span>
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
 
 The pin input will be logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the InterruptIn is setup with an internal pull-down resistor.
 

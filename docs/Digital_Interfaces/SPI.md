@@ -14,7 +14,7 @@ This interface can be used for communication with SPI slave devices, such as FLA
 
 ## Interface
 
-<span class="images">![](../Images/pin_out.jpeg)</span>
+<span class="images">![](../Images/pin_out.png)</span>
   
 The default settings of the SPI interface are 1MHz, 8-bit, Mode 0
 

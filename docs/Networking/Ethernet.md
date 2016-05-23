@@ -38,7 +38,7 @@ API summary
 
 ## Interface
 
-<span class="images">![](../Images/two_pinouts.jpeg)</span>
+<span class="images">![](../Images/two_pinouts.png)</span>
 
 All of the required passive termination circuits are implemented on the mbed Microcontoller, allowing direct connection to the ethernet network.
 
