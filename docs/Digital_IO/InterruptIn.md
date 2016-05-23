@@ -14,8 +14,7 @@ API summary
 
 ## Interface
 
-<span class="warnings">**Warning:** Certain pins cannot be used for InterruptIn
-</br>
+<span class="warnings">**Warning:** Certain pins cannot be used for InterruptIn</br>
 * mbed NXP LPC1768: Any of the numbered mbed pins can be used as an InterruptIn, except p19 and p20.
 * mbed FRDM KL25Z: Only the pins of port A and D can be used. (PTA[0-31] and PTD[0-31]). </div>
 </span>
@@ -24,10 +23,9 @@ API summary
 
 The pin input will be logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the InterruptIn is setup with an internal pull-down resistor.
 
-<span class="warning">**Warnings:** No blocking code in ISR
-</br>In ISR you should avoid any call to wait, infinitive while loop, or blocking calls in general. 
-</br>**Warning:** No printf, malloc, or new in ISR
-</br>In ISR you should avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behaviour could be corrupted when called from an ISR.</span>
+<span class="warning">**Warnings:** No blocking code in ISR </br>In ISR you should avoid any call to wait, infinitive while loop, or blocking calls in general.</span>
+
+<span class="warning">**Warning:** No printf, malloc, or new in ISR </br>In ISR you should avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behaviour could be corrupted when called from an ISR.</span>
 
 ## Examples
 
