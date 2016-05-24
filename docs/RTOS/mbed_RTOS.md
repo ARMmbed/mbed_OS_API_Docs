@@ -4,7 +4,7 @@
 
 ## Thread
 
-The ``Thread`` class allows defining, creating, and controlling thread functions in the system. The function ``main`` is a special thread function that is started at system initialization and has the initial priority ##osPriorityNormal##.
+The ``Thread`` class allows defining, creating, and controlling thread functions in the system. The function ``main`` is a special thread function that is started at system initialization and has the initial priority ``osPriorityNormal``.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/rtos_basic/)](https://developer.mbed.org/users/mbed_official/code/rtos_basic/file/tip/main.cpp) 
 
@@ -38,7 +38,7 @@ A ``Mutex`` is used to synchronize the execution of threads, for example to prot
 <span class="notes">**Note:** C standard library mutexes
 </br>The ARM C standard library has already mutexes in place to protect the access to stdio, therefore on the M3 mbed the above example is not necessary. On the contrary, ARM microlib (used on the M0 mbed) does not provide default stdio mutexes making the above example a necessity. </span> 
 <span class="warnings">**Warning:** stdio (printf, putc, getc, etc), malloc &amp; new in ISR
-</br>Because of the mutexes in the ARM C standard library you cannot use stdio (**##printf##**, **##putc##**, **##getc##**, etc), **##malloc##** and **##new##** in ISR! </span> 
+</br>Because of the mutexes in the ARM C standard library you cannot use stdio (``printf``, ``putc``, ``getc``, etc), ``malloc`` and ``new`` in ISR! </span> 
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Mutex.html) 
 
