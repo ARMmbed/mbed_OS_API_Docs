@@ -14,6 +14,10 @@ You use the AnalogIn API to read an external voltage applied to an analog input 
 
 ## Examples
 
+### Example 1
+
+Determine a servo position 
+
 ```
 #include "mbed.h"
 
@@ -29,7 +33,9 @@ int main() {
     }
 }
 ```   
+### Example 2
 
+Print inputs
 
 ```
 #include "mbed.h"
@@ -51,6 +57,9 @@ int main() {
 }   
 ```   
 
+### Example 3
+
+Control LEDs
 
 ```
 #include "mbed.h"
