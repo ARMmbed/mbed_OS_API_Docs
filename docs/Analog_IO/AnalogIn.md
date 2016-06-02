@@ -2,7 +2,7 @@
 
 You use the AnalogIn API to read an external voltage applied to an analog input pin. 
 
-<span class="notes">**Note:**Only certain pins are capable of making these measurement so check the documentation for compatible pins.</span>
+<span class="notes">**Note:** Only certain pins are capable of making these measurement so check the documentation for compatible pins.</span>
 
 ## API
 
@@ -11,7 +11,6 @@ You use the AnalogIn API to read an external voltage applied to an analog input 
 ## Hello World!
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/file/tip/main.cpp) 
-
 
 ## Examples
 
