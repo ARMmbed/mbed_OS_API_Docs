@@ -4,7 +4,7 @@ You use the BusInOut interface as a bi-directional bus that collects together a 
 
 ## Hello World!
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/BusInOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusInOut_HelloWorld/file/d6010b360bca/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusInOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusInOut_HelloWorld/file/d6010b360bca/main.cpp) 
 
 ## API
 
