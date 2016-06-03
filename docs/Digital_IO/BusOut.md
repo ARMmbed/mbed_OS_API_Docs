@@ -1,21 +1,57 @@
 # BusOut
 
-The BusOut interface is used to create a number of [DigitalOut](DigitalOut.md) pins that can be written as one value.
+You use the BusOut interface to write a single value to a number of [DigitalOut](DigitalOut.md) pins, creating an artificial bus. You can use any Digitalin pins, and they do not have to have sequential hardware addressing. 
+
+<span class="tips">**Tip:** When initializing a BusOut object, you initialize pins in their bit order from right to left. Be careful with this, as the bit order is the reverse of the object initializing order:
+
+```
+// init object
+BusOut thingy(pin0,pin1,...,pin15)
+ 
+// use object
+thingy = (val15<<15 | ... | val1 <<1 | val0 <<0) ; // where valx corresponds to the value to be put onto pinx
+```
+</span>
+
+
 
 ## Hello World!
 
-** MISSING **
+This example program counts up from 0 to 15 or binary 0000 to 1111. This turns LEDs 1 to 4 on or off, according to the number going across the bus.  If the board has a single, tricolor LED, then the LED will change colors instead of going on and off.
+The values are:
+
+| Integer | Binary | LED on(1) / off(0)          |
+|---------|--------|-----------------------------|
+| 0       | 0000   | LED4=0 LED3=0 LED2=0 LED1=0 |
+| 1       | 0001   | LED4=0 LED3=0 LED2=0 LED1=1 |
+| 2       | 0010   | LED4=0 LED3=0 LED2=1 LED1=0 |
+| 3       | 0011   | LED4=0 LED3=0 LED2=1 LED1=1 |
+| 4       | 0100   | LED4=0 LED3=1 LED2=0 LED1=0 |
+| 5       | 0101   | LED4=0 LED3=1 LED2=0 LED1=1 |
+| 6       | 0110   | LED4=0 LED3=1 LED2=1 LED1=0 |
+| 7       | 0111   | LED4=0 LED3=1 LED2=1 LED1=1 |
+| 8       | 1000   | LED4=1 LED3=0 LED2=0 LED1=0 |
+| 9       | 1001   | LED4=1 LED3=0 LED2=0 LED1=1 |
+| 10      | 1010   | LED4=1 LED3=0 LED2=1 LED1=0 |
+| 11      | 1011   | LED4=1 LED3=0 LED2=1 LED1=1 |
+| 12      | 1100   | LED4=1 LED3=1 LED2=0 LED1=0 |
+| 13      | 1101   | LED4=1 LED3=1 LED2=0 LED1=1 |
+| 14      | 1110   | LED4=1 LED3=1 LED2=1 LED1=0 |
+| 15      | 1111   | LED4=1 LED3=1 LED2=1 LED1=1 |
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/f979089a5ca0/main.cpp) 
+
 
 ## API
-
-API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1BusOut.html) 
 
 ## Interface
 
-The BusOut Interface can be used on any pin with a blue label, and also with the on-board LEDs (LED1-LED4)
-
-The BusOut Interface can be used to set the state of the output pin, and also read back the current output state. Set the BusOut to zero to turn it off, or 1 to turn it on.
+You can use any pin with a blue label, and the on-board LEDs (LED1-LED4).
 
 <span class="images">![](../Images/pin_out.png)</span> 
+
+You can use the interface to both set the state of the output pin and read back the current output state. 
+
+Set the BusOut to 0 to turn it off, or 1 to turn it on.
