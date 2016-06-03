@@ -4,15 +4,15 @@ You use the AnalogOut interface to set the voltage of an analog output pin to a 
 
 <span class="notes">**Note:** Not all pins are capable of being AnalogOut, so check your board's documentation.</span>
 
-## API
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1AnalogOut.html) 
-
 ## Hello World!
 
 Measure the voltage and turn the LED on if a set value is exceeded.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/file/tip/main.cpp) 
+
+## API
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1AnalogOut.html) 
 
 ## Example
 
