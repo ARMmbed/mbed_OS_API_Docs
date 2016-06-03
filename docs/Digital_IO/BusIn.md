@@ -2,11 +2,16 @@
 
 You use the BusIn interface to read a single value from several DigitalIn pins. You can use any of the numbered pins on your board for this.
 
+BusIn is an abstraction that takes any pins and makes them appear as though they are linearly memory mapped for ease of use.  You can then check multiple inputs in a single pass. In general, this abstraction makes your code less cluttered, clearer,  and faster to write.
+
+<span class="tips">**Tip:** Please pay attention to the ordering of pins in the initialization. The order pins are initialized in are the reverse order that bits are OR'd together.</span>
+
+
 ## Hello World!
 
 Combine four pins into a single BusIn.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/BusIn_HelloWorld/)](https://developer.mbed.org/teams/mbed/code/BusIn_HelloWorld/file/5e474ece410b/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusIn_HelloWorld/file/e1f4151bb580/main.cpp) 
 
 ## API
 
