@@ -6,7 +6,7 @@ You use the AnalogIn API to read an external voltage applied to an analog input 
 
 ## Hello World!
 
-Use a digial output to indicate the value of the analog input
+Use a digial output to indicate the value of the analog input.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/file/tip/main.cpp) 
 
