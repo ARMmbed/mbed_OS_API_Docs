@@ -1,3 +1,5 @@
+*** I put this in the handbook and I think it should stay there, not here ***
+
 # mbed-rtos
 
 ** MISSING LINK **
