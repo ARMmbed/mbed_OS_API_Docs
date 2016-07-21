@@ -4,8 +4,6 @@ You can think of mbed OS as a collection of application programming interfaces (
 
 mbed OS always exposes the same APIs, irrespective of the hardware on which you're working. The job of making these APIs work with different hardware is left to mbed OS itself, meaning you don't have to change your application code to have it run on any compatible hardware (this is known as "hardware agnosticism").
 
-## APIs by feature
-
 The APIs in this document are organized by the feature, or group of features, they enable.
 
 * [Hardware inputs and outputs](APIs/io/inputs_outputs.md): analog, digital, bus, port, PwmOut and interrupts.
