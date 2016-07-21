@@ -1,4 +1,4 @@
-# Introduction to mbed OS API References
+# Introduction to the mbed OS API References
 
 You can think of mbed OS as a collection of application programming interfaces (APIs). You use these APIs to control mbed OS, and mbed OS in turn controls the hardware.
 
