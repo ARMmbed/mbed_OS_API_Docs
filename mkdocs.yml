@@ -4,7 +4,6 @@ docs_dir: docs
 
 pages:
 - ['index.md','Introduction to the mbed OS API References']
-- ['APIs/intro.md', 'API overview', 'Writing applications with the mbed OS APIs']
 - ['APIs/io/inputs_outputs.md', 'Input and output APIs', 'Handling inputs and outputs']
 - ['APIs/io/AnalogIn.md', 'Input and output APIs', 'AnalogIn']
 - ['APIs/io/AnalogOut.md', 'Input and output APIs', 'AnalogOut']
