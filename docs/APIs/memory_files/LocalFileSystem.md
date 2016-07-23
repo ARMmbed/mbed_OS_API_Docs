@@ -4,11 +4,11 @@ A filesystem for accessing the local mbed Microcontroller USB disk drive.
 
 This allows programs to read and write files on the same disk drive that is used to program the mbed Microcontroller. Once created, the standard C file access functions are used to open, read and write files.
 
-<span class="note"> As the FRDM-KL25Z does not have external flash to store files, the LocalFileSystem is not available for this board </span>
+<span class="note"> this is only available for the mbed LPC1768 and mbed LPC11U24 </span>
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/LocalFileSystem_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/LocalFileSystem_HelloWorld/file/cc465aef98cf/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/LocalFileSystem_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/LocalFileSystem_HelloWorld/file/tip/main.cpp) 
 
 ## Notes
 
