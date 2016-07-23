@@ -14,15 +14,7 @@ Any of the numbered mbed pins can be used as a DigitalIn.
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1DigitalIn.html) 
-
-## Interface
-
-The DigitalIn Interface can be used on any pin with a blue label.
-
-The pin input is logic '0' for any voltage on the pin below 0.8v, and '1' for any voltage above 2.0v. By default, the DigitalIn is setup with an internal pull-down resistor.
-
-<span class="images">![](../Images/pin_out.png)</span>
+[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1DigitalIn.html)
 
 ## Related
 
