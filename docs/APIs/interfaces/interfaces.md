@@ -13,10 +13,6 @@ These APIs allow your board to interface with a computer or external devices.
 	* [I2CSlave](digital/I2CSlave.md): slave.
 * [CAN](digital/CAN.md): connect two devices without using a computer.
 
-## USB
-
-mbed boards can be either a USB device or a USB host.
-
 ### USB device
 
 Use your mbed board as a a source of input to your PC's USB port:
