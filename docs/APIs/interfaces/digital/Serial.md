@@ -14,14 +14,6 @@ API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1Serial.html) 
 
-## Interface
-
-The Serial Interface can be used on supported pins and USBTX/USBRX
-
-<span class="images">![](../Images/pin_out.png)</span>
-  
-Note that USBTX/USBRX are not DIP pins; they represent the pins that route to the interface USB Serial port so you can communicate with a host PC.
-
 <span class="tips">**Tip:** If you want to send data to a host PC, take a look at [SerialPC](Serial.md) </span>
 
 <span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](Windows serial configuration) **MISSING LINK** </span>
