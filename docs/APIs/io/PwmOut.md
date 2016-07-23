@@ -19,38 +19,6 @@ API summary
 The default period is 0.020s, and the default pulsewidth is 0.
 
 The PwmOut interface can express the pulse train in many ways depening on how it is to be used. The period and pulse width can be expressed directly in units of seconds, millisecond or microseconds. The pulsewidth can also be expressed as a percentage of the the period.
-
-## Implementation details
-
-### LPC1768
-
-You can also specify the LED1-LED4 as PwmOut. Note that these are just different pinout options for the same underlying PWM hardware, so they are just alternative routing rather than extra PWM channels. So you can pin them out can't be used at the same time:
-
-PWM H/W Channel | Pinout Options   
----|---  
-PWM_1 | P2_0/p26 or P1_18/LED1   
-PWM_2 | P2_1/p25 or P1_20/LED2   
-PWM_3 | P2_2/p24 or P1_21/LED3   
-PWM_4 | P2_3/p23 or P1_23/LED4   
-PWM_5 | P2_4/p22   
-PWM_6 | P2_5/p21   
-  
-On the mbed LPC1768, the PwmOut hardware is limited to share the period value between all outputs. Therefore, if you change the period of one output, you change them all. The pulsewidth can be set independently for each output.
-
-### LPC11U24
-
-Pin under the same "Timer" share the same period:
-
-Timer/Match Register | Pinout Options   
----|---  
-CT16B0/MR0 | p5 (P0_9)   
-CT16B0/MR1 | p6 (P0_8)   
-CT16B0/MR2 | p34 (P1_15)   
-CT16B1/MR0 | p36 (P0_21)   
-CT16B1/MR1 | p20 (P0_22) and p14 (P1_23)   
-CT32B0/MR0 | p25 (P1_24)   
-CT32B0/MR1 | p26 (P1_25) and USBTX (P0_19)   
-CT32B0/MR2 | p10 (P1_26)   
   
 ## Code Examples
 
