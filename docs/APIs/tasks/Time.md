@@ -51,5 +51,3 @@
  * @endcode
  */
 ``` 
-
-<span class="warnings">**Warning:** Time with the FRDM-KL25Z </br>For the FRDM-KL25Z board, the on-board oscillator does not allow to use the RTC module. We instead **generate the RTC clock from the interface chip on the RTC_CLKIN pin** (PTC1). That is why the PTC1 pin is not available for other purpose. </span>
