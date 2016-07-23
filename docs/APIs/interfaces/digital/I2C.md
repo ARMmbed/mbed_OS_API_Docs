@@ -17,10 +17,6 @@ All drivers on the I2C bus are required to be open collector, and so it is neces
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1I2C.html)
 
-## Interface
-
-<span class="images">![](../Images/pin_out.png)</span>
-
 The default frequency of the I2C interface is 100KHz.
 
 I2C is a two wire serial protocol that allows an I2C Master exchange data with an I2C Slave. The I2C protocol support upto 127 devices per bus. The I2C interface can be used for writing data words out of the I2C port, returning the data recieved back from I2C slave. The I2C clock frequency can be configured.
