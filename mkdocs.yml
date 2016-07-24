@@ -42,7 +42,6 @@ pages:
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
 - ['APIs/communication/wifi.md', 'Communication APIs', 'WiFi']
-- ['APIs/communication/radio.md', 'Communication APIs', 'Radio']
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
