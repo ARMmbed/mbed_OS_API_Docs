@@ -38,7 +38,6 @@ pages:
 - ['APIs/interfaces/USBHost/USBHostMSD.md', 'Interface APIs', 'USBHostMSD']
 - ['APIs/interfaces/USBHost/USBHostSerial.md', 'Interface APIs', 'USBHostSerial']
 - ['APIs/interfaces/USBHost/USBHostHub.md', 'Interface APIs', 'USBHostHub']
-- ['APIs/communication/communication.md', 'Communication APIs', 'Communication options']
 - ['APIs/communication/network_stack.md', 'Communication APIs', 'Network stack']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
