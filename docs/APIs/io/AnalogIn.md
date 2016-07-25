@@ -2,9 +2,7 @@
 
 Use the AnalogIn API to read an external voltage applied to an analog input pin. 
 
-<span class="tips">
-Tips:
-
+<span class="tips">Tips:</br>
 * Only certain pins are capable of making these measurement, so check the documentation for compatible pins. 
 * For more information on what it takes to convert an analog signal to its digital representation see [http://en.wikipedia.org/wiki/Analog-to-digital_converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter).   
 
