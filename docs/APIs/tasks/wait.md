@@ -40,5 +40,6 @@ void wait_ms(int ms);
  */
 void wait_us(int us);
 ``` 
+## Avoiding OS delay
 
-<span class="notes">**Note:** OS delay </br>When you call ``wait`` the CPU of your mbed will be busy spinning in a loop waiting for the required time to pass. Using the [mbed RTOS](../RTOS/mbed_RTOS.md) you can make a call to ``Thread::wait`` instead. In this way the OS scheduler will put the current thread in ``waiting state`` and it will allow another thread to execute, or even better, if there are not other threads in ``ready state``, it can put the whole microcontroller to ``sleep`` saving energy. </span> 
+When you call ``wait`` your board's CPU will be busy in a loop waiting for the required time to pass. Using the [mbed RTOS](rtos.md) you can make a call to ``Thread::wait`` instead. The OS scheduler will put the current thread in ``waiting state``, allowing another thread to execute. Even better: if there are not other threads in ``ready state``, it can put the whole microcontroller to ``sleep`` saving energy. </span> 
