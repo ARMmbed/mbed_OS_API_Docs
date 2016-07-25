@@ -4,10 +4,10 @@
 
 The USBMouse interface is used to emulate a mouse over the USB port. You can choose relative or absolute co-ordinates, and send clicks, button state and scroll wheel movements.
 
-The USB connector should be attached to 
+The USB connector should be attached to:
 
-* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-* The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**.
+* The on-board USB connector of the **FRDM-KL25Z**.
 
 ## Hello World
 
@@ -19,7 +19,11 @@ The USB connector should be attached to
 
 ## Details
 
-You can choose either a relative mouse or an absolute mouse. By default, a USBMouse is a relative mouse. For instance, you can use an absolute mouse to draw a circle:
+You can choose either a relative mouse or an absolute mouse. By default, a USBMouse is a relative mouse. 
+
+## Example
+
+Use an absolute mouse to draw a circle:
 
 ```
  #include "mbed.h"
