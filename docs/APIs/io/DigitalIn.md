@@ -18,7 +18,7 @@ API summary
 
 To handle an interrupt, see [InterruptIn](InterruptIn.md).
 
-Examples of logical functions:
+Examples of logical functions - boolean logic NOT, AND, OR, XOR:
 
 ```
 #include "mbed.h"
