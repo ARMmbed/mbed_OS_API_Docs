@@ -1,7 +1,5 @@
 # USBMouse
 
-<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
-
 The USBMouse interface is used to emulate a mouse over the USB port. You can choose relative or absolute co-ordinates, and send clicks, button state and scroll wheel movements.
 
 The USB connector should be attached to:
@@ -56,3 +54,8 @@ Use an absolute mouse to draw a circle:
    }
  }
 ```
+
+## Video tutorial
+
+<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
+
