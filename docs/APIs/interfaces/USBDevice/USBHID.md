@@ -1,11 +1,11 @@
 # USBHID
 
-The USBHID class can be used to send and receive messages over USB. For instance, you can define your own protocol and communicate between your computer and the Mbed with all capabilities of a USB communication. To use USBHID, you need a script running on the host side (computer). For instance on a 32 bits Windows 7 machine, you can use [pywinusb](http://code.google.com/p/pywinusb/).
+The USBHID class can be used to send and receive messages over USB. For instance, you can define your own protocol and communicate between your computer and the mbed board with all the benefits of USB communication. To use USBHID, you need a script running on the host side (computer). For instance, on a 32-bit Windows 7 machine, you can use [pywinusb](http://code.google.com/p/pywinusb/).
 
-The USB connector should be attached to 
+The USB connector should be attached to:
 
-* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-* The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**.
+* The on-board USB connector of the **FRDM-KL25Z**.
 
 ## Hello World
 
@@ -15,10 +15,9 @@ The USB connector should be attached to
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/tip/main.cpp>) 
 
-## Details
+## Example
 
-You can choose the length of exchanged packets. In this example, mbed leds are controlled by four switches. When you press a button, there is a message sent containing buttons state. According to this message, the mbed will receive back a new message to light on leds.   
-We need one byte to control leds and one byte to send buttons state.
+You can choose the length of exchanged packets. In this example, we need one byte to control LEDs and one byte to send the button state. When you press a button, a message is sent with button states; the state of each button determines which LEDs will light up on the board:
 
 ```
 #include "mbed.h"
@@ -27,14 +26,14 @@ We need one byte to control leds and one byte to send buttons state.
 //We declare a USBHID device: it can send 1 byte and receive 1 byte
 USBHID hid(1, 1);
 
-//Two reports where will be stored values to send and received
+//Two reports to store values to send and receive
 HID_REPORT recv_report;
 HID_REPORT send_report;
 
-//Bus of leds
+//Bus for LEDs
 BusOut leds(LED1,LED2,LED3,LED4);
 
-//Bus of buttons
+//Bus for buttons
 BusInOut buttons(p21, p22, p23, p24);
 
 int main(void) {
@@ -42,7 +41,7 @@ int main(void) {
     send_report.length = 1;
 
     while (1) {
-        //If a data is received, update led bus
+        //If data is received, update LED bus
         if (hid.readNB(&recv;_report)) {
             leds = recv_report.data[0];
         }
@@ -58,6 +57,6 @@ int main(void) {
 }
 ```
 
-## Contribute to the USBHID bindings webpage!
+## Contribute to the USBHID bindings webpage
 
-A great thing would be to develop in several languages running on different platforms, programs able to communicate with the mbed over USB. Visit the [USBHID bindings webpage](http://mbed.org/cookbook/USBHID-bindings-) and develop your own USBHID device!
+A great thing would be to develop programs able to communicate with an mbed board over USB using different languages and different platforms. Visit the [USBHID bindings webpage](http://mbed.org/cookbook/USBHID-bindings-) and develop your own USBHID device.
