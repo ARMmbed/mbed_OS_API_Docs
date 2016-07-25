@@ -1,14 +1,21 @@
 # USBAudio
 
-The USBAudio class enables the mbed to be recognized as an audio device. With this interface, you can receive and send audio packets from and to a computer (play music) over USB. For instance you can connect a speaker or an I2S/I2C chip to the mbed and play the stream received from the computer.
+If you want to use your mbed board as an audio device, you can use the USBAudio class to receive and send audio packets from and to a computer (play music) over USB. For instance, you can connect a speaker or an I2S/I2C chip to the board and play the stream received from the computer.
 
-The USB connector should be attached to 
+The USB connector should be attached to:
 
-* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**
-* The on-board USB connector of the **FRDM-KL25Z**
+* **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**.
+* The on-board USB connector of the **FRDM-KL25Z**.
 
-<span class="warnings">**Warning:** Change the default sound board </br>To send audio packets to the mbed, you have to change the default sound board used by the Operating system.</br>
-On Windows, you can do this by clicking on: **Control panel** > **Hardware and Sound** > **Manage audio device** in the Sound section > Select the mbed Audio device and press **Set default** </span>
+## Change the default sound board
+
+To send audio packets to the board, you have to change the default sound board used by your computer's operating system. 
+
+On Windows:
+
+1. Click on **Control panel** > **Hardware and Sound** > **Manage audio device**. 
+1. In the **Sound** section, select the mbed audio device.
+1. Click **Set default**.
 
 ## Hello World
 
@@ -18,36 +25,36 @@ On Windows, you can do this by clicking on: **Control panel** > **Hardware and S
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/eaa07ce86d49/main.cpp>) 
 
-## More examples
+## Examples
 
-The following program is sending to a speaker all audio packets received. This means that you can play a music on your computer and listen it on your Mbed.
+Send received audio packets to a speaker. This means that you can play music on your computer and listen to it on your mbed board.
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/samux/)](http://mbed.org/users/samux/file/USBAUDIO_speaker/main.cpp>) 
 
-The USBAudio playback example sends back to the computer all audio packets received. You can then listen for incoming audio packets with [audacity](http://audacity.sourceforge.net/) for instance.
+A second version of this example allows you to listen to the music using [audacity](http://audacity.sourceforge.net/) for instance.
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/samux/)](http://mbed.org/users/samux/file/USBAudioPlayback/main.cpp>) 
 
-## In details
+## In detail
 
 ### Audio packet length
 
 In this section, I will explain what kind of packets are received according to the frequency and the number of channels.   
 
-An audio packet is received each millisecond. So let's say that a frequency of 48 kHz has been chosen with 2 channels (stereo). Knowing that each sample of a packet are 16 bits long, 48 * 2 bytes will be received each millisecond for one channel. In total, for 2 channels, 48 * 2 * 2 bytes will be received.
+An audio packet is received each millisecond. So let's say that a frequency of 48 kHz has been chosen with two channels (stereo). Knowing that each sample of a packet is 16 bits long, 48 * 2 bytes will be received each millisecond for one channel. In total, for two channels, 48 * 2 * 2 bytes will be received.
 
 <span class="tips">**Tip:** Compute the length packet </br>``AUDIO_LENGTH_PACKET = (FREQ / 500) * nb_channel``</span>
 
 ### How to interpret an audio packet
 
-The read() function fills an uint8_t array. But these data has to be interpreted as 16 bits signed data (PCM). Then PCM values can be handled according to the number of channels.
+The ``read()`` function fills an ``uint8_t`` array. But this data has to be interpreted as 16 bits signed data (PCM). Then PCM values can be handled according to the number of channels.
 
 ### MONO: single channel
 
-<span class="images">![](../../Images/mono.png)</span>
+<span class="images">![](../../images/single_channel.png)</span>
 
-### STEREO: 2 channels
+### STEREO: two channels
 
-When there are 2 channels, values for channel 1 and values for channel 2 will alternate as explained in the following diagram:
+When there are two channels, values for channel 1 and values for channel 2 will alternate as explained in the following diagram:
 
-<span class="images">![](../../Images/stereo.png)</span>
+<span class="images">![](../../images/two_channels.png)</span>
