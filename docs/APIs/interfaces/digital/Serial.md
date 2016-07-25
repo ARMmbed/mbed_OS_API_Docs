@@ -35,7 +35,9 @@ The default settings for the mbed microcontroller are described as _9600 8N1_, a
 
 ## Examples
 
-### Example one - print Hello World
+### Example one 
+
+Write a message to a device at a baud rate of 19200
 
 ```
 #include "mbed.h"
@@ -48,6 +50,8 @@ int main() {
 }
 ```
 ### Example two
+
+Provide a serial pass-through between the PC and an external UART
 
 ```
 #include "mbed.h"
@@ -68,6 +72,8 @@ int main() {
 ```
 
 ### Example three
+
+Attach to RX interrupt
 
 ```
 #include "mbed.h"
