@@ -14,11 +14,11 @@ This interface can be used for communication with SPI slave devices, such as FLA
 
 ## Interface
 
-<span class="images">![](../Images/pin_out.png)</span>
+<span class="images">![](../../images/pin_out.png)</span>
   
-The default settings of the SPI interface are 1MHz, 8-bit, Mode 0
+The default settings of the SPI interface are 1MHz, 8-bit, Mode 0.
 
-The SPI Interface can be used to write data words out of the SPI port, returning the data received back from the SPI slave. The SPI clock frequency and format can also be configured. The format is set to data word length 8 to 16 bits, and the mode as per the table below:
+The SPI interface can be used to write data words out of the SPI port, returning the data received back from the SPI slave. The SPI clock frequency and format can also be configured. The format is set to data word length 8 to 16 bits, and the mode as per the table below:
 
 Mode |  Polarity |  Phase  
 ---|---|---  
