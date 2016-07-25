@@ -3,8 +3,7 @@
 Use the AnalogOut interface to set the voltage of an analog output pin in the range of VSS to VCC.
 
 <span class="tips">Tips:</br>
-</br>
-* Not all pins are capable of being AnalogOut, so check the documentation. 
+* Not all pins are capable of being AnalogOut, so check the documentation.</br>
 * For more information on what it takes to convert an digital value to its analog representation see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
 </span>
 
