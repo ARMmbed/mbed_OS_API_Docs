@@ -2,7 +2,7 @@
 
 The USBHostMouse interface is used to communicate with a USB mouse.
 
-<span class="warnings">**Warning:** Library in Beta</br>This library is in beta. If you have any problems using the USBHost library, please send a bug report to [support@mbed.org](support@mbed.org) </span>
+<span class="warnings">**Warning:** Library in Beta</br>This library is in beta. If you have any problems using the USBHost library, please send a bug report to [support@mbed.org](support@mbed.org).</span>
 
 The USB Host connector should be attached to:
 
