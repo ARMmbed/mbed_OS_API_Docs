@@ -1,6 +1,9 @@
 # DigitialInOut
 
-The DigitalInOut interface is used as a bi-directional digital pin, used to read the value of a digital pin when set as an input, or write the value when set as an output.
+The DigitalInOut interface is used as a bi-directional digital pin:
+
+* Read the value of a digital pin when set as an input.
+* Write the value when set as an output.
 
 Any of the numbered mbed pins can be used as a DigitalInOut. 
 
