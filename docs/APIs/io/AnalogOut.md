@@ -1,6 +1,13 @@
 # AnalogOut
 
-The AnalogOut Interface is used to set the voltage of an analog output pin. The AnalogOut Interface can be used to set a voltage on pin somewhere in the range of VSS to VCC. Not all pins are capable of being AnalogOut so check the documentation. For more information on what it takes to convert an digital value to its analog representation see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
+Use the AnalogOut interface to set the voltage of an analog output pin in the range of VSS to VCC.
+
+<span class="tips">
+Tips:
+
+* Not all pins are capable of being AnalogOut, so check the documentation. 
+* For more information on what it takes to convert an digital value to its analog representation see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
+</span>
 
 ## API
 
@@ -12,6 +19,8 @@ The AnalogOut Interface is used to set the voltage of an analog output pin. The 
 
 
 ## Example
+
+Create a sine wave
 
 ```
 #include "mbed.h"
