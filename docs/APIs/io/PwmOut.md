@@ -4,7 +4,7 @@ The PwmOut interface is used to control the frequency and mark-space ratio of a 
 
 ## Hello World!
 
-This code example uses the default period of 0.020s and ramps the duty cycle from 0% to 100% in incriments of 10%. 
+This code example uses the default period of 0.020s and ramps the duty cycle from 0% to 100% in increments of 10%. 
 
 ** MISSING ** 
 
@@ -16,13 +16,15 @@ API summary
 
 ## Details
 
-The default period is 0.020s, and the default pulsewidth is 0.
+The default period is 0.020s, and the default pulse width is 0.
 
-The PwmOut interface can express the pulse train in many ways depening on how it is to be used. The period and pulse width can be expressed directly in units of seconds, millisecond or microseconds. The pulsewidth can also be expressed as a percentage of the the period.
+The PwmOut interface can express the pulse train in many ways to fit different use cases. The period and pulse width can be expressed directly in units of seconds, millisecond or microseconds. The pulse width can also be expressed as a percentage of the the period.
   
 ## Code Examples
 
-This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (0 to 1 range). The effect of this code snippet will be to blink LED2 over a 4 second cycle, 50% on, for a pattern of 2 seconds on, 2 seconds off.
+### Example one
+
+This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0 to 1). The effect of this code snippet will be to blink LED2 over a 4 second cycle, 50% on, for a pattern of 2 seconds on, 2 seconds off.
 
 ```
 #include "mbed.h"
@@ -36,7 +38,10 @@ int main() {
     while(1);          // led flashing
 }
 ```   
-The following example does the same thing. Instead of specifying the duty cycle as a relative percentage of the period it specifies it as an absolute value in seconds. In this case we have a 4 second period and a 2 second duty cycle, meaning the led will be on for 2 seconds and off for 2 seconds. 
+
+### Example two
+
+The following example does the same thing, but instead of specifying the duty cycle as a relative percentage of the period it specifies it as an absolute value in seconds. In this case we have a four-second period and a two-second duty cycle, meaning the LED will be on for two seconds and off for two seconds. 
 
 ```
 #include "mbed.h"
@@ -52,7 +57,9 @@ int main() {
 
 ```
 
-This code example is for an RC Servo. In RC Servo's you set the position based on duty cycle or pulse width of the pwm signal. This example code uses a period of 0.020s and increases the pulse width by 0.0001s on each pass. This will cause an increase of .5% of the servo's range every .25s. In effect the servo will move 2% of its range per second, meaning after 50 seconds the servo will have gone from 0% to 100% of its range. 
+### Example three
+
+This code example is for an RC Servo. In RC Servos you set the position based on the PWM signal's duty cycle or pulse width. This example code uses a period of 0.020s and increases the pulse width by 0.0001s on each pass. This will cause an increase of .5% of the servo's range every .25s. In effect the servo will move 2% of its range per second, meaning after 50 seconds the servo will have gone from 0% to 100% of its range. 
 
 ```
 
