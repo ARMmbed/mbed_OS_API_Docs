@@ -8,7 +8,7 @@ Synchronization level: not protected.
 
 Simple I2C responder
 
-```
+```c++
 #include <mbed.h>
  
 I2CSlave slave(p9, p10);
