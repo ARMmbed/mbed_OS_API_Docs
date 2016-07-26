@@ -8,7 +8,7 @@ The default format is set to 8-bits, mode 0, and a clock frequency of 1MHz. Sync
 
 Reply to an SPI master as slave:
 
-```
+```c++
 #include "mbed.h"
  
 SPISlave device(p5, p6, p7, p8); // mosi, miso, sclk, ssel
