@@ -29,5 +29,5 @@ Send a MIDI message if the buttons change state:
 
 ## Video tutorial 
 
-<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/pRiYQ6Dv-uY/0.jpg)](http://www.youtube.com/watch?v=pRiYQ6Dv-uY)</span>
+<span class="images">[![Video tutorial](http://img.youtube.com/vi/pRiYQ6Dv-uY/0.jpg)](http://www.youtube.com/watch?v=pRiYQ6Dv-uY)</span>
 
