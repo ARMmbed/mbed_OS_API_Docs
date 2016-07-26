@@ -4,7 +4,10 @@ The BusOut interface is used to create a number of [DigitalOut](DigitalOut.md) p
 
 ## Hello World!
 
-** MISSING **
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/f979089a5ca0/main.cpp) 
+
+
+
 
 ## API
 
