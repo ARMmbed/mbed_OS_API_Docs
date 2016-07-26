@@ -58,4 +58,4 @@ int main(void) {
 
 ## Video tutorial 
 
-<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/NKSlkUcoOjY/0.jpg)](http://www.youtube.com/watch?v=NKSlkUcoOjY)</span>
+<span class="images">[![Video tutorial](http://img.youtube.com/vi/NKSlkUcoOjY/0.jpg)](http://www.youtube.com/watch?v=NKSlkUcoOjY)</span>
