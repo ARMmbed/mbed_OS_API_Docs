@@ -1,1 +1,1 @@
-!{https://raw.githubusercontent.com/ARMmbed/uvisor/dev/docs/QUICKSTART.md}
+!{https://raw.githubusercontent.com/ARMmbed/uvisor/dev/docs/api/QUICKSTART.md}
