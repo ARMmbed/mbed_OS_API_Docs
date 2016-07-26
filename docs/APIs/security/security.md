@@ -1,1 +1,11 @@
 # Securing devices and connections
+
+Security on mbed OS is divided into two parts:
+
+* [Device security through mbed uVisor](uvisor.md)
+* [Connection security through mbed TLS](tls.md)
+
+The sections cover working with these modules in the context of mbed OS. Both have more generic documentation available on other sites:
+
+* [mbed uVisor full documentation](docs.mbed.com/docs/uvisor-and-uvisor-lib-documentation/en/latest/)
+* [mbed TLS full documentation](https://tls.mbed.org/)
