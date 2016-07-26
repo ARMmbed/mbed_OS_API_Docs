@@ -57,5 +57,5 @@ Use an absolute mouse to draw a circle:
 
 ## Video tutorial
 
-<span class="images">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
+<span class="images">[![Video tutorial](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
 
