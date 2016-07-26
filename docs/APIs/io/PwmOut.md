@@ -6,7 +6,9 @@ The PwmOut interface is used to control the frequency and mark-space ratio of a 
 
 This code example uses the default period of 0.020s and ramps the duty cycle from 0% to 100% in increments of 10%. 
 
-** MISSING ** 
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_HelloWorld/file/5160ea45399b/main.cpp) 
+
 
 ## API
 
