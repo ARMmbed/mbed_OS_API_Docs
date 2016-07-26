@@ -1,30 +1,18 @@
-# Network Sockets #
+# Network Sockets
 
 The network-socket API provides a common interface for using
-[sockets](https://en.wikipedia.org/wiki/Network_socket) on network devices.
-The network-socket API provides a simple class-based interface that should
-be familiar to users experienced with other socket APIs.
+[sockets](https://en.wikipedia.org/wiki/Network_socket) on network devices. It's a class-based interface, which should be familiar to users experienced with other socket APIs.
 
-## Example ##
+## Example
 
 Here is a quick example of a simple HTTP client program:
+
+[TODO: what does it do, and why are there no code comments?]
 
 ``` cpp
 /* NetworkSocketAPI Example Program
  * Copyright (c) 2015 ARM Limited
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 #include "mbed.h"
 #include "TCPSocket.h"
@@ -61,60 +49,45 @@ int main()
 }
 ```
 
-## The Socket classes ##
+## The Socket classes
 
-The [Socket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/Socket.h#L30)
-classes are used for managing network sockets. Once opened, a socket provides 
-a pipe through which data can be sent and received to a specific endpoint. The 
-type of the instantiated socket indicates the underlying protocol to use.
+The [Socket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/Socket.h#L30) classes are used for managing network sockets. Once opened, a socket provides 
+a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
-- The [UDPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/UDPSocket.h#L26)
-  class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
-  using the sendto/recvfrom member functions. Packets can be lost or arrive out
-  of order, so a TCPSocket is suggested when delivery is required.
+[TODO: does it provide the ability, or does it actually do it? Provides the ability implies there is something else underlying it, and that the class itself is only the means of reaching that something]
+- The [UDPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/UDPSocket.h#L26) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when delivery is required.
 
-- The [TCPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPSocket.h#L26)
-  class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).
-  TCPSockets maintain a stateful connection that starts with the connect member
-  function. After successfully connecting to a server, the send/recv member
-  functions can be used to send and recieve data similarly to writing/reading
-  from a file.
+[TODO: does it provide the ability, or does it actually do it? etc]
 
-- The [TCPServer](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPServer.h)
-  class provides the ability to accept incoming TCP connections. The listen
-  member function sets up the server to listen for incoming connections, and 
-  the accept member function sets up a stateful TCPSocket instance on an
-  incoming connection.
+- The [TCPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPSocket.h#L26) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).  TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
 
-## The Network Interface classes ##
+[TODO: does it provide the ability, or does it actually do it? etc]
 
-A socket requires a NetworkInterface instance when opened to indicate which
-NetworkInterface the socket should be created on. The NetworkInterface
-provides a network stack that implements the underlying socket operations.
+- The [TCPServer](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPServer.h) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
+
+## The NetworkInterface classes
+
+A socket requires a NetworkInterface instance when opened to indicate which NetworkInterface the socket should be created on. The NetworkInterface provides a network stack that implements the underlying socket operations.
 
 Existing network interfaces:
+
 - [EthernetInterface](ethernet.md)
 - [WiFiInterface](wifi.md)
 
+[TODO: porting documentation should be in the porting guide, not the handbook. This section should tell an app developer what to do with the network interface class. If they don't use it, it shouldn't be here. Perhaps down as "further reading".]
+
 More information on network interfaces can be found in the porting
-documentation for the network-socket API ([here](network_stacks.md)).
+documentation for the [network-socket API](network_stacks.md).
 
-## The SocketAddress class ##
+## The SocketAddress class
 
-The [SocketAddress](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/SocketAddress.h#L28)
-class can be used to represent the IP address and port pair of a unique
-network endpoint. Most network functions are also overloaded to accept string
-representations of IP addresses, but SocketAddress can be used to avoid the
-overhead of parsing IP addresses during repeated network transactions and
-can be passed around as a first class object.
+Use the [SocketAddress](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/SocketAddress.h#L28)
+class to represent the IP address and port pair of a unique
+network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
 
-## Network Errors ##
+## Network errors
 
-The convention of the network-socket API is for functions to return negative
-error codes to indicate failure. On success a function may return zero or a
-non-negative integer to indicate the size of a transaction. On failure a
-function must return a negative integer which should be one of the following
-error codes in the `nsapi_error_t` enum ([here](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/nsapi_types.h#L27)):
+The convention of the network-socket API is for functions to return negative error codes to indicate failure. On success, a function may return zero or a non-negative integer to indicate the size of a transaction. On failure, a function must return a negative integer, which should be one of the error codes in the `nsapi_error_t` enum ([here](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/nsapi_types.h#L27)):
 
 ``` cpp
 /** Enum of standardized error codes 
@@ -125,7 +98,7 @@ error codes in the `nsapi_error_t` enum ([here](https://github.com/mbedmicro/mbe
  *  @enum nsapi_error_t
  */
 typedef enum nsapi_error {
-    NSAPI_ERROR_WOULD_BLOCK   = -3001,     /*!< no data is not available but call is non-blocking */
+    NSAPI_ERROR_WOULD_BLOCK   = -3001,     /*!< data is not available but call is non-blocking */
     NSAPI_ERROR_UNSUPPORTED   = -3002,     /*!< unsupported functionality */
     NSAPI_ERROR_PARAMETER     = -3003,     /*!< invalid configuration */
     NSAPI_ERROR_NO_CONNECTION = -3004,     /*!< not connected to a network */
@@ -134,22 +107,15 @@ typedef enum nsapi_error {
     NSAPI_ERROR_NO_MEMORY     = -3007,     /*!< memory resource not available */
     NSAPI_ERROR_DNS_FAILURE   = -3008,     /*!< DNS failed to complete successfully */
     NSAPI_ERROR_DHCP_FAILURE  = -3009,     /*!< DHCP failed to complete successfully */
-    NSAPI_ERROR_AUTH_FAILURE  = -3010,     /*!< connection to access point faield */
-    NSAPI_ERROR_DEVICE_ERROR  = -3011,     /*!< failure interfacing with the network procesor */
+    NSAPI_ERROR_AUTH_FAILURE  = -3010,     /*!< connection to access point failed */
+    NSAPI_ERROR_DEVICE_ERROR  = -3011,     /*!< failure interfacing with the network processor */
 } nsapi_error_t;
 ```
 
-## Non-blocking operation ##
+## Non-blocking operation
 
-The network-socket API also supports non-blocking operation. The set_blocking
-member function changes the state of a socket. When a socket is in non-blocking
-mode, socket operations return NSAPI_ERROR_WOULD_BLOCK when a transaction can
-not be immediately completed.
+The network-socket API also supports non-blocking operation. The ``set_blocking`` member function changes the state of a socket. When a socket is in non-blocking mode, socket operations return ``NSAPI_ERROR_WOULD_BLOCK`` when a transaction cannot be immediately completed.
 
-To allow efficient use of non-blocking operations, the socket classes provide
-an attach member function to register a callback on socket state changes.
-The callback will be called when the socket can recv/send/accept successfully
-or if an error occurs. The callback may be called spuriously without reason.
+To allow efficient use of non-blocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. The callback will be called when the socket can successfully receive, send or accept, or when an error occurs. The callback may be called spuriously without reason.
 
-The callback may be called in an interrupt context and should not perform
-expensive operations such as recv/send calls.
+The callback may be called in an interrupt context and should not perform expensive operations such as receive and send calls.
