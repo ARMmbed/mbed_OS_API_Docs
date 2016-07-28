@@ -51,6 +51,5 @@ pages:
 - ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
 - ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
 - ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
-- ['APIs/memory_files/memory.md', 'Memory and file system APIs', 'Memory']
 
 copyright: © ARM Ltd. Copyright 2016 – ARM mbed IoT Device Platform
