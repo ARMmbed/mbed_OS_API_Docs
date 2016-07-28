@@ -45,7 +45,6 @@ pages:
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
-- ['APIs/tasks/tasks.md', 'Task management APIs', 'Managing tasks']
 - ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
 - ['APIs/tasks/Timer.md', 'Task management APIs', 'Timer']
 - ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
