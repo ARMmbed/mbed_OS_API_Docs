@@ -143,37 +143,11 @@ class HelloWorld {
 
 To generate documentation for the example above, you have to click **Compile** > **Update Docs**:
 
-<span class="images">![](images/docs_update2.png)</span>
+<span class="images">![](images/docs_update.png)</span>
 
 Once the docs are generated, the navigation tree is refreshed and you can see the formatted documentation:
 
 <span class="images">![](images/docs_example.png)</span>
-
-
-## Extra Features
-
-You can insert code and API documentation in to your wiki pages, notebook pages, questions, forum posts, etc.
-
-## Example
-
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/simon/code/Servo/docs/36b69a7ced07//classServo.html) 
-
-These are done using the ``library``  macro and the URLs of the documentation you wish to pull in:
-
-```
-<<library http://mbed.org/users/simon/code/Servo/docs/36b69a7ced07/classServo.html>>
-	
-<<library http://mbed.org/users/simon/code/Servo/docs/tip/classServo.html>>
-	
-<<library http://mbed.org/users/simon/code/Servo/>>
-```
-
-Each public documentation page has a handy **Embed** code box that you can copy and paste into your wikipage.
-
-Note the URL above with "tip" and the one with a mercurial revision hash. Linking to documentation with a tip URL means that the page will always show the latest documentation for your library.
-
-See [Wiki syntax](http://mbed.org/cookbook/Wiki-Syntax) for more details.
 
 ## Additional notes
 
