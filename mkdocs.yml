@@ -55,7 +55,6 @@ pages:
 - ['APIs/memory_files/memory_files.md', 'Memory and file system APIs', 'Managing the memory and file system']
 - ['APIs/memory_files/memory.md', 'Memory and file system APIs', 'Memory']
 - ['APIs/memory_files/file_system.md', 'Memory and file system APIs', 'File system']
-- ['APIs/memory_files/LocalFileSystem.md', 'Memory and file system APIs', 'Local file system']
 - ['APIs/memory_files/SDFileSystem.md', 'Memory and file system APIs', 'SD file system']
 
 copyright: © ARM Ltd. Copyright 2016 – ARM mbed IoT Device Platform
