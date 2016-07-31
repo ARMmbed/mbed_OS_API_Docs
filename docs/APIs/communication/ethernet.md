@@ -1,7 +1,6 @@
-# Ethernet #
+# Ethernet
 
-The [EthernetInterface](https://github.com/mbedmicro/mbed/blob/master/features/net/FEATURE_IPV4/lwip-interface/EthernetInterface.h#L28)
-provides a simple C++ api for connecting to the internet over an ethernet connection.
+The [EthernetInterface](https://github.com/mbedmicro/mbed/blob/master/features/net/FEATURE_IPV4/lwip-interface/EthernetInterface.h#L28) provides a simple C++ API for connecting to the internet over an Ethernet connection.
 
 ``` cpp
 /** EthernetInterface class
@@ -32,13 +31,16 @@ public:
 };
 ```
 
-## Usage ##
+## Usage
 
-To bring up the network interface, instantiate the EthernetInterface class and
-call the connect function. Once connected, the EthernetInterface can be used as a
+To bring up the network interface:
+
+1. Instantiate the ``EthernetInterface`` class.
+1. Call the ``connect`` function. 
+1. Once connected, the EthernetInterface can be used as a
 target for opening [network sockets](network_sockets.md).
 
-## Example ##
+## Example
 
 Here is a quick example of a simple HTTP client program:
 
