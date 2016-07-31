@@ -1,7 +1,7 @@
-# WiFi #
+# WiFi
 
 The [WifiInterface](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/WiFiInterface.h#L37)
-provides a simple C++ api for connecting to the internet over an WiFi device.
+provides a simple C++ API for connecting to the internet over a WiFi device.
 
 There are multiple WiFi components that implement the WiFiInterface class. For this example,
 the [ESP8266Interface](https://github.com/armmbed/esp8266-driver) is used.
@@ -43,14 +43,16 @@ public:
 };
 ```
 
-## Usage ##
+## Usage
 
-To bring up the network interface, instantiate an implementation of the WiFiInterface
-class (for example the [ESP8266Interface](https://github.com/armmbed/esp8266-driver)),
-and call the connect function with an ssid and password for the WiFi network. Once connected,
+To bring up the network interface:
+
+1. Instantiate an implementation of the WiFiInterface class (for example the [ESP8266Interface](https://github.com/armmbed/esp8266-driver)).
+1. Call the ``connect`` function with an SSID and password for the WiFi network. 
+1. Once connected,
 the WiFiInterface can be used as a target for opening [network sockets](network_sockets.md).
 
-## Example ##
+## Example
 
 Here is a quick example of a simple HTTP client program:
 
