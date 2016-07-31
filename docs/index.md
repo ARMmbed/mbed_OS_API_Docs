@@ -12,3 +12,7 @@ The APIs in this document are organized by the feature, or group of features, th
 * [Device and networking security](APIs/security/security.md): mbed uVisor and mbed TLS.
 * [Task management](APIs/tasks/tasks.md): timers and RTOS.
 * [Memory and file system](APIs/memory_files/memory_files.md): memory and file systems.
+
+If you want to learn how we use the APIs, take a look at our [handbook]() [TODO: link] or at one of our samples applications:
+
+!{https://raw.githubusercontent.com/ARMmbed/Handbook/master/docs/getting_started/examples.md?token=AKWAjchqxTiW4Wz6mk9VTmb9YWNE0gMoks5Xpz8lwA%3D%3D}
