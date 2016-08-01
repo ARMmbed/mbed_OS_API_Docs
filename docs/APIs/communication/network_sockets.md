@@ -5,15 +5,9 @@ The network-socket API provides a common interface for using
 
 ## Example
 
-Here is a quick example of a simple HTTP client program:
-
-[TODO: what does it do, and why are there no code comments?]
+Here is a quick example of a simple HTTP client program. The program brings up ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
 ``` cpp
-/* NetworkSocketAPI Example Program
- * Copyright (c) 2015 ARM Limited
- *
-
 #include "mbed.h"
 #include "TCPSocket.h"
 #include "EthernetInterface.h"
@@ -25,23 +19,28 @@ int main()
 {
     printf("Example network-socket HTTP client\n");
 
+    // Brings up the network interface
     eth.connect();
     const char *ip = eth.get_ip_address();
     const char *mac = eth.get_mac_address();
     printf("IP address is: %s\n", ip ? ip : "No IP");
     printf("MAC address is: %s\n", mac ? mac : "No MAC");
 
+    // Open a socket on the network interface, and create a TCP connection to mbed.org
     socket.open(&eth);
     socket.connect("developer.mbed.org", 80);
 
+    // Send a simple http request
     char sbuffer[] = "GET / HTTP/1.1\r\nHost: developer.mbed.org\r\n\r\n";
     int scount = socket.send(sbuffer, sizeof sbuffer);
     printf("sent %d [%.*s]\r\n", scount, strstr(sbuffer, "\r\n")-sbuffer, sbuffer);
 
+    // Recieve a simple http response and print out the response line
     char rbuffer[64];
     int rcount = socket.recv(rbuffer, sizeof rbuffer);
     printf("recv %d [%.*s]\r\n", rcount, strstr(rbuffer, "\r\n")-rbuffer, rbuffer);
 
+    // Close the socket to return its memory and bring down the network interface
     socket.close();
     eth.disconnect();
 
@@ -54,14 +53,9 @@ int main()
 The [Socket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/Socket.h#L30) classes are used for managing network sockets. Once opened, a socket provides 
 a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
-[TODO: does it provide the ability, or does it actually do it? Provides the ability implies there is something else underlying it, and that the class itself is only the means of reaching that something]
-- The [UDPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/UDPSocket.h#L26) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when delivery is required.
-
-[TODO: does it provide the ability, or does it actually do it? etc]
+- The [UDPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/UDPSocket.h#L26) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when garunteed delivery is required.
 
 - The [TCPSocket](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPSocket.h#L26) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).  TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
-
-[TODO: does it provide the ability, or does it actually do it? etc]
 
 - The [TCPServer](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/TCPServer.h) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
 
@@ -73,11 +67,6 @@ Existing network interfaces:
 
 - [EthernetInterface](ethernet.md)
 - [WiFiInterface](wifi.md)
-
-[TODO: porting documentation should be in the porting guide, not the handbook. This section should tell an app developer what to do with the network interface class. If they don't use it, it shouldn't be here. Perhaps down as "further reading".]
-
-More information on network interfaces can be found in the porting
-documentation for the [network-socket API](network_stacks.md).
 
 ## The SocketAddress class
 
