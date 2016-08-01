@@ -38,7 +38,6 @@ pages:
 - ['APIs/interfaces/USBHost/USBHostMSD.md', 'Interface APIs', 'USBHostMSD']
 - ['APIs/interfaces/USBHost/USBHostSerial.md', 'Interface APIs', 'USBHostSerial']
 - ['APIs/interfaces/USBHost/USBHostHub.md', 'Interface APIs', 'USBHostHub']
-- ['APIs/communication/network_stack.md', 'Communication APIs', 'Network stack']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
 - ['APIs/communication/wifi.md', 'Communication APIs', 'WiFi']
@@ -51,6 +50,7 @@ pages:
 - ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
 - ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
 - ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
-- ['APIs/API_Documentation.md','API documentation']
+- ['APIs/API_Documentation.md','API documentation', 'How to use the API documentation']
+- ['further_reading.md', 'Other sources', 'Further reading and examples']
 
 copyright: © ARM Ltd. Copyright 2016 – ARM mbed IoT Device Platform
