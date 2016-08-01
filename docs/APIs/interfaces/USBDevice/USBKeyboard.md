@@ -12,6 +12,10 @@ The USB connector should be attached to :
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/samux/code/USBKeyboard_HelloWorld/)](https://developer.mbed.org/users/samux/code/USBKeyboard_HelloWorld/file/tip/main.cpp) 
 
+## Video tutorial 
+
+<span class="images">[![Video tutorial](http://img.youtube.com/vi/NKSlkUcoOjY/0.jpg)](http://www.youtube.com/watch?v=NKSlkUcoOjY)</span>
+
 ## API
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/6d85e04fb59f/main.cpp>) 
@@ -55,7 +59,3 @@ int main(void) {
     }
 }
 ```
-
-## Video tutorial 
-
-<span class="images">[![Video tutorial](http://img.youtube.com/vi/NKSlkUcoOjY/0.jpg)](http://www.youtube.com/watch?v=NKSlkUcoOjY)</span>
