@@ -1,8 +1,10 @@
-# Introduction to the mbed OS API References
+# Introduction to the mbed OS API 
 
 mbed OS lets you write applications that run on embedded devices, by providing the layer that interprets your application's code in a way the hardware can understand.
 
 Your application code - written in C++ - uses the application programing interfaces (APIs) presented by mbed OS to receive information from the hardware and send instructions to it. This means that a lot of the challenges in getting started with microcontrollers or integrating large amounts of software is already taken care of.
+
+## The API references
 
 The APIs in this document are organized by the feature, or group of features, they enable.
 
@@ -12,6 +14,8 @@ The APIs in this document are organized by the feature, or group of features, th
 * [Device and networking security](APIs/security/security.md): mbed uVisor and mbed TLS.
 * [Task management](APIs/tasks/tasks.md): timers and RTOS.
 * [Memory and file system](APIs/memory_files/memory_files.md): memory and file systems.
+
+## Sample applications
 
 If you want to learn how we use the APIs, take a look at our [handbook]() [TODO: link] or at one of our samples applications:
 
