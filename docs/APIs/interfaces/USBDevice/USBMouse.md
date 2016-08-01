@@ -11,6 +11,10 @@ The USB connector should be attached to:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/)](https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/file/tip/main.cpp) 
 
+## Video tutorial
+
+<span class="images">[![Video tutorial](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
+
 ## API
 
 [![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/6d85e04fb59f/main.cpp>) 
@@ -54,8 +58,4 @@ Use an absolute mouse to draw a circle:
    }
  }
 ```
-
-## Video tutorial
-
-<span class="images">[![Video tutorial](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
 
