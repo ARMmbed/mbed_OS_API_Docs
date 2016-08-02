@@ -42,7 +42,7 @@ target for opening [network sockets](network_sockets.md).
 
 ## Example
 
-Here is a quick example of a simple HTTP client program. The program brings up ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
+Here is a quick example of a simple HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
 ``` cpp
 #include "mbed.h"
