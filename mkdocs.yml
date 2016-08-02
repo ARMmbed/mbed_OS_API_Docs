@@ -1,4 +1,4 @@
-site_name: mbed OS 5 API References
+site_name: mbed OS API References
 
 docs_dir: docs
 
@@ -38,6 +38,7 @@ pages:
 - ['APIs/interfaces/USBHost/USBHostMSD.md', 'Interface APIs', 'USBHostMSD']
 - ['APIs/interfaces/USBHost/USBHostSerial.md', 'Interface APIs', 'USBHostSerial']
 - ['APIs/interfaces/USBHost/USBHostHub.md', 'Interface APIs', 'USBHostHub']
+- ['APIs/communication/network_sockets.md', 'Communication APIs', 'Network sockets']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
 - ['APIs/communication/wifi.md', 'Communication APIs', 'WiFi']
