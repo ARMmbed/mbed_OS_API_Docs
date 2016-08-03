@@ -16,7 +16,7 @@ API summary
 
 <span class="tips">**Tip:** If you want to send data to a host PC, take a look at [SerialPC](Serial.md) </span>
 
-<span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](Windows serial configuration) **MISSING LINK** </span>
+<span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/getting_started/what_need/)</span>
 
 Serial channels have a number of configurable parameters:
 
