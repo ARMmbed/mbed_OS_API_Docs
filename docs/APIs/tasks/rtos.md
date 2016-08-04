@@ -19,7 +19,7 @@ A ``Thread`` can be in the following states:
 * ``Waiting``: Threads that are waiting for an event to occur.
 * ``Inactive``: Threads that are not created or terminated. These threads typically consume no system resources.
 
-<span class="images">![](../Images/Thread/thread_status.png)</span>
+<span class="images">![](Images/Thread/thread_status.png)</span>
 
 ### The main() function
 
@@ -36,7 +36,7 @@ The code below uses two separate threads to blink two LEDs. The first thread is 
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Thread.html) 
 
-<span class="images">![](../Images/Thread/thread_priority.png)</span>
+<span class="images">![](Images/Thread/thread_priority.png)</span>
 
 ## Mutex
 
@@ -44,7 +44,7 @@ A ``Mutex`` is used to synchronize the execution of threads, for example to prot
 
 <span class="warnings"> **Warning:** ISR</br>The ``Mutex`` methods cannot be called from interrupt service routines (ISR). In the current version of mbed OS, if you attempt to use a mutex from within an ISR nothing happens; attempts to lock a mutex succeed immediately, regardless of whether the lock is actually free. In other words, if you acquire a mutex lock in an ISR, you can break the thread safety mechanisms and introduce race-conditions into an otherwise safe piece of code Future versions of mbed OS will provide warnings and ultimately prevent this from happening. </span>
 
-<span class="images">![](../Images/Thread/Mutex.png)</span>
+<span class="images">![](Images/Thread/Mutex.png)</span>
 
 ### Mutex example
 
@@ -63,7 +63,7 @@ Use Mutex to protect printf().
 
 A ``Semaphore`` manages thread access to a pool of shared resources of a certain type.
 
-<span class="images">![](../Images/Thread/Semaphore.png)</span>
+<span class="images">![](Images/Thread/Semaphore.png)</span>
 
 ### Semaphore example
 
@@ -87,7 +87,7 @@ Each ``Thread`` can wait for signals and be notified of events:
 
 A ``Queue`` allows you to queue pointers to data from producer threads to consumer threads:
 
-<span class="images">![](../Images/Thread/queue.png)</span>
+<span class="images">![](Images/Thread/queue.png)</span>
 
 ```
 Queue queue;
@@ -131,7 +131,7 @@ Shows ``Queue`` and ``MemoryPool`` (see below) managing measurements.
 
 ``Mail`` works like a queue, with the added benefit of providing a memory pool for allocating messages (not only pointers).
 
-<span class="images">![](../Images/Thread/mail_queue.png)</span>
+<span class="images">![](Images/Thread/mail_queue.png)</span>
 
 ### Mail example
 
@@ -149,7 +149,7 @@ You use the ``RtosTimer`` class to create and and control timer functions in the
 
 Timers are handled in the thread ``osTimerThread``. Callback functions run under the control of this thread and may use CMSIS-RTOS API calls.
 
-<span class="images">![](../Images/Thread/rtos_timer.png)</span>
+<span class="images">![](Images/Thread/rtos_timer.png)</span>
 
 ### RtosTimer example
 
