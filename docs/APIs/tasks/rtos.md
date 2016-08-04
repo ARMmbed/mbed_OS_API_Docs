@@ -135,7 +135,6 @@ Shows ``Queue`` and ``MemoryPool`` (see below) managing measurements.
 
 ### Mail example
 
-
 Using ``mail`` to manage measurement.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mail/)](https://developer.mbed.org/teams/mbed/code/rtos_mail/file/a3428581e64c/main.cpp) 
