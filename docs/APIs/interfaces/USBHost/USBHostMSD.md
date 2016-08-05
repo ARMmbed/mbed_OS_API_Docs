@@ -2,7 +2,7 @@
 
 The USBHostMSD interface is used to access a USB mass storage device.
 
-<span class="warnings">**Warning:** Library in beta</br>This library is in beta. If you have any problems using the USBHost library, please send a bug report to [support@mbed.org](support@mbed.org). </span>
+<span class="warnings">**Warning:** Library in beta</br>This library is in beta. If you have any problems using the USBHost library, please send a bug report to [support@mbed.org](mailto:support@mbed.org). </span>
 
 The USB Host connector should be attached to:
 
