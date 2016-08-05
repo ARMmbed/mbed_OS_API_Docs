@@ -12,7 +12,7 @@ One of the Serial connections goes via the mbed USB port, allowing you to easily
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1Serial.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/Serial_8h_source.html) 
 
 <span class="tips">**Tip:** If you want to send data to a host PC, take a look at [SerialPC](Serial.md) </span>
 
