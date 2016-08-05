@@ -13,11 +13,6 @@ This library supports:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/SDFileSystem_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/SDFileSystem_HelloWorld/file/tip/main.cpp) 
 
-## Library
-
-The SDFileSystem library, for accessing SD Cards using fopen, fprintf, etc. 
-
-** MISSING LINK **
 
 ## Details
 
