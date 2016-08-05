@@ -201,6 +201,4 @@ The CMSIS-RTOS functions will return the following statuses:
 * ``osErrorValue``: value of a parameter is out of range.
 * ``osErrorOS``: unspecified RTOS error - run-time error but no other error message fits.
 
-## osEvent
 
-The ``osEvent`` data structure is returned by the ``get`` methods of ``Queue`` and ``Mail`` objects. This data structure contains both an error code and a pointer to the actual data:
