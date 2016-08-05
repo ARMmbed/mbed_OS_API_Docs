@@ -14,9 +14,8 @@ API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/Serial_8h_source.html) 
 
-<span class="tips">**Tip:** If you want to send data to a host PC, take a look at [SerialPC](Serial.md) </span>
 
-<span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/getting_started/what_need/)</span>
+<span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/getting_started/what_need/).</span>
 
 Serial channels have a number of configurable parameters:
 
@@ -28,8 +27,6 @@ Serial channels have a number of configurable parameters:
 The default settings for the mbed microcontroller are described as _9600 8N1_, a  common notation for serial port settings.
 
 ## See Also
-
-  * [Communication with a PC](Serial.md)
 
   * [Serial Port on Wikipedia](http://en.wikipedia.org/wiki/Serial_port)
 
