@@ -34,3 +34,8 @@ mbed BLE, also called BLE_API, is the Bluetooth Low Energy software solution for
 * The mbed BLE [API reference](https://docs.mbed.com/docs/ble-api/en/master/api/index.html) offer the full details of the API.
 
 * The mbed BLE [online community](https://developer.mbed.org/teams/Bluetooth-Low-Energy/community/) is also a great place to ask questions and share your knowledge.
+
+## API reference
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classBLE.html) 
+
