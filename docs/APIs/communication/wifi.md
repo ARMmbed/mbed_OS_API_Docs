@@ -1,46 +1,13 @@
 # WiFi
 
-The [WifiInterface](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/WiFiInterface.h#L37) provides a simple C++ API for connecting to the internet over a WiFi device.
+The [WifiInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classWiFiInterface.html) provides a simple C++ API for connecting to the internet over a WiFi device.
 
 There are multiple WiFi components that implement the WiFiInterface class. For this example,
 the [ESP8266Interface](https://github.com/armmbed/esp8266-driver) is used.
 
-``` cpp
-class WiFiInterface: public NetworkInterface
-{
-public:
-    /** Start the interface
-     *
-     *  Attempts to connect to a WiFi network. If passphrase is invalid,
-     *  NSAPI_ERROR_AUTH_ERROR is returned.
-     *
-     *  @param ssid      Name of the network to connect to
-     *  @param pass      Security passphrase to connect to the network
-     *  @param security  Type of encryption for connection
-     *  @return          0 on success, negative error code on failure
-     */
-    virtual int connect(const char *ssid, const char *pass, nsapi_security_t security = NSAPI_SECURITY_NONE) = 0;
+## API
 
-    /** Stop the interface
-     *
-     *  @return          0 on success, negative error code on failure
-     */
-    virtual int disconnect() = 0;
-
-    /** Get the local MAC address
-     *
-     *  @return         Null-terminated representation of the local MAC address
-     */
-    virtual const char *get_mac_address() = 0;
-
-    /** Get the local IP address
-     *
-     *  @return         Null-terminated representation of the local IP address
-     *                  or null if not yet connected
-     */
-    virtual const char *get_ip_address() = 0;
-};
-```
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classWiFiInterface.html)
 
 ## Usage
 
