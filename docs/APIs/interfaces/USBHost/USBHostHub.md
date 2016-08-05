@@ -13,5 +13,10 @@ The USB Host connector should be attached to:
 
 As you can see there is no instance of USBHostHub in the code. All the hubs are automatically enumerated by the USB thread.
 
+## API
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/USBHostHub_8h_source.html)
+
 ## Troobleshooting
+
 If your mbed board is automatically reset when you plug a USB device, you should consider using an external power supply.
