@@ -15,7 +15,7 @@ The USB Host connector should be attached to:
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classUSBHost.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/USBHostKeyboard_8h_source.html) 
 
 ## Troobleshooting
 If your mbed board is automatically reset when you plug a USB device, you should consider using an external power supply.
