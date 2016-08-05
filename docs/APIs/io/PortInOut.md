@@ -10,4 +10,4 @@ A mask can be supplied so only certain bits of a port are used, allowing other b
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/0954ebd79f59/classmbed_1_1PortInOut.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/PortInOut_8h_source.html) 
