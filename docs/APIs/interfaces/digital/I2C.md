@@ -15,7 +15,7 @@ All drivers on the I2C bus are required to be open collector, and so it is neces
 
 <span class="notes">**Note:** The mbed API uses 8 bit addresses, so make sure to left-shift 7 bit address by 1 bit before passing them. </span> 
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1I2C.html)
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/I2C_8h_source.html)
 
 
 ## References
