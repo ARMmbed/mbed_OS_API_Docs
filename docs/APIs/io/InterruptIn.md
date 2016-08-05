@@ -59,4 +59,4 @@ int main() {
 
 To read an input, see [DigitalIn](DigitalIn.md).
 
-For timer-based interrupts, see [Ticker](Ticker.md) (repeating interrupt) and [Timeout](Timeout.md) (one-time interrupt).
+For timer-based interrupts, see [Ticker](../tasks/Ticker.md) (repeating interrupt) and [Timeout](../tasks/TimeOut.md) (one-time interrupt).
