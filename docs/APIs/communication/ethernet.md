@@ -1,35 +1,10 @@
 # Ethernet
 
-The [EthernetInterface](https://github.com/mbedmicro/mbed/blob/master/features/net/FEATURE_IPV4/lwip-interface/EthernetInterface.h#L28) provides a simple C++ API for connecting to the internet over an Ethernet connection.
+The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/features_2net_2FEATURE__IPV4_2lwip-interface_2EthernetInterface_8h_source.html) provides a simple C++ API for connecting to the internet over an Ethernet connection.
 
-``` cpp
-/** EthernetInterface class
- *  Implementation of the NetworkStack for LWIP
- */
-class EthernetInterface : public EthInterface
-{
-public:
-    /** Start the interface
-     *  @return             0 on success, negative on failure
-     */
-    virtual int connect();
+## API 
 
-    /** Stop the interface
-     *  @return             0 on success, negative on failure
-     */
-    virtual int disconnect();
-
-    /** Get the internally stored IP address
-     *  @return             IP address of the interface or null if not yet connected
-     */
-    virtual const char *get_ip_address();
-
-    /** Get the internally stored MAC address
-     *  @return             MAC address of the interface
-     */
-    virtual const char *get_mac_address();
-};
-```
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classEthernetInterface.html)
 
 ## Usage
 
