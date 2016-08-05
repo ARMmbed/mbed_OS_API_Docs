@@ -6,7 +6,6 @@ The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information abou
 
 The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos/rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos/rtos).
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/4c105b8d7cae/rtos_8h_source.html) 
 
 ## Thread
 
@@ -34,7 +33,7 @@ The code below uses two separate threads to blink two LEDs. The first thread is 
 
 ### Thread class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Thread.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1Thread.html) 
 
 <span class="images">![](Images/Thread/thread_priority.png)</span>
 
@@ -57,7 +56,7 @@ Use Mutex to protect printf().
 
 ### Mutex class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Mutex.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1Mutex.html) 
 
 ## Semaphore
 
@@ -73,7 +72,7 @@ Use Semaphore to protect printf().
 
 ### Semaphore class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Semaphore.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1Semaphore.html) 
 
 ## Signals
 
@@ -103,7 +102,7 @@ if (evt.status == osEventMessage) {
 
 ### Queue class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Queue.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1Queue.html) 
 
 ### MemoryPool
 
@@ -119,7 +118,7 @@ mpool.free(message);
 
 ### MemoryPool class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1MemoryPool.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1MemoryPool.html) 
 
 ### Queue and MemoryPool example
 
@@ -141,7 +140,7 @@ Using ``mail`` to manage measurement.
 
 ### Mail class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1Mail.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1Mail.html) 
 
 ## RtosTimer
 
@@ -159,7 +158,7 @@ Control the timing of four LEDs.
 
 ### RtosTimer class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed-rtos/docs/tip/classrtos_1_1RtosTimer.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classrtos_1_1RtosTimer.html) 
 
 ## Interrupt Service Routines
 
@@ -201,4 +200,6 @@ The CMSIS-RTOS functions will return the following statuses:
 * ``osErrorValue``: value of a parameter is out of range.
 * ``osErrorOS``: unspecified RTOS error - run-time error but no other error message fits.
 
+## API - RTOS header
 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/rtos_8h_source.html) 
