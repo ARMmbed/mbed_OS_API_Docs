@@ -1,4 +1,4 @@
-# Introduction to the mbed OS API References
+# Introduction to the mbed OS API 
 
 mbed OS lets you write applications that run on embedded devices, by providing the layer that interprets your application's code in a way the hardware can understand.
 
@@ -12,6 +12,4 @@ The APIs in this document are organized by the feature, or group of features, th
 * [Device and networking security](APIs/security/security.md): mbed uVisor and mbed TLS.
 * [Task management](APIs/tasks/rtos.md): timers and RTOS.
 
-If you want to learn how we use the APIs, take a look at our [handbook]() [TODO: link] or at one of our samples applications:
-
-!{https://raw.githubusercontent.com/ARMmbed/Handbook/master/docs/getting_started/examples.md?token=AKWAjchqxTiW4Wz6mk9VTmb9YWNE0gMoks5Xpz8lwA%3D%3D}
+You can also view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/index.html).

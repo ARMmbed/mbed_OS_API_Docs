@@ -1,4 +1,4 @@
-site_name: mbed OS 5 API References
+site_name: mbed OS API References
 
 docs_dir: docs
 
@@ -45,12 +45,13 @@ pages:
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
-- ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
-- ['APIs/tasks/Timer.md', 'Task management APIs', 'Timer']
 - ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
 - ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
-- ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
+- ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
 - ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
-- ['APIs/API_Documentation.md','API documentation']
+- ['APIs/tasks/Timer.md', 'Task management APIs', 'Timer']
+- ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
+- ['APIs/API_Documentation.md','API documentation', 'How to use the API documentation']
+- ['further_reading.md', 'Other sources', 'Further reading and examples']
 
 copyright: © ARM Ltd. Copyright 2016 – ARM mbed IoT Device Platform

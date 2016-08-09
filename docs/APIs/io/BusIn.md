@@ -12,6 +12,6 @@ Any of the numbered mbed pins can be used as a DigitalIn in the BusIn.
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1BusIn.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classmbed_1_1BusIn.html) 
 
 

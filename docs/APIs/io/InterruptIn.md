@@ -10,7 +10,7 @@ The InterruptIn interface is used to trigger an event when a [digital input pin]
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://developer.mbed.org/users/mbed_official/code/mbed/docs/tip/classmbed_1_1InterruptIn.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/InterruptIn_8h_source.html) 
 
 **Warnings:**
 
@@ -59,4 +59,4 @@ int main() {
 
 To read an input, see [DigitalIn](DigitalIn.md).
 
-For timer-based interrupts, see [Ticker](Ticker.md) (repeating interrupt) and [Timeout](Timeout.md) (one-time interrupt).
+For timer-based interrupts, see [Ticker](../tasks/Ticker.md) (repeating interrupt) and [Timeout](../tasks/TimeOut.md) (one-time interrupt).

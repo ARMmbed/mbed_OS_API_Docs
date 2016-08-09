@@ -17,7 +17,7 @@ Digital pins can be controlled individually or as a grouped value.
 
 * [DigitalIn](DigitalIn.md): read a single digital input pin.
 * [DigitalOut](DigitalOut.md): write to a single digital output pin.
-* [DigitalInOut](DigialInOut.md): read and write to a single bi-directional digital pin.
+* [DigitalInOut](DigitalInOut.md): read and write to a single bi-directional digital pin.
 
 ### Grouped control
 

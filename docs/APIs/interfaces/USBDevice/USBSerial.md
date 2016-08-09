@@ -30,7 +30,7 @@ Because ``product_id`` and ``vendor_id`` are hardcoded in the ``.inf`` file, if 
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/6d85e04fb59f/main.cpp) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classUSBSerial.html)
 
 ## Example
 

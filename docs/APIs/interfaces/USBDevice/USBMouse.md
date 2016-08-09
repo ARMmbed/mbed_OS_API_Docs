@@ -7,17 +7,17 @@ The USB connector should be attached to:
 * **p31 (D+), p32 (D-) and GND** for the **LPC1768 and the LPC11U24**.
 * The on-board USB connector of the **FRDM-KL25Z**.
 
-## Hello World
-
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/)](https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/file/tip/main.cpp) 
-
 ## Video tutorial
 
 <span class="images">[![Video tutorial](http://img.youtube.com/vi/1lSjP6E7RV4/0.jpg)](http://www.youtube.com/watch?v=1lSjP6E7RV4)</span>
 
+## Hello World
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/)](https://developer.mbed.org/users/samux/code/USBMouse_HelloWorld/file/tip/main.cpp) 
+
 ## API
 
-[![View code](https://www.mbed.com/embed/?url=<http://mbed.org/users/mbed_official/code/USBDevice/)](http://mbed.org/users/mbed_official/code/USBDevice/file/6d85e04fb59f/main.cpp>) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classUSBMouse.html) 
 
 ## Details
 

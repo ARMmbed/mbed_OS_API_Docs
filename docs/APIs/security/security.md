@@ -7,5 +7,5 @@ Security on mbed OS is divided into two parts:
 
 The sections cover working with these modules in the context of mbed OS. For generic documentation for both modules, see:
 
-* [mbed uVisor full documentation](docs.mbed.com/docs/uvisor-and-uvisor-lib-documentation/en/latest/)
+* [mbed uVisor full documentation](https://docs.mbed.com/docs/uvisor-and-uvisor-lib-documentation/en/latest/)
 * [mbed TLS full documentation](https://tls.mbed.org/)
