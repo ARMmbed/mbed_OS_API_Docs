@@ -21,4 +21,4 @@ To bring up the network interface:
 
 Here is a quick example of a simple HTTP client program. The program brings up an ESP8266 as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
-[![View code](https://github.com/ARMmbed/mbed-os-example-wifi)](https://github.com/ARMmbed/mbed-os-example-wifi/blob/master/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://github.com/ARMmbed/mbed-os-example-wifi/)](https://github.com/ARMmbed/mbed-os-example-wifi/blob/master/main.cpp)
