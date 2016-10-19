@@ -2,7 +2,7 @@
 
 The [WifiInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classWiFiInterface.html) provides a simple C++ API for connecting to the internet over a WiFi device.
 
-There are multiple WiFi components that implement the WiFiInterface class. For this example,
+There are multiple WiFi components that implement the WiFiInterface class. For the example below,
 the [ESP8266Interface](https://github.com/armmbed/esp8266-driver) is used.
 
 ## API
