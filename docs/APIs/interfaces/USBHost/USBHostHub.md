@@ -15,7 +15,7 @@ As you can see there is no instance of USBHostHub in the code. All the hubs are 
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/USBHostHub_8h_source.html)
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/USBHostHub_8h_source.html)
 
 ## Troobleshooting
 
