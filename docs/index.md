@@ -14,6 +14,4 @@ The APIs in this document are organized by the feature, or group of features, th
 
 We also provide guidelines [for using the API documentation in the mbed Online Compiler](APIs/API_Documentation.md). 
 
-____
-
-**Tip:** You can view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/index.html) on our site, or explore the [code on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.2).
+<span class="tips">**Tip:** You can view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/index.html) on our site, or explore the [code on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.2).</span>
