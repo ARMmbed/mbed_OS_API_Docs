@@ -6,10 +6,14 @@ Your application code - written in C++ - uses the application programing interfa
 
 The APIs in this document are organized by the feature, or group of features, they enable.
 
-* [Hardware inputs and outputs](APIs/io/inputs_outputs.md): analog, digital, bus, port, PwmOut and interrupts.
-* [Digital interfaces and USB](APIs/interfaces/interfaces.md): serial, SPI, I2C, CAN and USB.
-* [Networking and communication](APIs/communication/network_sockets.md): network stack, BLE, Ethernet, WiFi and radio. 
-* [Device and networking security](APIs/security/security.md): mbed uVisor and mbed TLS.
-* [Task management](APIs/tasks/rtos.md): timers and RTOS.
+* [Inputs and outputs](APIs/io/inputs_outputs.md): analog, digital, bus, port, PwmOut and interrupts.
+* [Interfaces and USB](APIs/interfaces/interfaces.md): serial, SPI, I2C, CAN and USB.
+* [Communication](APIs/communication/network_sockets.md): network stack, BLE, Ethernet, WiFi and radio.
+* [Security](APIs/security/security.md): working with mbed uVisor and mbed TLS in the context of mbed OS.
+* [Task management](APIs/tasks/rtos.md): handling tasks and events in mbed OS.
 
-You can also view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/index.html).
+We also provide guidelines [for using the API documentation in the mbed Online Compiler](APIs/API_Documentation.md). 
+
+____
+
+**Tip:** You can view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/index.html) on our site, or explore the [code on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.2).
