@@ -5,7 +5,10 @@ We have more resources to help you get started with mbed OS 5.
 ## The handbook
 
 The [mbed OS Handbook](https://docs.mbed.com/docs/mbed-os-handbook/) explores our development tools and general concepts.
-The full [code doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/index.html).
+
+## The code base Doxygen
+
+The full [code Doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/index.html).
 
 ## Sample applications
 
