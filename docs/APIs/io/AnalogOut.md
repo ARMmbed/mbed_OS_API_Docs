@@ -10,7 +10,7 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/AnalogOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/AnalogOut_8h_source.html) 
 
 ## Hello World!
 
