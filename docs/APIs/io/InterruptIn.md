@@ -10,7 +10,7 @@ The InterruptIn interface is used to trigger an event when a [digital input pin]
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/InterruptIn_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/InterruptIn_8h_source.html) 
 
 **Warnings:**
 
