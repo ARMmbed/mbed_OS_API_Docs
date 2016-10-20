@@ -1,10 +1,10 @@
 # Ethernet
 
-The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/features_2net_2FEATURE__IPV4_2lwip-interface_2EthernetInterface_8h_source.html) provides a simple C++ API for connecting to the internet over an Ethernet connection.
+The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/features_2net_2FEATURE__IPV4_2lwip-interface_2EthernetInterface_8h_source.html) provides a simple C++ API for connecting to the internet over an Ethernet connection.
 
 ## API 
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classEthernetInterface.html)
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classEthernetInterface.html)
 
 ## Usage
 
