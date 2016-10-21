@@ -46,7 +46,7 @@ pages:
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
 - ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
-- ['APIs/tasks/events_lib.md', 'Task management APIs', 'Events library']
+- ['APIs/tasks/events.md', 'Task management APIs', 'Event loop']
 - ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
 - ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
 - ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
