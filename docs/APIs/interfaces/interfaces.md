@@ -23,7 +23,6 @@ Use your mbed board as a a source of input to your PC's USB port:
 * [USBMouseKeyboard](USBDevice/USBMouseKeyboard.md): emulate a USB keyboard and a USB mouse with absolute or relative positioning.
 * [USBHID](USBDevice/USBHID.md): communicate over a raw USBHID interface; great for driverless communication with a custom PC program.
 * [USBMIDI](USBDevice/USBMIDI.md): send and receive MIDI messages to control and be controlled by PC music sequencers.
-* [USBSerial](USBDevice/USBSerial.md): create a virtual serial port over the USB port; great for easy communication with a computer.
 * [USBAudio](USBDevice/USBAudio.md): receive audio stream from a computer over USB.
 * [USBMSD](USBDevice/USBMSD.md): Generic class implementing the Mass Storage Device protocol; access block storage chips.
 
