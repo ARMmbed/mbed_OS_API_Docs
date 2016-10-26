@@ -30,7 +30,6 @@ pages:
 - ['APIs/interfaces/USBDevice/USBMouseKeyboard.md', 'Interface APIs', 'USBMouseKeyboard']
 - ['APIs/interfaces/USBDevice/USBHID.md', 'Interface APIs', 'USBHID']
 - ['APIs/interfaces/USBDevice/USBMIDI.md', 'Interface APIs', 'USBMIDI']
-- ['APIs/interfaces/USBDevice/USBSerial.md', 'Interface APIs', 'USBSerial']
 - ['APIs/interfaces/USBDevice/USBAudio.md', 'Interface APIs', 'USBAudio']
 - ['APIs/interfaces/USBDevice/USBMSD.md', 'Interface APIs', 'USBMSD']
 - ['APIs/interfaces/USBHost/USBHostMouse.md', 'Interface APIs', 'USBHostMouse']
