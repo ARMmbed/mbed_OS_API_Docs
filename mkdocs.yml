@@ -18,7 +18,6 @@ pages:
 - ['APIs/io/PortInOut.md', 'Input and output APIs', 'PortInOut']
 - ['APIs/io/PwmOut.md', 'Input and output APIs', 'PwmOut']
 - ['APIs/io/InterruptIn.md', 'Input and output APIs', 'InterruptIn']
-- ['APIs/interfaces/interfaces.md', 'Interface APIs', 'Interface options']
 - ['APIs/interfaces/digital/Serial.md', 'Interface APIs', 'Serial']
 - ['APIs/interfaces/digital/SPI.md', 'Interface APIs', 'SPI']
 - ['APIs/interfaces/digital/SPISlave.md', 'Interface APIs', 'SPISlave']
