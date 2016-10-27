@@ -7,7 +7,7 @@ Your application code - written in C++ - uses the application programing interfa
 The APIs in this document are organized by the feature, or group of features, they enable.
 
 * [Inputs and outputs](APIs/io/inputs_outputs.md): analog, digital, bus, port, PwmOut and interrupts.
-* [Interfaces and USB](APIs/interfaces/interfaces.md): serial, SPI, I2C, CAN and USB.
+* [Interfaces](APIs/interfaces/interfaces.md): serial, SPI, I2C and CAN.
 * [Communication](APIs/communication/network_sockets.md): network stack, BLE, Ethernet, WiFi and radio.
 * [Security](APIs/security/security.md): working with mbed uVisor and mbed TLS in the context of mbed OS.
 * [Task management](APIs/tasks/rtos.md): handling tasks and events in mbed OS.
