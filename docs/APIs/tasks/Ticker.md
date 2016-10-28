@@ -14,7 +14,7 @@ A simple program to set up a Ticker to repeatedly invert an LED:
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classmbed_1_1Ticker.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Ticker.html) 
 
 ### Warnings and notes
 

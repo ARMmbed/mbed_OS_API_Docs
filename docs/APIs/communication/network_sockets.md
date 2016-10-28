@@ -6,56 +6,18 @@ The network-socket API provides a common interface for using [sockets](https://e
 
 Here is a quick example of a simple HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
-``` cpp
-#include "mbed.h"
-#include "TCPSocket.h"
-#include "EthernetInterface.h"
+[![View code](https://www.mbed.com/embed/?url=https://github.com/ARMmbed/mbed-os-example-sockets/)](https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp)
 
-EthernetInterface eth;
-TCPSocket socket;
-
-int main()
-{
-    printf("Example network-socket HTTP client\n");
-
-    // Brings up the network interface
-    eth.connect();
-    const char *ip = eth.get_ip_address();
-    const char *mac = eth.get_mac_address();
-    printf("IP address is: %s\n", ip ? ip : "No IP");
-    printf("MAC address is: %s\n", mac ? mac : "No MAC");
-
-    // Open a socket on the network interface, and create a TCP connection to mbed.org
-    socket.open(&eth);
-    socket.connect("developer.mbed.org", 80);
-
-    // Send a simple http request
-    char sbuffer[] = "GET / HTTP/1.1\r\nHost: developer.mbed.org\r\n\r\n";
-    int scount = socket.send(sbuffer, sizeof sbuffer);
-    printf("sent %d [%.*s]\r\n", scount, strstr(sbuffer, "\r\n")-sbuffer, sbuffer);
-
-    // Recieve a simple http response and print out the response line
-    char rbuffer[64];
-    int rcount = socket.recv(rbuffer, sizeof rbuffer);
-    printf("recv %d [%.*s]\r\n", rcount, strstr(rbuffer, "\r\n")-rbuffer, rbuffer);
-
-    // Close the socket to return its memory and bring down the network interface
-    socket.close();
-    eth.disconnect();
-
-    printf("Done\n");
-}
-```
 
 ## The Socket classes
 
-The [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
+The [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
-- The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
+- The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
 
-- The [TCPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classTCPSocket.html) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol). TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
+- The [TCPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classTCPSocket.html) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol). TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
 
-- The [TCPServer](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classTCPServer.html) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
+- The [TCPServer](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classTCPServer.html) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
 
 ## The NetworkInterface classes
 
@@ -68,7 +30,7 @@ Existing network interfaces:
 
 ## The SocketAddress class
 
-Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classSocketAddress.html) class to represent the IP address and port pair of a unique network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
+Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classSocketAddress.html) class to represent the IP address and port pair of a unique network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
 
 ## Network errors
 

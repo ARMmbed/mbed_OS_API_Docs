@@ -19,7 +19,7 @@ The following program has been tested with a micro SD card (Transcend micro SD 1
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/classUSBMSD.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classUSBMSD.html) 
 
 ## How to use USBMSD with your own chip
 

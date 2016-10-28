@@ -14,7 +14,7 @@ This code example uses the default period of 0.020s and ramps the duty cycle fro
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/PwmOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/PwmOut_8h_source.html) 
 
 ## Details
 

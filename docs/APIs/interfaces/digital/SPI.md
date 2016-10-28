@@ -10,7 +10,7 @@ This interface can be used for communication with SPI slave devices, such as FLA
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/SPI_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/SPI_8h_source.html) 
 
 ## Interface
 
