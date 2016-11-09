@@ -4,9 +4,6 @@ The DigitalIn interface is used to read the value of a digital input pin.
 
 Any of the numbered mbed pins can be used as a DigitalIn. 
 
-## Hello World!
-
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/file/tip/main.cpp) 
 
 ## API
 
@@ -14,7 +11,11 @@ API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1DigitalIn.html)
 
-## Related
+## Hello World!
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/file/tip/main.cpp) 
+
+## Related API
 
 To handle an interrupt, see [InterruptIn](InterruptIn.md).
 

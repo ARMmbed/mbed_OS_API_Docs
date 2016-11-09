@@ -4,17 +4,15 @@ Use the Timeout interface to set up an interrupt to call a function after a spec
 
 Any number of Timeout objects can be created, allowing multiple outstanding interrupts at the same time.
 
+## API
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Timeout.html) 
+
 ## Hello World!
 
 Set up a Timeout to invert an LED after a given timeout:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Timeout_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Timeout_HelloWorld/file/8a555873b7d3/main.cpp) 
-
-## API
-
-API summary
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Timeout.html) 
 
 ## Warnings and notes
 

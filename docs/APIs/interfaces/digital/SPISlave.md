@@ -4,6 +4,12 @@ Use the SPISlave class to communicate with an SPI master device.
 
 The default format is set to 8-bits, mode 0, and a clock frequency of 1MHz. Synchronization level: not protected.
 
+## API
+
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/SPISlave_8h_source.html)
+
+
 ## Example
 
 Reply to an SPI master as slave:
@@ -25,7 +31,3 @@ int main() {
 }
 ```
 
-## API
-
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/SPISlave_8h_source.html)

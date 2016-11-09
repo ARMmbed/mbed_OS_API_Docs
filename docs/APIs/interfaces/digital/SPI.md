@@ -4,13 +4,14 @@ The SPI Interface provides a Serial Peripheral Interface Master.
 
 This interface can be used for communication with SPI slave devices, such as FLASH memory, LCD screens and other modules or integrated circuits.
 
+## API
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/SPI_8h_source.html) 
+
 ## Hello World!
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/SPI_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/SPI_HelloWorld_Mbed/file/tip/main.cpp) 
 
-## API
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/SPI_8h_source.html) 
 
 ## Interface
 

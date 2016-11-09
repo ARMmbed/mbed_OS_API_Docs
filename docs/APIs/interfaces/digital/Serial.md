@@ -4,10 +4,6 @@ Serial is a generic protocol used by computers and electronic modules to send an
 
 One of the Serial connections goes via the mbed USB port, allowing you to easily communicate with your host PC.
 
-## Hello World!
-
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/file/879aa9d0247b/main.cpp) 
-
 ## API
 
 API summary
@@ -26,9 +22,10 @@ Serial channels have a number of configurable parameters:
 
 The default settings for the mbed microcontroller are described as _9600 8N1_, a  common notation for serial port settings.
 
-## See Also
+## Hello World!
 
-  * [Serial Port on Wikipedia](http://en.wikipedia.org/wiki/Serial_port)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/file/879aa9d0247b/main.cpp) 
+
 
 ## Examples
 

@@ -4,12 +4,12 @@
 
 The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://www.keil.com/pack/doc/CMSIS/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). These resources can be used as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide. 
 
-The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos/rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos/rtos).
+The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos/rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos/rtos). The Doxygen is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/group__rtos.html).
 
 
 ## Thread
 
-The ``Thread`` class allows defining, creating, and controlling thread functions in the system. 
+The [``Thread``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1Thread.html) class allows defining, creating, and controlling thread functions in the system. 
 
 A ``Thread`` can be in the following states:
 
@@ -39,7 +39,7 @@ The code below uses two separate threads to blink two LEDs. The first thread is 
 
 ## Mutex
 
-A ``Mutex`` is used to synchronize the execution of threads, for example to protect the access to a shared resource.
+A [``Mutex``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1Mutex.html) is used to synchronize the execution of threads, for example to protect the access to a shared resource.
 
 <span class="warnings"> **Warning:** ISR</br>The ``Mutex`` methods cannot be called from interrupt service routines (ISR). In the current version of mbed OS, if you attempt to use a mutex from within an ISR nothing happens; attempts to lock a mutex succeed immediately, regardless of whether the lock is actually free. In other words, if you acquire a mutex lock in an ISR, you can break the thread safety mechanisms and introduce race-conditions into an otherwise safe piece of code Future versions of mbed OS will provide warnings and ultimately prevent this from happening. </span>
 
@@ -60,7 +60,7 @@ Use Mutex to protect printf().
 
 ## Semaphore
 
-A ``Semaphore`` manages thread access to a pool of shared resources of a certain type.
+A [``Semaphore``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1Semaphore.html) manages thread access to a pool of shared resources of a certain type.
 
 <span class="images">![](Images/Thread/Semaphore.png)</span>
 
@@ -84,7 +84,7 @@ Each ``Thread`` can wait for signals and be notified of events:
 
 ### Queue
 
-A ``Queue`` allows you to queue pointers to data from producer threads to consumer threads:
+A [``Queue``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1Queue.html) allows you to queue pointers to data from producer threads to consumer threads:
 
 <span class="images">![](Images/Thread/queue.png)</span>
 
@@ -106,7 +106,7 @@ if (evt.status == osEventMessage) {
 
 ### MemoryPool
 
-The MemoryPool class is used to define and manage fixed-size memory pools:
+The [MemoryPool](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1MemoryPool.html) class is used to define and manage fixed-size memory pools:
 
 ```
 MemoryPool mpool;
@@ -128,7 +128,7 @@ Shows ``Queue`` and ``MemoryPool`` (see below) managing measurements.
 
 ## Mail
 
-``Mail`` works like a queue, with the added benefit of providing a memory pool for allocating messages (not only pointers).
+[``Mail``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1Mail.html) works like a queue, with the added benefit of providing a memory pool for allocating messages (not only pointers).
 
 <span class="images">![](Images/Thread/mail_queue.png)</span>
 
@@ -144,7 +144,7 @@ Using ``mail`` to manage measurement.
 
 ## RtosTimer
 
-You use the ``RtosTimer`` class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted, or stopped. 
+You use the [``RtosTimer``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classrtos_1_1RtosTimer.html) class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted, or stopped. 
 
 Timers are handled in the thread ``osTimerThread``. Callback functions run under the control of this thread and may use CMSIS-RTOS API calls.
 

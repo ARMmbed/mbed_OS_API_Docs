@@ -2,13 +2,7 @@
 
 The InterruptIn interface is used to trigger an event when a [digital input pin](DigitalIn.md) changes.
 
-## Hello World!
-
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/file/7a20a6aa1f5e/main.cpp) 
-
 ## API
-
-API summary
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/InterruptIn_8h_source.html) 
 
@@ -17,6 +11,10 @@ API summary
 * No blocking code in ISR: avoid any call to wait, infinite while loop, or blocking calls in general.
 
 * No printf, malloc, or new in ISR: avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behavior could be corrupted when called from an ISR.
+
+## Hello World!
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/file/7a20a6aa1f5e/main.cpp) 
 
 ## Example
 
