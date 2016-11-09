@@ -4,17 +4,15 @@ The Ticker interface is used to set up a recurring interrupt; it calls a functio
 
 Any number of Ticker objects can be created, allowing multiple outstanding interrupts at the same time. The function can be a static function, or a member function of a particular object.
 
+## API
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Ticker.html) 
+
 ## Hello World!
 
 A simple program to set up a Ticker to repeatedly invert an LED:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/file/5014bf742e9b/main.cpp) 
-
-## API
-
-API summary
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Ticker.html) 
 
 ### Warnings and notes
 

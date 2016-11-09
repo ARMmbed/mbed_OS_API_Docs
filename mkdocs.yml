@@ -4,6 +4,13 @@ docs_dir: docs
 
 pages:
 - ['index.md','Introduction to the mbed OS API References']
+- ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
+- ['APIs/tasks/events.md', 'Task management APIs', 'Event loop']
+- ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
+- ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
+- ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
+- ['APIs/tasks/Timer.md', 'Task management APIs', 'Timer']
+- ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
 - ['APIs/io/inputs_outputs.md', 'Input and output APIs', 'Handling inputs and outputs']
 - ['APIs/io/AnalogIn.md', 'Input and output APIs', 'AnalogIn']
 - ['APIs/io/AnalogOut.md', 'Input and output APIs', 'AnalogOut']
@@ -31,13 +38,6 @@ pages:
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
-- ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
-- ['APIs/tasks/events.md', 'Task management APIs', 'Event loop']
-- ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
-- ['APIs/tasks/Time.md', 'Task management APIs', 'Time']
-- ['APIs/tasks/TimeOut.md', 'Task management APIs', 'TimeOut']
-- ['APIs/tasks/Timer.md', 'Task management APIs', 'Timer']
-- ['APIs/tasks/wait.md', 'Task management APIs', 'Wait']
 - ['APIs/API_Documentation.md','API documentation', 'How to use the API documentation']
 - ['further_reading.md', 'Other sources', 'Further reading and examples']
 
