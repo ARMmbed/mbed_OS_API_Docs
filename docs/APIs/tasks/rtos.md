@@ -199,7 +199,3 @@ The CMSIS-RTOS functions will return the following statuses:
 * ``osErrorNoMemory``: system is out of memory; it was impossible to allocate or reserve memory for the operation.
 * ``osErrorValue``: value of a parameter is out of range.
 * ``osErrorOS``: unspecified RTOS error - run-time error but no other error message fits.
-
-## API - RTOS header
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/rtos_8h_source.html) 
