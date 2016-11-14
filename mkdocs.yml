@@ -25,7 +25,7 @@ pages:
 - ['APIs/io/PortInOut.md', 'Input and output APIs', 'PortInOut']
 - ['APIs/io/PwmOut.md', 'Input and output APIs', 'PwmOut']
 - ['APIs/io/InterruptIn.md', 'Input and output APIs', 'InterruptIn']
-- ['APIs/interfaces/digital/interfaces.md', 'Digital interface APIs', 'Introduction to digital interface']
+- ['APIs/interfaces/interfaces.md', 'Digital interface APIs', 'Introduction to digital interface']
 - ['APIs/interfaces/digital/Serial.md', 'Digital interface APIs', 'Serial']
 - ['APIs/interfaces/digital/SPI.md', 'Digital interface APIs', 'SPI']
 - ['APIs/interfaces/digital/SPISlave.md', 'Digital interface APIs', 'SPISlave']
