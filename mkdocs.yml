@@ -31,6 +31,7 @@ pages:
 - ['APIs/interfaces/digital/I2C.md', 'Interface APIs', 'I2C']
 - ['APIs/interfaces/digital/I2CSlave.md', 'Interface APIs', 'I2CSlave']
 - ['APIs/interfaces/digital/CAN.md', 'Interface APIs', 'CAN']
+- ['APIs/communication/communication_index.md', 'Communication APIs', 'Introduction to the communication APIs']
 - ['APIs/communication/network_sockets.md', 'Communication APIs', 'Network sockets']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
