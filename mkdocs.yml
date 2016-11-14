@@ -4,6 +4,7 @@ docs_dir: docs
 
 pages:
 - ['index.md','Introduction to the mbed OS API References']
+- ['APIs/tasks/tasks.md', 'Task management APIs', 'Introduction to task management']
 - ['APIs/tasks/rtos.md', 'Task management APIs', 'RTOS']
 - ['APIs/tasks/events.md', 'Task management APIs', 'Event loop']
 - ['APIs/tasks/Ticker.md', 'Task management APIs', 'Ticker']
