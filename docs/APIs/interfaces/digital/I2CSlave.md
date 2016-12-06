@@ -4,6 +4,11 @@ An I2C Slave, used for communicating with an I2C Master device.
 
 Synchronization level: not protected.
 
+## API
+
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/I2CSlave_8h_source.html)
+
 ## Example
 
 Simple I2C responder
@@ -38,7 +43,3 @@ int main() {
 }
 ```
 
-## API
-
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/I2CSlave_8h_source.html)
