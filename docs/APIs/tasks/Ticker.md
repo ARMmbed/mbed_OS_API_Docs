@@ -6,7 +6,7 @@ Any number of Ticker objects can be created, allowing multiple outstanding inter
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Ticker.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classmbed_1_1Ticker.html) 
 
 ## Hello World!
 

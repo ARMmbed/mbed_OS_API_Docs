@@ -4,7 +4,7 @@ The BusOut interface is used to create a number of [DigitalOut](DigitalOut.md) p
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1BusOut.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classmbed_1_1BusOut.html) 
 
 ## Hello World!
 

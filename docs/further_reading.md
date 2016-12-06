@@ -8,7 +8,7 @@ The [mbed OS Handbook](https://docs.mbed.com/docs/mbed-os-handbook/) explores ou
 
 ## The code base Doxygen
 
-The full [code Doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/index.html).
+The full [code Doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/index.html).
 
 ## Sample applications
 

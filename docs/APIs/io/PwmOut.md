@@ -4,7 +4,7 @@ The PwmOut interface is used to control the frequency and mark-space ratio of a 
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/PwmOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/PwmOut_8h_source.html) 
 
 
 ## Hello World!

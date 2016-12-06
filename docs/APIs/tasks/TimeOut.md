@@ -6,7 +6,7 @@ Any number of Timeout objects can be created, allowing multiple outstanding inte
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1Timeout.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classmbed_1_1Timeout.html) 
 
 ## Hello World!
 
