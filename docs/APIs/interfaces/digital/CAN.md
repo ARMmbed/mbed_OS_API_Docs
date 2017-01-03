@@ -6,7 +6,7 @@ CAN or Controller-Area Network is a bus standard that allows microcontrollers an
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/CAN_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/CAN_8h_source.html) 
 
 ## Hello World!
 

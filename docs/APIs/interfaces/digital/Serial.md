@@ -8,7 +8,7 @@ One of the Serial connections goes via the mbed USB port, allowing you to easily
 
 API summary
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/Serial_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/Serial_8h_source.html) 
 
 
 <span class="notes">**Note**: on a windows machine, you will need to install a USB Serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/getting_started/what_need/).</span>

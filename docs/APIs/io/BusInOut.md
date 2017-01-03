@@ -6,7 +6,7 @@ Any of the numbered mbed pins can be used as a [DigitalInOut](DigitalInOut.md).
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classmbed_1_1BusInOut.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classmbed_1_1BusInOut.html) 
 
 ## Hello World!
 
