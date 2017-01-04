@@ -4,8 +4,8 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 **Tips:**
 
-* Only certain pins are capable of making these measurement, so check the documentation for compatible pins. 
-* For more information on what it takes to convert an analog signal to its digital representation see [http://en.wikipedia.org/wiki/Analog-to-digital_converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter).   
+* Only certain pins are capable of making these measurements, so check the documentation for compatible pins. 
+* For more information on what it takes to convert an analog signal to its digital representation, see [http://en.wikipedia.org/wiki/Analog-to-digital_converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter).   
 
 ## API
 
@@ -20,7 +20,7 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 ### Example one
 
-Control an R/C servo with analog input
+Control an R/C servo with analog input.
 
 ```
 #include "mbed.h"
@@ -39,7 +39,7 @@ int main() {
 ```   
 ### Example two
 
-AnalogIn reading 16-it normalized samples
+The example below shows AnalogIn reading 16-it normalized samples.
 
 ```
 #include "mbed.h"
@@ -63,7 +63,7 @@ int main() {
 
 ### Example three
 
-Visual volt meter using LEDs
+The example below shows a visual volt meter using LEDs.
 
 ```
 #include "mbed.h"
