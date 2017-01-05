@@ -37,6 +37,7 @@ pages:
 - ['APIs/communication/network_sockets.md', 'Communication APIs', 'Network sockets']
 - ['APIs/communication/ethernet.md', 'Communication APIs', 'Ethernet']
 - ['APIs/communication/wifi.md', 'Communication APIs', 'WiFi']
+- ['APIs/communication/mesh.md', 'Communication APIs', 'Mesh networking']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
