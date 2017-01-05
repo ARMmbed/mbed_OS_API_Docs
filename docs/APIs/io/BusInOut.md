@@ -1,8 +1,8 @@
 #BusInOut
 
-The BusInOut interface is used as a bi-directional bus that collects together a number of [DigitalInOut](DigitalInOut.md) pins that can be read and written as one value.
+Use the BusInOut interface as a bidirectional bus that collects a number of [DigitalInOut](DigitalInOut.md) pins that can be read and written as one value.
 
-Any of the numbered mbed pins can be used as a [DigitalInOut](DigitalInOut.md). 
+You can use any of the numbered mbed pins as a [DigitalInOut](DigitalInOut.md). 
 
 ## API
 
