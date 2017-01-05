@@ -11,7 +11,7 @@ These APIs read or set the voltage of analog pins:
 
 ## Digital I/O
 
-Digital pins can be controlled individually or as a grouped value.
+You can control the digital pins individually or as a grouped value.
 
 ### Individual control
 
