@@ -2,7 +2,7 @@
 
 The SPI Interface provides a Serial Peripheral Interface Master. 
 
-This interface can be used for communication with SPI slave devices, such as FLASH memory, LCD screens and other modules or integrated circuits.
+You can use this interface for communication with SPI slave devices, such as FLASH memory, LCD screens and other modules or integrated circuits.
 
 ## API
 
@@ -19,7 +19,7 @@ This interface can be used for communication with SPI slave devices, such as FLA
   
 The default settings of the SPI interface are 1MHz, 8-bit, Mode 0.
 
-The SPI interface can be used to write data words out of the SPI port, returning the data received back from the SPI slave. The SPI clock frequency and format can also be configured. The format is set to data word length 8 to 16 bits, and the mode as per the table below:
+You can use the SPI interface to write data words out of the SPI port, returning the data received back from the SPI slave. You can also configure the SPI clock frequency and format. The format is set to data word length 8 to 16 bits, and the mode as per the table below:
 
 Mode |  Polarity |  Phase  
 ---|---|---  
@@ -32,4 +32,4 @@ The SPI master generates a clock to synchronously drive a serial bit stream slav
 
 ## Reference
 
-  * [SPI on Wikipedia](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
+  * [SPI on Wikipedia](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus).
