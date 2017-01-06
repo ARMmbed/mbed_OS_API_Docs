@@ -2,14 +2,14 @@
 
 ## Overview
 
-The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://www.keil.com/pack/doc/CMSIS/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). These resources can be used as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide. 
+The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://www.keil.com/pack/doc/CMSIS/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). You can use these resources as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide. 
 
 The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos/rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos/rtos). The Doxygen is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/group__rtos.html).
 
 
 ## Thread
 
-The [``Thread``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html) class allows defining, creating, and controlling thread functions in the system. 
+The [``Thread``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html) class allows defining, creating and controlling thread functions in the system. 
 
 A ``Thread`` can be in the following states:
 
@@ -22,7 +22,7 @@ A ``Thread`` can be in the following states:
 
 ### The main() function
 
-The function ``main`` is a special thread function that is started at system initialization and has the initial priority ``osPriorityNormal``; it is the first thread scheduled by the RTOS.
+The function ``main`` is a special thread function that is started at system initialization and has the initial priority ``osPriorityNormal``; it is the first thread the RTOS schedules.
 
 ### Thread example
 
@@ -41,7 +41,7 @@ The code below uses two separate threads to blink two LEDs. The first thread is 
 
 A [``Mutex``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Mutex.html) is used to synchronize the execution of threads, for example to protect the access to a shared resource.
 
-<span class="warnings"> **Warning:** ISR</br>The ``Mutex`` methods cannot be called from interrupt service routines (ISR). In the current version of mbed OS, if you attempt to use a mutex from within an ISR nothing happens; attempts to lock a mutex succeed immediately, regardless of whether the lock is actually free. In other words, if you acquire a mutex lock in an ISR, you can break the thread safety mechanisms and introduce race-conditions into an otherwise safe piece of code Future versions of mbed OS will provide warnings and ultimately prevent this from happening. </span>
+<span class="warnings"> **Warning:** ISR</br>The ``Mutex`` methods cannot be called from interrupt service routines (ISR). In the current version of mbed OS, if you attempt to use a mutex from within an ISR, nothing happens; attempts to lock a mutex succeed immediately, regardless of whether the lock is actually free. In other words, if you acquire a mutex lock in an ISR, you can break the thread safety mechanisms and introduce race-conditions into an otherwise safe piece of code. Future versions of mbed OS will provide warnings and ultimately prevent this from happening. </span>
 
 <span class="images">![](Images/Thread/Mutex.png)</span>
 
@@ -52,7 +52,7 @@ Use Mutex to protect printf().
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mutex/)](https://developer.mbed.org/teams/mbed/code/rtos_mutex/file/192fef923dbc/main.cpp) 
 
 <span class="notes">**Note:** C standard library Mutexes</br>The ARM C standard library already has Mutexes in place to protect the access to ``stdio``, so on the LPC1768 the above example is not necessary. On the other hand, the LPC11U24 does not provide default ``stdio`` Mutexes, making the above example a necessity. </span> 
-<span class="warnings">**Warning:** ``stdio``, ``malloc`` and ``new`` in ISR</br>Because of the mutexes in the ARM C standard library you cannot use ``stdio`` (``printf``, ``putc``, ``getc`` and so on), ``malloc`` and ``new`` in ISR. </span> 
+<span class="warnings">**Warning:** ``stdio``, ``malloc`` and ``new`` in ISR</br>Because of the mutexes in the ARM C standard library, you cannot use ``stdio`` (``printf``, ``putc``, ``getc`` and so on), ``malloc`` and ``new`` in ISR. </span> 
 
 ### Mutex class reference
 
@@ -106,7 +106,7 @@ if (evt.status == osEventMessage) {
 
 ### MemoryPool
 
-The [MemoryPool](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html) class is used to define and manage fixed-size memory pools:
+You can use the [MemoryPool](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html) class to define and manage fixed-size memory pools:
 
 ```
 MemoryPool mpool;
@@ -122,7 +122,7 @@ mpool.free(message);
 
 ### Queue and MemoryPool example
 
-Shows ``Queue`` and ``MemoryPool`` (see below) managing measurements. 
+This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurements. 
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_queue/)](https://developer.mbed.org/teams/mbed/code/rtos_queue/file/c980920b5e22/main.cpp) 
 
@@ -134,7 +134,7 @@ Shows ``Queue`` and ``MemoryPool`` (see below) managing measurements.
 
 ### Mail example
 
-Using ``mail`` to manage measurement.
+This code uses ``mail`` to manage measurement.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mail/)](https://developer.mbed.org/teams/mbed/code/rtos_mail/file/a3428581e64c/main.cpp) 
 
@@ -144,7 +144,7 @@ Using ``mail`` to manage measurement.
 
 ## RtosTimer
 
-You use the [``RtosTimer``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html) class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted, or stopped. 
+Use the [``RtosTimer``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html) class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted or stopped. 
 
 Timers are handled in the thread ``osTimerThread``. Callback functions run under the control of this thread and may use CMSIS-RTOS API calls.
 
@@ -169,7 +169,7 @@ The same RTOS API can be used in ISR. The only two warnings are:
 
 ### ISR example
 
-Using a message from the queue to trigger an interrupt.
+This example uses a message from the queue to trigger an interrupt.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_isr/)](https://developer.mbed.org/teams/mbed/code/rtos_isr/file/b3d67501ac55/main.cpp) 
 
@@ -179,7 +179,7 @@ The mbed RTOS API has made the choice of defaulting to ``0`` timeout (no wait) f
 
 A typical scenario for a producer could be a peripheral triggering an interrupt to notify an event; in the corresponding interrupt service routine you cannot wait (this would deadlock the entire system). On the other side, the consumer could be a background thread waiting for events; in this case the desired default behaviour is not using CPU cycles until this event is produced, hence the ``osWaitForever``.
 
-<span class="warnings">**Warning**: No wait in ISR </br>When calling an RTOS object method in an ISR all the time out parameters have to be set to 0 (no wait); waiting in ISR is not allowed. </span>
+<span class="warnings">**Warning**: No wait in ISR </br>When calling an RTOS object method in an ISR all the timeout parameters have to be set to 0 (no wait); waiting in ISR is not allowed. </span>
 
 ## Status and error codes
 
@@ -198,4 +198,4 @@ The CMSIS-RTOS functions will return the following statuses:
 * ``osErrorPriority``: system cannot determine priority or thread has illegal priority.
 * ``osErrorNoMemory``: system is out of memory; it was impossible to allocate or reserve memory for the operation.
 * ``osErrorValue``: value of a parameter is out of range.
-* ``osErrorOS``: unspecified RTOS error - run-time error but no other error message fits.
+* ``osErrorOS``: unspecified RTOS error - runtime error but no other error message fits.
