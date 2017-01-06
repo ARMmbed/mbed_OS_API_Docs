@@ -1,6 +1,6 @@
 # DigitalOut
 
-The DigitalOut interface is used to configure and control a digital output pin. 
+Use the DigitalOut interface to configure and control a digital output pin. 
 
 ## API
 
