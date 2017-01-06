@@ -1,8 +1,8 @@
 #DigitalIn
 
-The DigitalIn interface is used to read the value of a digital input pin.
+Use the DigitalIn interface to read the value of a digital input pin.
 
-Any of the numbered mbed pins can be used as a DigitalIn. 
+You can use any of the numbered mbed pins can be used as a DigitalIn. 
 
 
 ## API
