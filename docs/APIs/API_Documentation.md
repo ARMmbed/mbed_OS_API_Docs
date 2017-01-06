@@ -1,6 +1,6 @@
 #API Documentation
 
-API documentation is a tells you what you need to know to use a library or work with a program. It details functions, classes, return types, and more.
+API documentation tells you what you need to know to use a library or work with a program. It details functions, classes, return types and more.
 
 In mbed, API documentation for programs and libraries is fully supported both within the mbed Online Compiler and in the code listings on the public site. 
 
@@ -16,27 +16,27 @@ Each documentation group contains only the documented definitions for that group
 
 * Files: functions, variables, enums, defines, references to struct and unions, but no namespaces and classes.
 
-* Groups: defined by the author; grouped documentation elements like files, namespaces, classes, functions, variables, enums, typedefs, defines and others for quick reference.
+* Groups: defined by the author; grouped documentation elements such as files, namespaces, classes, functions, variables, enums, typedefs, defines and others for quick reference.
 
-<span class="notes">**Note:** Classes, methods, functions etc that exist in the source code but aren't documented, won't appear in the documentation.</span>
+<span class="notes">**Note:** Undocumented classes, methods, functions and so on that exist in the source code won't appear in the documentation.</span>
 
 ## Viewing documentation
 
-The documentation preview contains references presented as standard links that point to sub-sections of the document or to other documents, and which open inside the mbed Compiler when clicked:
+The documentation preview contains references presented as standard links that point to subsections of the document or to other documents. They open inside the mbed Compiler when clicked:
 
 <span class="images">![](images/docs_preview1.png)</span>
 
-Clicking one of the "Definition at line X of file source.c" links would open the definition source file in the Editor (see below). The definition source file can also be opened with "Go to definition" option in the context menu from the navigation tree:
+Clicking one of the "Definition at line X of file source.c" links would open the definition source file in the Editor (see below). You can also open the definition source file with the "Go to definition" option in the context menu from the navigation tree:
 
 <span class="images">![](images/docs_preview2.png)</span>
 
 <span class="notes">
-**Note:** The documentation groups and individual documents **do not exist in your workspace**. They are meta navigation items that reflect the API documentation as present in the library's home page, and as such they cannot be moved, deleted, renamed and so on.
+**Note:** The documentation groups and individual documents **do not exist in your workspace**. They are meta navigation items that reflect the API documentation as present in the library's home page, so they cannot be moved, deleted, renamed and so on.
 </span>
 
 ## New file from documentation example
 
-Another notable feature of the API documentation in the mbed Online Compiler is the ability to create new files from documentation examples, making it easier to try them. The mbed Compiler would prompt for file name and may suggest ``main.cpp`` if that file doesn't already exist in the program root:
+Another notable feature of the API documentation in the mbed Online Compiler is the ability to create new files from documentation examples, making it easier to try them. The mbed Compiler prompts for file name and may suggest ``main.cpp`` if that file doesn't already exist in the program root:
 
 ## How to add documentation to your own programs and libraries
 
@@ -90,21 +90,21 @@ It requires almost no effort to translate scattered comments in code into well f
 
 ### Comment markup
 
-Documentation has special markup to describe parameters, return values, notes, code example and so on.
+Documentation has special markup to describe parameters, return values, notes, code examples and so on.
 
-Doxygen accepts reserved words prefixed with ``\`` or ``@``, where some of the commonly used are:
+Doxygen accepts reserved words prefixed with ``\`` or ``@``. Some of the commonly used ones are:
 
-* @param <name> text
+* `@param <name> text`
 
-* @return text (synonym @returns)
+* `@return text (synonym @returns)`
 
-* @note text
+* `@note text`
 
-* @group <name>
+* `@group <name>`
 
-* @code example @endcode
+* `@code example @endcode`
 
-* @see ref [, ref2...] (synonym @sa)
+* `@see ref [, ref2...] (synonym @sa)`
 
 Here is an example of advanced documentation:
 
@@ -145,13 +145,13 @@ To generate documentation for the example above, you have to click **Compile** >
 
 <span class="images">![](images/docs_update.png)</span>
 
-Once the docs are generated, the navigation tree is refreshed and you can see the formatted documentation:
+Once the docs are generated, the navigation tree is refreshed, and you can see the formatted documentation:
 
 <span class="images">![](images/docs_example.png)</span>
 
 ## Additional notes
 
-Last but not least, a few notes about Doxygen as being the core of the documentation generation in the mbed ecosystem:
+Doxygen is the core of the documentation generation in the mbed ecosystem:
 
 * Doxygen is compatible with Javadoc and other documentation styles. Refer to the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html) for more information.
 
