@@ -5,7 +5,7 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 **Tips:**
 
 * Not all pins are capable of being AnalogOut, so check the documentation.</br>
-* For more information on what it takes to convert an digital value to its analog representation see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
+* For more information about converting a digital value to its analog representation, see [http://en.wikipedia.org/wiki/Digital-to-analog_converter](http://en.wikipedia.org/wiki/Digital-to-analog_converter).   
 
 
 ## API
@@ -19,7 +19,7 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 
 ## Example
 
-Create a sine wave
+Create a sine wave.
 
 ```
 #include "mbed.h"
