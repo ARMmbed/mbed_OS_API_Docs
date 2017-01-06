@@ -1,6 +1,6 @@
 # CAN
 
-CAN or Controller-Area Network is a bus standard that allows microcontrollers and devices to communicate with each other without going through a host computer.
+Controller-Area Network (CAN) is a bus standard that allows microcontrollers and devices to communicate with each other without going through a host computer.
 
 ## API
 
@@ -50,8 +50,8 @@ int main() {
 
 ## Details
 
-The CAN interface can be used to write data words out of a CAN port and will return the data received from another CAN device. The CAN clock frequency can be configured.
+TYou can use the CAN interface to write data words out of a CAN port. It will return the data received from another CAN device. You can configure the CAN clock frequency.
 
 ## Additional resources
 
-  * [Wikipedia](http://en.wikipedia.org/wiki/Controllerarea_network)
+  * [Wikipedia](http://en.wikipedia.org/wiki/Controllerarea_network).
