@@ -18,7 +18,7 @@ Each documentation group contains only the documented definitions for that group
 
 * Groups: defined by the author; grouped documentation elements such as files, namespaces, classes, functions, variables, enums, typedefs, defines and others for quick reference.
 
-<span class="notes">**Note:** Undocumented classes, methods, functions etc. that exist in the source code won't appear in the documentation.</span>
+<span class="notes">**Note:** Undocumented classes, methods, functions and so on that exist in the source code won't appear in the documentation.</span>
 
 ## Viewing documentation
 
@@ -94,17 +94,17 @@ Documentation has special markup to describe parameters, return values, notes, c
 
 Doxygen accepts reserved words prefixed with ``\`` or ``@``. Some of the commonly used ones are:
 
-* @param <name> text.
+* `@param <name> text`
 
-* @return text (synonym @returns).
+* `@return text (synonym @returns)`
 
-* @note text.
+* `@note text`
 
-* @group <name>.
+* `@group <name>`
 
-* @code example @endcode.
+* `@code example @endcode`
 
-* @see ref [, ref2...] (synonym @sa).
+* `@see ref [, ref2...] (synonym @sa)`
 
 Here is an example of advanced documentation:
 
