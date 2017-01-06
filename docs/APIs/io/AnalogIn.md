@@ -39,7 +39,7 @@ int main() {
 ```   
 ### Example two
 
-The example below shows AnalogIn reading 16-bit normalized samples.
+This example shows AnalogIn reading 16-bit normalized samples.
 
 ```
 #include "mbed.h"
