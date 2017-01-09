@@ -4,14 +4,14 @@ The network-socket API provides a common interface for using [sockets](https://e
 
 ## Example
 
-Here is a quick example of a simple HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
+Here is an example of an HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
 [![View code](https://www.mbed.com/embed/?url=https://github.com/ARMmbed/mbed-os-example-sockets/)](https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp)
 
 
 ## The Socket classes
 
-The [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
+You can use the [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
 - The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
 
@@ -25,8 +25,8 @@ A socket requires a NetworkInterface instance when opened to indicate which Netw
 
 Existing network interfaces:
 
-- [EthernetInterface](ethernet.md)
-- [WiFiInterface](wifi.md)
+- [EthernetInterface](ethernet.md).
+- [WiFiInterface](wifi.md).
 
 ## The SocketAddress class
 
@@ -59,10 +59,10 @@ typedef enum nsapi_error {
 } nsapi_error_t;
 ```
 
-## Non-blocking operation
+## Nonblocking operation
 
-The network-socket API also supports non-blocking operations. The ``set_blocking`` member function changes the state of a socket. When a socket is in non-blocking mode, socket operations return ``NSAPI_ERROR_WOULD_BLOCK`` when a transaction cannot be immediately completed.
+The network-socket API also supports nonblocking operations. The ``set_blocking`` member function changes the state of a socket. When a socket is in nonblocking mode, socket operations return ``NSAPI_ERROR_WOULD_BLOCK`` when a transaction cannot be immediately completed.
 
-To allow efficient use of non-blocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. The callback will be called when the socket can successfully receive, send or accept, or when an error occurs. The callback may be called spuriously without reason.
+To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. The callback will be called when the socket can successfully receive, send or accept, or when an error occurs. The callback may be called spuriously without reason.
 
 The callback may be called in an interrupt context and should not perform expensive operations such as receiving and sending calls.
