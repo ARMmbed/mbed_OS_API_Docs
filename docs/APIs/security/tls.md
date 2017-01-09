@@ -2,7 +2,7 @@
 
 mbed TLS provides a comprehensive SSL/TLS solution and makes it easy for developers to include cryptographic and SSL/TLS capabilities in their software and embedded products. As an SSL library it provides an intuitive API, readable source code and a minimal and highly configurable code footprint.
 
-<span class="notes">_**Note:** mbed TLS needs a secure source of random numbers; make sure that your target board has one and that it is fully ported to mbed OS. You can read more about this in our [porting guide](https://docs.mbed.com/docs/mbed-os-handbook/en/5.3/advanced/porting_guide/)._</span>
+<span class="notes">_**Note:** mbed TLS needs a secure source of random numbers; make sure that your target board has one and that it is fully ported to mbed OS. You can read more about this in our [porting guide](https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/porting_guide/)._</span>
 
 ##Differences between the standalone and mbed OS editions
 
@@ -15,7 +15,7 @@ The key differences are:
 
 ## Configuring mbed TLS features
 
-mbed TLS simplifies the process of enabling or disabling features to meet the needs of a particular project, through compilation options. The default configuration:
+mbed TLS simplifies enabling and disabling features to meet the needs of a particular project, through compilation options. The default configuration:
 
 - Enables all modern and widely used features, to meet the needs of new projects.
 - Disables all features that are older or less common, to minimize the code footprint.
