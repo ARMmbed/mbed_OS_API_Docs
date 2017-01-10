@@ -20,14 +20,14 @@ mbed BLE, also called BLE_API, is the Bluetooth Low Energy software solution for
 
     * **mbed OS 5 samples** are available on [developer.mbed.org](https://developer.mbed.org/teams/mbed-os-examples/) and [Github](https://github.com/ARMmbed/mbed-os-example-ble):
         * The [beacon](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-ble-Beacon/) example is a good starting point; it demonstrates how you can create a BLE beacon with just a few lines of code.  
-        * The [heart rate monitor](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-ble-HeartRate/)           example demonstrates how to build a heart rate sensor that can be connected and monitored by a BLE client such as your phone.
+        * The [heart rate monitor](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-ble-HeartRate/) example demonstrates how to build a heart rate sensor that can be connected and monitored by a BLE client such as your phone.
         * The [LED](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-ble-LED/) and [LED blinker](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-ble-LEDBlinker/) are a single example, which demonstrates how a client (LED) and a server (LED blinker) work together over BLE.
 
     <span>**Tip:** Despite the differences between the different mbed OS versions, there is only **one** version of mbed BLE, and it is easy to move code from one version of the OS to another. Choose the sample you use according to the version of mbed OS supported by your development board.</span>
 
 ## Going further
 
-* [Introduction to mbed BLE](https://docs.mbed.com/docs/ble-intros/en/latest/) is a wonderful resources for developers new to BLE and mbed BLE. It covers how to build BLE embedded applications with mbed.
+* [Introduction to mbed BLE](https://docs.mbed.com/docs/ble-intros/en/latest/) is a resource for developers new to BLE and mbed BLE. It covers how to build BLE embedded applications with mbed.
 
 * The Bluetooth Low Energy main [page](https://developer.mbed.org/teams/Bluetooth-Low-Energy/) on developer.mbed.org also provide samples and resources around BLE.
 
