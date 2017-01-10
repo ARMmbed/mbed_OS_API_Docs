@@ -1,6 +1,6 @@
 # Wait
 
-Wait functions provide simple wait capabilities. The OS scheduler will put the current thread in ``waiting state``, allowing another thread to execute. Even better: if there are not other threads in ``ready state``, it can put the whole microcontroller to ``sleep``, saving energy.
+Wait functions provide simple wait capabilities. The OS scheduler will put the current thread in ``waiting state``, allowing another thread to execute. Even better: if there are no other threads in ``ready state``, it can put the whole microcontroller to ``sleep``, saving energy.
 
 ```
 /** Waits for a number of seconds, with microsecond resolution (within
