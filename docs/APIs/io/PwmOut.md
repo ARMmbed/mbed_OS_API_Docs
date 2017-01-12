@@ -1,6 +1,6 @@
 # PwmOut
 
-The PwmOut interface is used to control the frequency and mark-space ratio of a digital pulse train.
+Use the PwmOut interface to control the frequency and mark-to-space ratio of a digital pulse train.
 
 ## API
 
@@ -17,13 +17,13 @@ This code example uses the default period of 0.020s and ramps the duty cycle fro
 
 The default period is 0.020s, and the default pulse width is 0.
 
-The PwmOut interface can express the pulse train in many ways to fit different use cases. The period and pulse width can be expressed directly in units of seconds, millisecond or microseconds. The pulse width can also be expressed as a percentage of the the period.
+The PwmOut interface can express the pulse train in many ways to fit different use cases. You can express the period and pulse width directly in units of seconds, millisecond or microseconds. You can also express the pulse width as a percentage of the the period.
   
 ## Code Examples
 
 ### Example one
 
-This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0 to 1). The effect of this code snippet will be to blink LED2 over a 4 second cycle, 50% on, for a pattern of 2 seconds on, 2 seconds off.
+This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0 to 1). The effect of this code snippet will be to blink LED2 over a four-second cycle, 50% on, for a pattern of two seconds on, two seconds off.
 
 ```
 #include "mbed.h"
@@ -40,7 +40,7 @@ int main() {
 
 ### Example two
 
-The following example does the same thing, but instead of specifying the duty cycle as a relative percentage of the period it specifies it as an absolute value in seconds. In this case we have a four-second period and a two-second duty cycle, meaning the LED will be on for two seconds and off for two seconds. 
+The following example does the same thing, but instead of specifying the duty cycle as a relative percentage of the period, it specifies it as an absolute value in seconds. In this case we have a four-second period and a two-second duty cycle, meaning the LED will be on for two seconds and off for two seconds. 
 
 ```
 #include "mbed.h"

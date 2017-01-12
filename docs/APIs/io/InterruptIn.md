@@ -1,6 +1,6 @@
 # InterruptIn
 
-The InterruptIn interface is used to trigger an event when a [digital input pin](DigitalIn.md) changes.
+Use the InterruptIn interface to trigger an event when a [digital input pin](DigitalIn.md) changes.
 
 ## API
 
@@ -8,9 +8,9 @@ The InterruptIn interface is used to trigger an event when a [digital input pin]
 
 **Warnings:**
 
-* No blocking code in ISR: avoid any call to wait, infinite while loop, or blocking calls in general.
+* No blocking code in ISR: avoid any call to wait, infinite while loop or blocking calls in general.
 
-* No printf, malloc, or new in ISR: avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behavior could be corrupted when called from an ISR.
+* No printf, malloc or new in ISR: avoid any call to bulky library functions. In particular, certain library functions (such as printf, malloc and new) are non re-entrant, and their behavior could be corrupted when called from an ISR.
 
 ## Hello World!
 
@@ -18,7 +18,7 @@ The InterruptIn interface is used to trigger an event when a [digital input pin]
 
 ## Example
 
-An example class for counting rising edges on a pin
+Try the following example to count rising edges on a pin.
 
 ```
 

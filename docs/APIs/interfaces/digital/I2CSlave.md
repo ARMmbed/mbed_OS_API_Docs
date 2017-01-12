@@ -1,6 +1,6 @@
 # I2CSlave
 
-An I2C Slave, used for communicating with an I2C Master device.
+Use I2C Slave to communicate with I2C Master.
 
 Synchronization level: not protected.
 
@@ -11,7 +11,7 @@ Synchronization level: not protected.
 
 ## Example
 
-Simple I2C responder
+Try this example to see how an I2C responder works.
 
 ```c++
 #include <mbed.h>

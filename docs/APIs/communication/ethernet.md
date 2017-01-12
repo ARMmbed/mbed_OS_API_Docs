@@ -1,6 +1,6 @@
 # Ethernet
 
-The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/features_2net_2FEATURE__IPV4_2lwip-interface_2EthernetInterface_8h_source.html) provides a simple C++ API for connecting to the internet over an Ethernet connection.
+The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classEthernetInterface.html) provides a C++ API for connecting to the internet over an Ethernet connection.
 
 ## API 
 
@@ -12,12 +12,12 @@ To bring up the network interface:
 
 1. Instantiate the ``EthernetInterface`` class.
 1. Call the ``connect`` function. 
-1. Once connected, the EthernetInterface can be used as a
+1. Once you connect the EthernetInterface, you can use it as a
 target for opening [network sockets](network_sockets.md).
 
 ## Example
 
-Here is a quick example of a simple HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
+Here is an example of an HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
 ``` cpp
 #include "mbed.h"

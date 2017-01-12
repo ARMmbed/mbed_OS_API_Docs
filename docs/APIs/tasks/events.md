@@ -1,9 +1,9 @@
 # About the mbed OS event loop
 
-One of the optional mbed OS features is an event loop mechanism that can be used to defer the execution of code to a different context. In particular, a common use of an event loop is to postpone the execution of a code sequence from an interrupt handler to a user context. This is useful because of the specific constraints of code that runs in an interrupt handler:
+One of the optional mbed OS features is an event loop mechanism that you can use to defer the execution of code to a different context. In particular, a common use of an event loop is to postpone the execution of a code sequence from an interrupt handler to a user context. This is useful because of the specific constraints of code that runs in an interrupt handler:
 
 - The execution of certain functions (notably some functions in the C library) is not safe.
-- Various RTOS objects and functions can't be used from an interrupt context.
+- You cannot use various RTOS objects and functions from an interrupt context.
 - As a general rule, the code needs to finish as fast as possible, to allow other interrupts to be handled.
 
 The event loop offers a solution to these issues in the form of an API that can defer execution of code from the interrupt context to the user context. More generally, the event loop can be used anywhere in a program (not necessarily in an interrupt handler) to defer code execution to a different context.
@@ -17,11 +17,11 @@ An event loop has two main components:
 1. An **event queue**, used to store events. In mbed OS, *events* are pointers to functions (and optionally function arguments).
 2. An **event loop** that extracts events from the queue and executes them.
 
-The mbed OS event queue is implemented by the [mbed-events library](http://github.com/ARMmbed/mbed-os/tree/master/events). It's a good idea to go through the [README of mbed-events](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md), as it shows how to use the event queue.
+The [mbed-events library](http://github.com/ARMmbed/mbed-os/tree/master/events) implements the mbed OS events queue. The [README of mbed-events](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows how to use the event queue.
 
 ## Creating an event loop
 
-The event loop must be created and started manually. The simplest way to achieve that is to create a `Thread` and run the event queue's `dispatch` method in the thread:
+You must create and start the event loop manually. The simplest way to achieve that is to create a `Thread` and run the event queue's `dispatch` method in the thread:
 
 ```
 #include "mbed.h"
@@ -39,11 +39,11 @@ int main () {
 }
 ```
 
-Note that although this document assumes the presence of a single event loop in the system, there's nothing preventing the programmer from running more than one event loop, simply by following the create/start pattern above for each of them.
+Note that though this document assumes the presence of a single event loop in the system, there's nothing preventing the programmer from running more than one event loop, simply by following the create/start pattern above for each of them.
 
 ## Using the event loop
 
-Once the event loop is started, it can post events. Let's consider a very simple example of a program that attaches two interrupt handlers for an InterruptIn object, using the InterruptIn `rise` and `fall` functions. The `rise` handler will run in interrupt context, while the `fall` handler will run in user context (more specifically, in the context of the event loop's thread). The full code for the example can be found below:
+Once you start the event loop, it can post events. Let's consider an example of a program that attaches two interrupt handlers for an InterruptIn object, using the InterruptIn `rise` and `fall` functions. The `rise` handler will run in interrupt context, while the `fall` handler will run in user context (more specifically, in the context of the event loop's thread). The full code for the example can be found below:
 
 ```
 #include "mbed.h"
@@ -144,4 +144,4 @@ We used `InterruptIn` for the example above, but the same kind of code can be us
 
 ## Where to go from here
 
-We just scratched the surface of how event queues work in mbed OS. The `EventQueue` and `Event` classes in the `mbed-events` library offer a lot of features that are not covered in this document, including calling functions with arguments, queueing functions to be called after a delay, or queueing functions to be called periodically. The [README of the mbed-events library](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows more ways to use events and event queues. For more details about how the events library is implemented, check [this file](https://github.com/ARMmbed/mbed-os/blob/master/events/equeue/README.md).
+We have discussed only a small part of how event queues work in mbed OS. The `EventQueue` and `Event` classes in the `mbed-events` library offer a lot of features that this document does not cover, including calling functions with arguments, queueing functions to be called after a delay or queueing functions to be called periodically. The [README of the mbed-events library](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows more ways to use events and event queues. For more details about how the events library is implemented, review [this file](https://github.com/ARMmbed/mbed-os/blob/master/events/equeue/README.md).
