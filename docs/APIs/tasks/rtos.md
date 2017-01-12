@@ -28,7 +28,7 @@ The function ``main`` is a special thread function that is started at system ini
 
 The code below uses two separate threads to blink two LEDs. The first thread is automatically created and executes the `main` function; the second thread is created explicitly inside `main`. 
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_basic/)](https://developer.mbed.org/teams/mbed/code/rtos_basic/file/209f4db62daf/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_basic/)](https://developer.mbed.org/teams/mbed/code/rtos_basic/file/dd58814e2dcf/main.cpp) 
 
 
 ### Thread class reference
