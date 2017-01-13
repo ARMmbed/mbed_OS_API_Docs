@@ -49,7 +49,7 @@ A [``Mutex``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrto
 
 Use Mutex to protect printf().
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mutex/)](https://developer.mbed.org/teams/mbed/code/rtos_mutex/file/192fef923dbc/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mutex/)](https://developer.mbed.org/teams/mbed/code/rtos_mutex/file/1ae0d86d2020/main.cpp) 
 
 <span class="notes">**Note:** C standard library Mutexes</br>The ARM C standard library already has Mutexes in place to protect the access to ``stdio``, so on the LPC1768 the above example is not necessary. On the other hand, the LPC11U24 does not provide default ``stdio`` Mutexes, making the above example a necessity. </span> 
 <span class="warnings">**Warning:** ``stdio``, ``malloc`` and ``new`` in ISR</br>Because of the mutexes in the ARM C standard library, you cannot use ``stdio`` (``printf``, ``putc``, ``getc`` and so on), ``malloc`` and ``new`` in ISR. </span> 
@@ -68,7 +68,7 @@ A [``Semaphore``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/clas
 
 Use Semaphore to protect printf().
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_semaphore/)](https://developer.mbed.org/teams/mbed/code/rtos_semaphore/file/02e47d35a686/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_semaphore/)](https://developer.mbed.org/teams/mbed/code/rtos_semaphore/file/574f47121e8e/main.cpp) 
 
 ### Semaphore class reference
 
@@ -78,7 +78,7 @@ Use Semaphore to protect printf().
 
 Each ``Thread`` can wait for signals and be notified of events:
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_signals/)](https://developer.mbed.org/teams/mbed/code/rtos_signals/file/c133402c77cb/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_signals/)](https://developer.mbed.org/teams/mbed/code/rtos_signals/file/476186ff82cf/main.cpp) 
 
 ## Queue and MemoryPool
 
@@ -124,7 +124,7 @@ mpool.free(message);
 
 This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurements. 
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_queue/)](https://developer.mbed.org/teams/mbed/code/rtos_queue/file/c980920b5e22/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_queue/)](https://developer.mbed.org/teams/mbed/code/rtos_queue/file/0cb43a362538/main.cpp) 
 
 ## Mail
 
@@ -136,7 +136,7 @@ This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurement
 
 This code uses ``mail`` to manage measurement.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mail/)](https://developer.mbed.org/teams/mbed/code/rtos_mail/file/a3428581e64c/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mail/)](https://developer.mbed.org/teams/mbed/code/rtos_mail/file/6602f2907ac5/main.cpp) 
 
 ### Mail class reference
 
@@ -171,7 +171,7 @@ The same RTOS API can be used in ISR. The only two warnings are:
 
 This example uses a message from the queue to trigger an interrupt.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_isr/)](https://developer.mbed.org/teams/mbed/code/rtos_isr/file/b3d67501ac55/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_isr/)](https://developer.mbed.org/teams/mbed/code/rtos_isr/file/40078e697304/main.cpp) 
 
 ## Default Timeouts
 
