@@ -42,12 +42,12 @@ int main()
     socket.open(&eth);
     socket.connect("developer.mbed.org", 80);
 
-    // Send a simple http request
+    // Send an HTTP request
     char sbuffer[] = "GET / HTTP/1.1\r\nHost: developer.mbed.org\r\n\r\n";
     int scount = socket.send(sbuffer, sizeof sbuffer);
     printf("sent %d [%.*s]\r\n", scount, strstr(sbuffer, "\r\n")-sbuffer, sbuffer);
 
-    // Recieve a simple http response and print out the response line
+    // Recieve an HTTP response and print out the response line
     char rbuffer[64];
     int rcount = socket.recv(rbuffer, sizeof rbuffer);
     printf("recv %d [%.*s]\r\n", rcount, strstr(rbuffer, "\r\n")-rbuffer, rbuffer);
