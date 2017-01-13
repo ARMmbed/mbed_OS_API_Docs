@@ -59,13 +59,13 @@ If you want to use mbed TLS from the GitHub repository, and potentially to edit 
 
 This release includes the following examples:
 
-1. [Self test](https://github.com/ARMmbed/mbed-tls-sample/blob/master/selftest): Tests different basic functions in the mbed TLS library.
+1. [TLS client](https://github.com/ARMmbed/mbed-os-example-tls/tree/master/tls-client): Downloads a file from an HTTPS server (developer.mbed.org) and looks for a specific string in that file.
 
-2. [Benchmark](https://github.com/ARMmbed/mbed-tls-sample/blob/master/benchmark): Measures the time taken to perform basic cryptographic functions used in the library.
+1. [Benchmark](https://github.com/ARMmbed/mbed-os-example-tls/tree/master/benchmark): Measures the time taken to perform basic cryptographic functions used in the library.
 
-3. [Hashing](https://github.com/ARMmbed/mbed-tls-sample/blob/master/hashing): Demonstrates the various APIs for computing hashes of data (also known as message digests) with SHA-256.
+1. [Hashing](https://github.com/ARMmbed/mbed-os-example-tls/tree/master/hashing): Demonstrates the various APIs for computing hashes of data (also known as message digests) with SHA-256.
 
-4. [Authenticated encryption](authenc): Demonstrates using the Cipher API for encrypting and authenticating data with AES-CCM.
+1. [Authenticated encryption](https://github.com/ARMmbed/mbed-os-example-tls/tree/master/authcrypt): Demonstrates using the Cipher API for encrypting and authenticating data with AES-CCM.
 
 Each of them comes with complete usage instructions as a readme file in the repository.
 
