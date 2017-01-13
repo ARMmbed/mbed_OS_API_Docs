@@ -89,7 +89,7 @@ A [``Queue``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrto
 <span class="images">![](Images/Thread/queue.png)</span>
 
 ```
-Queue queue;
+Queue<message_t, 32> queue;
 
 message_t *message;
 
@@ -109,7 +109,7 @@ if (evt.status == osEventMessage) {
 You can use the [MemoryPool](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html) class to define and manage fixed-size memory pools:
 
 ```
-MemoryPool mpool;
+MemoryPool<message_t, 16> mpool;
 
 message_t *message = mpool.alloc();
 
