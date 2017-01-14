@@ -30,11 +30,11 @@ Existing network interfaces:
 
 ## The SocketAddress class
 
-Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocketAddress.html) class to represent the IP address and port pair of a unique network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
+Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocketAddress.html) class to represent the IP address and port of a network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
 
 ## Network errors
 
-The convention of the network-socket API is for functions to return negative error codes to indicate failure. On success, a function may return zero or a non-negative integer to indicate the size of a transaction. On failure, a function must return a negative integer, which should be one of the error codes in the `nsapi_error_t` enum ([here](https://github.com/mbedmicro/mbed/blob/master/features/net/network-socket/nsapi_types.h#L27)):
+The convention of the network-socket API is for functions to return negative error codes to indicate failure. On success, a function may return zero or a non-negative integer to indicate the size of a transaction. On failure, a function must return a negative integer, which should be one of the error codes in the `nsapi_error_t` enum ([here](https://github.com/ARMmbed/mbed-os/blob/master/features/netsocket/nsapi_types.h)):
 
 ``` cpp
 /** Enum of standardized error codes 
@@ -45,7 +45,7 @@ The convention of the network-socket API is for functions to return negative err
  *  @enum nsapi_error_t
  */
 typedef enum nsapi_error {
-    NSAPI_ERROR_WOULD_BLOCK   = -3001,     /*!< data is not available but call is non-blocking */
+    NSAPI_ERROR_WOULD_BLOCK   = -3001,     /*!< data is not available but call is nonblocking */
     NSAPI_ERROR_UNSUPPORTED   = -3002,     /*!< unsupported functionality */
     NSAPI_ERROR_PARAMETER     = -3003,     /*!< invalid configuration */
     NSAPI_ERROR_NO_CONNECTION = -3004,     /*!< not connected to a network */
@@ -63,6 +63,6 @@ typedef enum nsapi_error {
 
 The network-socket API also supports nonblocking operations. The ``set_blocking`` member function changes the state of a socket. When a socket is in nonblocking mode, socket operations return ``NSAPI_ERROR_WOULD_BLOCK`` when a transaction cannot be immediately completed.
 
-To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. The callback will be called when the socket can successfully receive, send or accept, or when an error occurs. The callback may be called spuriously without reason.
+To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. When the socket can successfully receive, send or accept, or when an error occurs, the system triggers a callback. It may call the callback spuriously without reason.
 
-The callback may be called in an interrupt context and should not perform expensive operations such as receiving and sending calls.
+The callback may be called in interrupt context and should not perform operations such as receiving and sending calls. Instead, take precautions accordingly and do not make any read or write calls until it is on a thread.
