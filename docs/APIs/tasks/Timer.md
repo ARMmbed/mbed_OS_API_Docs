@@ -13,5 +13,5 @@ You can independently create, start and stop any number of Timer objects.
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Timer_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Timer_HelloWorld/file/27e1de20d3cb/main.cpp) 
+[![View code](https://developer.mbed.org/teams/mbed_example/code/Timer_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Timer_HelloWorld/file/485b7e68874c/main.cpp) 
 

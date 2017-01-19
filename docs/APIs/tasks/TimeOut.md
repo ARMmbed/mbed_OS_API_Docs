@@ -12,7 +12,7 @@ Any number of Timeout objects can be created, allowing multiple outstanding inte
 
 Set up a Timeout to invert an LED after a given timeout:
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Timeout_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Timeout_HelloWorld/file/8a555873b7d3/main.cpp) 
+[![View code](https://developer.mbed.org/teams/mbed_example/code/Timeout_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Timeout_HelloWorld/file/46d33a0cb1b1/main.cpp) 
 
 ## Warnings and notes
 
@@ -28,4 +28,4 @@ Set up a Timeout to invert an LED after a given timeout:
 
 Attaching a member function:
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Timeout_Example/)](https://developer.mbed.org/users/mbed_official/code/Timeout_Example/file/f24282a2495f/main.cpp) 
+[![View code](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/)](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/file/00cc01bd2e75/main.cpp) 
