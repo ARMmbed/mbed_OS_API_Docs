@@ -153,15 +153,15 @@ Timers are handled in the thread ``osTimerThread``. Callback functions run under
 
 <span class="images">![](Images/Thread/rtos_timer.png)</span>
 
-### RtosTimer class reference
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html)
-
 ### RtosTimer example
 
 Control the timing of four LEDs.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_timer/)](https://developer.mbed.org/teams/mbed/code/rtos_timer/file/tip/main.cpp)
+
+### RtosTimer class reference
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html)
 
 ## Interrupt Service Routines
 
