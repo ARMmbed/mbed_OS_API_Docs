@@ -25,22 +25,7 @@ void wait_us(int us);
 
 ## Example
 
-```
-
- #include "mbed.h"
-
- DigitalOut heartbeat(LED1);
-
- int main() {
-     while (1) {
-         heartbeat = 1;
-         wait(0.5);
-         heartbeat = 0;
-         wait(0.5);
-     }
- }
-/
-```
+[![View code](https://developer.mbed.org/teams/mbed_example/code/wait_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/wait_ex_1/file/7d249aa3d880/main.cpp)
 
 ## Avoiding OS delay
 

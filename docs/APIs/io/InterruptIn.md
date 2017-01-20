@@ -20,38 +20,7 @@ Use the InterruptIn interface to trigger an event when a [digital input pin](Dig
 
 Try the following example to count rising edges on a pin.
 
-```
-
-#include "mbed.h"
-
-class Counter {
-public:
-    Counter(PinName pin) : _interrupt(pin) {        // create the InterruptIn on the pin specified to Counter
-        _interrupt.rise(this, &Counter;::increment); // attach increment function of this counter instance
-    }
-
-    void increment() {
-        _count++;
-    }
-
-    int read() {
-        return _count;
-    }
-
-private:
-    InterruptIn _interrupt;
-    volatile int _count;
-};
-
-Counter counter(p5);
-
-int main() {
-    while(1) {
-        printf("Count so far: %d\n", counter.read());
-        wait(2);
-    }
-}
-```
+[![View code](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/file/8c7b073576c5/main.cpp)
 
 ## Related
 

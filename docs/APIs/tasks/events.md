@@ -45,38 +45,7 @@ Note that though this document assumes the presence of a single event loop in th
 
 Once you start the event loop, it can post events. Let's consider an example of a program that attaches two interrupt handlers for an InterruptIn object, using the InterruptIn `rise` and `fall` functions. The `rise` handler will run in interrupt context, while the `fall` handler will run in user context (more specifically, in the context of the event loop's thread). The full code for the example can be found below:
 
-```
-#include "mbed.h"
-#include "mbed_events.h"
-
-DigitalOut led1(LED1);
-InterruptIn sw(SW2);
-EventQueue queue(32 * EVENTS_EVENT_SIZE);
-Thread t;
-
-void rise_handler(void) {
-    printf("rise_handler in context %p\r\n", Thread::gettid());
-    // Toggle LED
-    led1 = !led1;
-}
-
-void fall_handler(void) {
-    printf("fall_handler in context %p\r\n", Thread::gettid());
-    // Toggle LED
-    led1 = !led1;
-}
-
-int main() {
-    // Start the event queue
-    t.start(callback(&queue, &EventQueue::dispatch_forever));
-    printf("Starting in context %p\r\n", Thread::gettid());
-    // The 'rise' handler will execute in IRQ context
-    sw.rise(rise_handler);
-    // The 'fall' handler will execute in the context of thread 't'
-    sw.fall(queue.event(fall_handler));
-}
-
-```
+[![View code](https://developer.mbed.org/teams/mbed_example/code/events_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/events_ex_1/file/aea2e03f5625/main.cpp)
 
 The above code executes two handler functions (`rise_handler` and `fall_handler`) in two different contexts:
 
