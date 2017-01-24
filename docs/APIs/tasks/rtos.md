@@ -95,7 +95,7 @@ A [``Queue``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrto
 <span class="images">![](Images/Thread/queue.png)</span>
 
 ```
-Queue queue;
+Queue<message_t, 32> queue;
 
 message_t *message;
 
@@ -115,7 +115,7 @@ if (evt.status == osEventMessage) {
 You can use the [MemoryPool](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html) class to define and manage fixed-size memory pools:
 
 ```
-MemoryPool mpool;
+MemoryPool<message_t, 16> mpool;
 
 message_t *message = mpool.alloc();
 
@@ -147,27 +147,6 @@ This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurement
 This code uses ``mail`` to manage measurement.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_mail/)](https://developer.mbed.org/teams/mbed_example/code/rtos_mail/file/6602f2907ac5/main.cpp)
-
-## RtosTimer
-
-<span class="warnings">**Warning**: DEPRECATED</br>
- The RtosTimer has been superseded by the EventQueue. The RtosTimer and EventQueue duplicate the functionality of timing events outside of interrupt context, however the EventQueue has additional features to handle deferring other events to multiple contexts.</span>
-
-Use the [``RtosTimer``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html) class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted or stopped.
-
-Timers are handled in the thread ``osTimerThread``. Callback functions run under the control of this thread and may use CMSIS-RTOS API calls.
-
-<span class="images">![](Images/Thread/rtos_timer.png)</span>
-
-### RtosTimer example
-
-Control the timing of four LEDs.
-
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_timer/)](https://developer.mbed.org/teams/mbed_example/code/rtos_timer/file/d184097a8c22/main.cpp)
-
-### RtosTimer class reference
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1RtosTimer.html)
 
 ## Interrupt Service Routines
 

@@ -1,6 +1,6 @@
 # SPISlave
 
-Use the SPISlave class to communicate with an SPI master device.
+Use the SPISlave class to communicate with a SPI master device.
 
 The default format is set to 8 bits, mode 0 and a clock frequency of 1MHz. Synchronization level: not protected.
 
@@ -12,7 +12,7 @@ The default format is set to 8 bits, mode 0 and a clock frequency of 1MHz. Synch
 
 ## Example
 
-Reply to an SPI master as slave:
+Reply to a SPI master as slave:
 
 ```c++
 #include "mbed.h"
