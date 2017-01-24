@@ -28,4 +28,4 @@ Set up a Timeout to invert an LED after a given timeout:
 
 Attaching a member function:
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/)](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/file/00cc01bd2e75/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/)](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/file/00cc01bd2e75/main.cpp) 
