@@ -28,4 +28,4 @@ Try this program to set up a Ticker to repeatedly invert an LED:
 
 Use this example to attach a member function to a ticker: 
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/file/fa1a6e600bdb/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/file/fa1a6e600bdb/main.cpp) 
