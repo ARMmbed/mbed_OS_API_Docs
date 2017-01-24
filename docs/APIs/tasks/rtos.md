@@ -34,7 +34,7 @@ The code below uses two separate threads to blink two LEDs. The first thread is 
 
 The Callback API provides a convenient way to pass arguments to spawned threads.  
 
-[![View code](https://developer.mbed.org/teams/mbed/code/rtos_threading_with_callback/)](https://developer.mbed.org/teams/mbed/code/rtos_threading_with_callback/file/d4b2a035ffe3/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_threading_with_callback/)](https://developer.mbed.org/teams/mbed/code/rtos_threading_with_callback/file/d4b2a035ffe3/main.cpp) 
 
 ### Thread class reference
 
