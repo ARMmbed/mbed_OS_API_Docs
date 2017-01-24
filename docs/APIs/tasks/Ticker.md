@@ -12,7 +12,7 @@ You can create any number of Ticker objects, allowing multiple outstanding inter
 
 Try this program to set up a Ticker to repeatedly invert an LED:
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/Ticker_HelloWorld/file/5014bf742e9b/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/file/5dc3a82c48f6/main.cpp) 
 
 ### Warnings and notes
 
@@ -28,4 +28,4 @@ Try this program to set up a Ticker to repeatedly invert an LED:
 
 Use this example to attach a member function to a ticker: 
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Ticker_Example/)](https://developer.mbed.org/users/mbed_official/code/Ticker_Example/file/14eb5da7a9a3/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_Example/file/fa1a6e600bdb/main.cpp) 

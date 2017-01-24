@@ -13,7 +13,7 @@ API summary
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/DigitalIn_HelloWorld_Mbed/file/tip/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/DigitalIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/DigitalIn_HelloWorld/file/954ac88dda04/main.cpp) 
 
 ## Related API
 

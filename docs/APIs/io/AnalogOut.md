@@ -14,7 +14,7 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogOut-HelloWorld/file/tip/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/AnalogOut_HelloWorld/file/a32148e02ecf/main.cpp) 
 
 
 ## Example
