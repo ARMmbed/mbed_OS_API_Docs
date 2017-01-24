@@ -2,6 +2,8 @@
 
 Controller-Area Network (CAN) is a bus standard that allows microcontrollers and devices to communicate with each other without going through a host computer.
 
+<span class="warnings"> **Warning:** Library in Beta</br>This library is in Beta. If you have any problems using the CAN library, please send a bug report at [[support@mbed.org]]. </span>
+
 ## API
 
 API summary
