@@ -12,7 +12,7 @@ You can create any number of Ticker objects, allowing multiple outstanding inter
 
 Try this program to set up a Ticker to repeatedly invert an LED:
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/file/5dc3a82c48f6/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Ticker_HelloWorld/file/5dc3a82c48f6/main.cpp) 
 
 ### Warnings and notes
 
