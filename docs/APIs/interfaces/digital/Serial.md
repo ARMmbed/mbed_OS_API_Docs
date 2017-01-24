@@ -67,7 +67,7 @@ int main() {
 
 ### Example three
 
-Attach to RX interrupt
+Attach a function to call during the generation of serial interrupts. This function defaults to interrupt on an RX pin.
 
 ```
 #include "mbed.h"

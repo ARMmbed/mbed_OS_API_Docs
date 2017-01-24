@@ -1,6 +1,6 @@
 # Wait
 
-Wait functions provide simple NOP-type wait capabilities. 
+Wait functions provide simple wait capabilities. The OS scheduler will put the current thread in ``waiting state``, allowing another thread to execute. Even better: if there are no other threads in ``ready state``, it can put the whole microcontroller to ``sleep``, saving energy.
 
 ```
 /** Waits for a number of seconds, with microsecond resolution (within
@@ -39,9 +39,4 @@ void wait_us(int us);
          wait(0.5);
      }
  }
-/
 ```
-
-## Avoiding OS delay
-
-When you call ``wait`` your board's CPU will be busy in a loop waiting for the required time to pass. Using the [mbed RTOS](rtos.md) you can make a call to ``Thread::wait`` instead. The OS scheduler will put the current thread in ``waiting state``, allowing another thread to execute. Even better: if there are not other threads in ``ready state``, it can put the whole microcontroller to ``sleep`` saving energy.

@@ -1,8 +1,8 @@
-# TimeOut
+# Timeout
 
 Use the Timeout interface to set up an interrupt to call a function after a specified delay.
 
-Any number of Timeout objects can be created, allowing multiple outstanding interrupts at the same time.
+You can create any number of Timeout objects, allowing multiple outstanding interrupts at the same time.
 
 ## API
 
@@ -16,16 +16,16 @@ Set up a Timeout to invert an LED after a given timeout:
 
 ## Warnings and notes
 
-* Timers are based on 32-bit int microsecond counters, so can only time up to a maximum of 2^31-1 microseconds (30 minutes). They are designed for times between microseconds and seconds. For longer times, you should consider the time() real time clock. 
+* Timers are based on 32-bit int microsecond counters, so they can only time up to a maximum of 2^31-1 microseconds (30 minutes). They are designed for times between microseconds and seconds. For longer times, you should consider the time() real time clock. 
 
-* No blocking code in ISR: avoid any call to wait, infinite while loop, or blocking calls in general. 
+* No blocking code in ISR: avoid any call to wait, infinite while loop or blocking calls in general. 
 
-* No printf, malloc, or new in ISR: avoid any call to bulky library functions. In particular, certain library functions (like printf, malloc and new) are non re-entrant and their behavior could be corrupted when called from an ISR. 
+* No printf, malloc or new in ISR: avoid any call to bulky library functions. In particular, certain library functions (such as printf, malloc and new) are not re-entrant, and their behavior could be corrupted when called from an ISR. 
 
 * RTOS Timer: consider using the [mbed RTOS Timer](https://developer.mbed.org/handbook/RTOS) instead of a Timeout. Your callback function will not be executed in an ISR, giving you more freedom and safety in your code.
 
-## Examples
+## Example
 
-Attaching a member function:
+Try this example to attach a member function:
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/)](https://developer.mbed.org/teams/mbed_example/code/Timeout_Example/file/00cc01bd2e75/main.cpp) 
