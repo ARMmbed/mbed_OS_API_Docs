@@ -24,7 +24,7 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
 
 
 ## Examples
