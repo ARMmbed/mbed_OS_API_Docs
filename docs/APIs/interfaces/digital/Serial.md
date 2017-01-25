@@ -24,7 +24,7 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
 
 
 ## Examples
@@ -33,16 +33,16 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 Write a message to a device at a baud rate of 19200.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/file/7376f17bb36e/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/file/7376f17bb36e/main.cpp)
 
 ### Example two
 
 Provide a serial pass-through between the PC and an external UART.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/file/8d318218bac1/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/file/8d318218bac1/main.cpp)
 
 ### Example three
 
 Attach a function to call during the generation of serial interrupts. This function defaults to interrupt on an RX pin.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/file/3b040f367dd8/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/file/3b040f367dd8/main.cpp)
