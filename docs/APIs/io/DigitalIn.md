@@ -21,4 +21,4 @@ To handle an interrupt, see [InterruptIn](InterruptIn.md).
 
 Examples of logical functions - boolean logic NOT, AND, OR, XOR:
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/DigitalIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/DigitalIn_ex_1/file/10c4d3aa026e/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/DigitalIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/DigitalIn_ex_1/file/10c4d3aa026e/main.cpp)
