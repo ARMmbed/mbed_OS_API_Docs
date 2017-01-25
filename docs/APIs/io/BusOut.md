@@ -8,4 +8,4 @@ Use the BusOut interface to create a number of [DigitalOut](DigitalOut.md) pins 
 
 ## Hello World!
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/6337070122f8/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/6337070122f8/main.cpp) 

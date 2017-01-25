@@ -13,7 +13,7 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 ## Hello World!
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/file/77750f8cba47/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/file/77750f8cba47/main.cpp) 
 
 
 ## Examples

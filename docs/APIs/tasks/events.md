@@ -12,10 +12,7 @@ The event loop offers a solution to these issues in the form of an API that can 
 
 ## Overview of the mbed OS event loop
 
-An event loop has two main components:
-
-1. An **event queue**, used to store events. In mbed OS, *events* are pointers to functions (and optionally function arguments).
-2. An **event loop** that extracts events from the queue and executes them.
+In mbed OS, events are pointers to functions (and optionally function arguments). An event loop extracts events from a queue and executes them.
 
 The [mbed-events library](http://github.com/ARMmbed/mbed-os/tree/master/events) implements the mbed OS events queue. The [README of mbed-events](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows how to use the event queue.
 
@@ -43,7 +40,7 @@ Note that though this document assumes the presence of a single event loop in th
 
 ## Using the event loop
 
-Once you start the event loop, it can post events. Let's consider an example of a program that attaches two interrupt handlers for an InterruptIn object, using the InterruptIn `rise` and `fall` functions. The `rise` handler will run in interrupt context, while the `fall` handler will run in user context (more specifically, in the context of the event loop's thread). The full code for the example can be found below:
+Once you start the event loop, it can post events. Let's consider an example of a program that attaches two interrupt handlers for an InterruptIn object, using the InterruptIn `rise` and `fall` functions. The `rise` handler will run in interrupt context, and the `fall` handler will run in user context (more specifically, in the context of the event loop's thread). The full code for the example can be found below:
 
 [![View code](https://developer.mbed.org/teams/mbed_example/code/events_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/events_ex_1/file/aea2e03f5625/main.cpp)
 

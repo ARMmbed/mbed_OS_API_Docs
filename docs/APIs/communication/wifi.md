@@ -21,4 +21,4 @@ To bring up the network interface:
 
 Here is an example of an HTTP client program. The program brings up an ESP8266 as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/)](https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/file/6a4e57edc2b2/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/)](https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/file/6a4e57edc2b2/main.cpp)

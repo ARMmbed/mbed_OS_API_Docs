@@ -2,14 +2,14 @@
 
 ## Overview
 
-The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://www.keil.com/pack/doc/CMSIS/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). You can use these resources as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide. 
+The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://github.com/ARM-software/CMSIS/raw/master/CMSIS/Documentation/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). You can use these resources as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide.
 
-The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos/rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos/rtos). The Doxygen is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/group__rtos.html).
+The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos). The Doxygen is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/group__rtos.html).
 
 
 ## Thread
 
-The [``Thread``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html) class allows defining, creating and controlling thread functions in the system. 
+The [``Thread``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html) class allows defining, creating and controlling thread functions in the system.
 
 A ``Thread`` can be in the following states:
 
@@ -26,14 +26,20 @@ The function ``main`` is a special thread function that is started at system ini
 
 ### Thread example
 
-The code below uses two separate threads to blink two LEDs. The first thread is automatically created and executes the `main` function; the second thread is created explicitly inside `main`. 
+The code below uses two separate threads to blink two LEDs. The first thread is automatically created and executes the `main` function; the second thread is created explicitly inside `main`.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_basic/)](https://developer.mbed.org/teams/mbed/code/rtos_basic/file/209f4db62daf/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_basic/)](https://developer.mbed.org/teams/mbed_example/code/rtos_basic/file/dc33cd3f4eb9/main.cpp)
 
+
+### Thread example with callbacks
+
+The Callback API provides a convenient way to pass arguments to spawned threads.  
+
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_threading_with_callback/)](https://developer.mbed.org/teams/mbed_example/code/rtos_threading_with_callback/file/d4b2a035ffe3/main.cpp)
 
 ### Thread class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Thread.html)
 
 <span class="images">![](Images/Thread/thread_priority.png)</span>
 
@@ -49,14 +55,14 @@ A [``Mutex``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrto
 
 Use Mutex to protect printf().
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mutex/)](https://developer.mbed.org/teams/mbed/code/rtos_mutex/file/1ae0d86d2020/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_mutex/)](https://developer.mbed.org/teams/mbed_example/code/rtos_mutex/file/1ae0d86d2020/main.cpp)
 
-<span class="notes">**Note:** C standard library Mutexes</br>The ARM C standard library already has Mutexes in place to protect the access to ``stdio``, so on the LPC1768 the above example is not necessary. On the other hand, the LPC11U24 does not provide default ``stdio`` Mutexes, making the above example a necessity. </span> 
-<span class="warnings">**Warning:** ``stdio``, ``malloc`` and ``new`` in ISR</br>Because of the mutexes in the ARM C standard library, you cannot use ``stdio`` (``printf``, ``putc``, ``getc`` and so on), ``malloc`` and ``new`` in ISR. </span> 
+<span class="notes">**Note:** C standard library Mutexes</br>The ARM C standard library already has Mutexes in place to protect the access to ``stdio``, so on the LPC1768 the above example is not necessary. On the other hand, the LPC11U24 does not provide default ``stdio`` Mutexes, making the above example a necessity. </span>
+<span class="warnings">**Warning:** ``stdio``, ``malloc`` and ``new`` in ISR</br>Because of the mutexes in the ARM C standard library, you cannot use ``stdio`` (``printf``, ``putc``, ``getc`` and so on), ``malloc`` and ``new`` in ISR. </span>
 
 ### Mutex class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Mutex.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Mutex.html)
 
 ## Semaphore
 
@@ -68,17 +74,17 @@ A [``Semaphore``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/clas
 
 Use Semaphore to protect printf().
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_semaphore/)](https://developer.mbed.org/teams/mbed/code/rtos_semaphore/file/574f47121e8e/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_semaphore/)](https://developer.mbed.org/teams/mbed_example/code/rtos_semaphore/file/574f47121e8e/main.cpp)
 
 ### Semaphore class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Semaphore.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Semaphore.html)
 
 ## Signals
 
 Each ``Thread`` can wait for signals and be notified of events:
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_signals/)](https://developer.mbed.org/teams/mbed/code/rtos_signals/file/476186ff82cf/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_signals/)](https://developer.mbed.org/teams/mbed_example/code/rtos_signals/file/476186ff82cf/main.cpp)
 
 ## Queue and MemoryPool
 
@@ -98,11 +104,11 @@ queue.put(message);
 osEvent evt = queue.get();
 if (evt.status == osEventMessage) {
     message_t *message = (message_t*)evt.value.p;
-``` 
+```
 
 ### Queue class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Queue.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Queue.html)
 
 ### MemoryPool
 
@@ -114,17 +120,17 @@ MemoryPool<message_t, 16> mpool;
 message_t *message = mpool.alloc();
 
 mpool.free(message);
-``` 
+```
 
 ### MemoryPool class reference
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1MemoryPool.html)
 
 ### Queue and MemoryPool example
 
-This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurements. 
+This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurements.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_queue/)](https://developer.mbed.org/teams/mbed/code/rtos_queue/file/0cb43a362538/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_queue/)](https://developer.mbed.org/teams/mbed_example/code/rtos_queue/file/0cb43a362538/main.cpp)
 
 ## Mail
 
@@ -132,15 +138,15 @@ This example shows ``Queue`` and ``MemoryPool`` (see below) managing measurement
 
 <span class="images">![](Images/Thread/mail_queue.png)</span>
 
+### Mail class reference
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Mail.html)
+
 ### Mail example
 
 This code uses ``mail`` to manage measurement.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_mail/)](https://developer.mbed.org/teams/mbed/code/rtos_mail/file/6602f2907ac5/main.cpp) 
-
-### Mail class reference
-
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classrtos_1_1Mail.html) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_mail/)](https://developer.mbed.org/teams/mbed_example/code/rtos_mail/file/6602f2907ac5/main.cpp)
 
 ## Interrupt Service Routines
 
@@ -153,7 +159,7 @@ The same RTOS API can be used in ISR. The only two warnings are:
 
 This example uses a message from the queue to trigger an interrupt.
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/rtos_isr/)](https://developer.mbed.org/teams/mbed/code/rtos_isr/file/40078e697304/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/rtos_isr/)](https://developer.mbed.org/teams/mbed_example/code/rtos_isr/file/40078e697304/main.cpp)
 
 ## Default Timeouts
 

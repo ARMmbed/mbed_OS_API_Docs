@@ -24,7 +24,7 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 ## Hello World!
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
 
 
 ## Examples
@@ -43,6 +43,6 @@ Provide a serial pass-through between the PC and an external UART.
 
 ### Example three
 
-Attach to RX interrupt
+Attach a function to call during the generation of serial interrupts. This function defaults to interrupt on an RX pin.
 
 [![View code](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/file/3b040f367dd8/main.cpp)

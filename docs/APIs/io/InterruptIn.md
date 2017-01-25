@@ -14,7 +14,7 @@ Use the InterruptIn interface to trigger an event when a [digital input pin](Dig
 
 ## Hello World!
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/file/f729f0421740/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/file/f729f0421740/main.cpp) 
 
 ## Example
 
