@@ -20,7 +20,7 @@ Use the InterruptIn interface to trigger an event when a [digital input pin](Dig
 
 Try the following example to count rising edges on a pin.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/file/8c7b073576c5/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/file/8c7b073576c5/main.cpp)
 
 ## Related
 
