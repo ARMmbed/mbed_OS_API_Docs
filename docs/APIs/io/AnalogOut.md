@@ -21,4 +21,4 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 
 Create a sine wave.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/AnalogOut_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/AnalogOut_ex_1/file/066510b55650/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogOut_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/AnalogOut_ex_1/file/066510b55650/main.cpp)
