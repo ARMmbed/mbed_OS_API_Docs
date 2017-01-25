@@ -22,19 +22,19 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 Control an R/C servo with analog input.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/file/490818b6238b/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/file/490818b6238b/main.cpp)
 
    
 ### Example two
 
 This example shows AnalogIn reading 16-bit normalized samples.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/file/cb98929b3895/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/file/cb98929b3895/main.cpp)
 
 
 ### Example three
 
 The example below shows a visual volt meter using LEDs.
 
-[![View code](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/file/267d01ecb3ec/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/file/267d01ecb3ec/main.cpp)
 
