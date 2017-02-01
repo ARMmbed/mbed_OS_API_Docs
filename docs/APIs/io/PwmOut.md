@@ -25,54 +25,16 @@ The PwmOut interface can express the pulse train in many ways to fit different u
 
 This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0 to 1). The effect of this code snippet will be to blink LED2 over a four-second cycle, 50% on, for a pattern of two seconds on, two seconds off.
 
-```
-#include "mbed.h"
-
-PwmOut led(LED2);
-
-int main() {
-    // specify period first, then everything else
-    led.period(4.0f);  // 4 second period
-    led.write(0.50f);  // 50% duty cycle
-    while(1);          // led flashing
-}
-```   
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_1/file/07220dd760cc/main.cpp)
 
 ### Example two
 
 The following example does the same thing, but instead of specifying the duty cycle as a relative percentage of the period, it specifies it as an absolute value in seconds. In this case we have a four-second period and a two-second duty cycle, meaning the LED will be on for two seconds and off for two seconds. 
 
-```
-#include "mbed.h"
-
-PwmOut led(LED2);
-
-int main() {
-    // specify period first, then everything else
-    led.period(4.0f);  // 4 second period
-    led.pulsewidth(2); // 2 second pulse (on)
-    while(1);          // led flashing
-}
-
-```
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_2/file/248dfc85bbf9/main.cpp)
 
 ### Example three
 
 This code example is for an RC Servo. In RC Servos you set the position based on the PWM signal's duty cycle or pulse width. This example code uses a period of 0.020s and increases the pulse width by 0.0001s on each pass. This will cause an increase of .5% of the servo's range every .25s. In effect the servo will move 2% of its range per second, meaning after 50 seconds the servo will have gone from 0% to 100% of its range. 
 
-```
-
-#include "mbed.h"
-
-PwmOut servo(p21);
-
-int main() {
-    servo.period(0.020);          // servo requires a 20ms period
-    while (1) {
-        for(float offset=0.0; offset<0.001; offset+=0.0001) {
-            servo.pulsewidth(0.001 + offset); // servo position determined by a pulsewidth between 1-2ms
-            wait(0.25);
-        }
-    }
-}
-```
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_3/file/465d882e6939/main.cpp)

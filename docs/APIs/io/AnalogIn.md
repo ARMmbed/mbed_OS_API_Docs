@@ -13,7 +13,7 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/)](https://developer.mbed.org/teams/mbed/code/AnalogIn-HelloWorld/file/tip/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_HelloWorld/file/77750f8cba47/main.cpp) 
 
 
 ## Examples
@@ -22,64 +22,19 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 Control an R/C servo with analog input.
 
-```
-#include "mbed.h"
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_1/file/490818b6238b/main.cpp)
 
-AnalogIn position(A0);
-PwmOut servo(D3);
-
-int main() {
-    // servo requires a 20ms period    
-    servo.period(0.020f);
-    while (1) {
-        // servo position determined by a pulse width between 1-2ms
-        servo.pulsewidth(0.001f + 0.001f * position);
-    }
-}
-```   
+   
 ### Example two
 
 This example shows AnalogIn reading 16-bit normalized samples.
 
-```
-#include "mbed.h"
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_2/file/cb98929b3895/main.cpp)
 
-AnalogIn input(A0);
-
-int main() {
-    uint16_t samples[1024];
-
-    for(int i=0; i<1024; i++) {
-        samples[i] = input.read_u16();
-        wait(0.001f);
-    }
-
-    printf("Results:\n");
-    for(int i=0; i<1024; i++) {
-        printf("%d, 0x%04X\n", i, samples[i]);
-    }
-}   
-```   
 
 ### Example three
 
 The example below shows a visual volt meter using LEDs.
 
-```
-#include "mbed.h"
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/AnalogIn_ex_3/file/267d01ecb3ec/main.cpp)
 
-AnalogIn ain(A0);
-DigitalOut led1(LED1);
-DigitalOut led2(LED2);
-DigitalOut led3(LED3);
-DigitalOut led4(LED4);
-
-int main() {
-    while (1){
-        led1 = (ain > 0.2f) ? 1 : 0;
-        led2 = (ain > 0.4f) ? 1 : 0;
-        led3 = (ain > 0.6f) ? 1 : 0;
-        led4 = (ain > 0.8f) ? 1 : 0;
-    }
-}
-```

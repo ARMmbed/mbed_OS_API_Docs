@@ -24,7 +24,7 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/Serial_HelloWorld_Mbed/file/879aa9d0247b/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/Serial_HelloWorld/file/e540d7769e69/main.cpp) 
 
 
 ## Examples
@@ -33,62 +33,16 @@ The default settings for the mbed microcontroller are described as _9600-8-N-1_,
 
 Write a message to a device at a baud rate of 19200.
 
-```
-#include "mbed.h"
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_1/file/7376f17bb36e/main.cpp)
 
-Serial device(p9, p10);  // tx, rx
-
-int main() {
-    device.baud(19200);
-    device.printf("Hello World\n");
-}
-```
 ### Example two
 
 Provide a serial pass-through between the PC and an external UART.
 
-```
-#include "mbed.h"
-
-Serial pc(USBTX, USBRX); // tx, rx
-Serial device(p9, p10);  // tx, rx
-
-int main() {
-    while(1) {
-        if(pc.readable()) {
-            device.putc(pc.getc());
-        }
-        if(device.readable()) {
-            pc.putc(device.getc());
-        }
-    }
-}
-```
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_2/file/8d318218bac1/main.cpp)
 
 ### Example three
 
 Attach a function to call during the generation of serial interrupts. This function defaults to interrupt on an RX pin.
 
-```
-#include "mbed.h"
-
-DigitalOut led1(LED1);
-DigitalOut led2(LED2);
-
-Serial pc(USBTX, USBRX);
-
-void callback() {
-    // Note: you need to actually read from the serial to clear the RX interrupt
-    printf("%c\n", pc.getc());
-    led2 = !led2;
-}
-
-int main() {
-    pc.attach(&callback;);
-    
-    while (1) {
-        led1 = !led1;
-        wait(0.5);
-    }
-}
-```
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/Serial_ex_3/file/3b040f367dd8/main.cpp)
