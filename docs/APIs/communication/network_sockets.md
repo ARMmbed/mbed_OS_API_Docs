@@ -65,4 +65,4 @@ The network-socket API also supports nonblocking operations. The ``set_blocking`
 
 To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. When the socket can successfully receive, send or accept, or when an error occurs, the system triggers a callback. It may call the callback spuriously without reason.
 
-The callback may be called in interrupt context and should not perform operations such as receiving and sending calls. Instead, take precautions accordingly and do not make any read or write calls until it is on a thread.
+The callback may be called in interrupt context and should not perform operations such as receiving and sending calls. Do not make any read or write calls until it is on a thread.
