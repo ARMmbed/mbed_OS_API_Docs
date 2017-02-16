@@ -65,3 +65,11 @@ The network-socket API also supports nonblocking operations. The ``set_blocking`
 To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. The callback will be called when the socket can successfully receive, send or accept, or when an error occurs. The callback may be called spuriously without reason.
 
 The callback may be called in an interrupt context and should not perform expensive operations such as receiving and sending calls.
+
+## Example applications
+
+Here are example applications that are built on top of the network-socket API:
+
+* [HTTP and HTTPS](https://developer.mbed.org/teams/sandbox/code/http-example/).
+* [MQTT](https://developer.mbed.org/teams/mqtt/code/HelloMQTT/).
+* [CoAP](https://developer.mbed.org/teams/sandbox/code/coap-example/).
