@@ -1,6 +1,6 @@
 # Storage APIs
 
-Here are the storage APIs present in mbed OS:
+The storage APIs present in mbed OS are:
 
-* [Filesystem](filesystem.md): A common interface for using filesystems on block devices
-* [Block Device](block_device.md): A common interface for block-based storage devices
+* [File system](filesystem.md): a common interface for using file systems on block devices.
+* [Block device](block_device.md): a common interface for block-based storage devices.
