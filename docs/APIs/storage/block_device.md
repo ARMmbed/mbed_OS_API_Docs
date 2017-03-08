@@ -18,7 +18,7 @@ A block device can perform three operations on a block in a device:
 - Erase a block in storage.
 - Program a block that has previously been erased.
 
-Note: The state of an erased block is undefined. For some block devices, erase is a NOOP. If a deterministic value is required after an erase, the consumer of the block device must verify this.
+Note: The state of an erased block is undefined. NOR flash devices typically set an erased block to all 0xff, but for some block devices such as the SD card, erase is a NOOP. If a deterministic value is required after an erase, the consumer of the block device must verify this.
 
 ## Block sizes
 
