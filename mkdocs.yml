@@ -42,6 +42,9 @@ pages:
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
+- ['APIs/storage/storage_index.md', 'Storage APIs', 'Storage APIs']
+- ['APIs/storage/filesystem.md', 'Storage APIs', 'File system']
+- ['APIs/storage/block_device.md', 'Storage APIs', 'Block devices']
 - ['APIs/API_Documentation.md','API documentation', 'How to use the API documentation']
 - ['further_reading.md', 'Other sources', 'Further reading and examples']
 
