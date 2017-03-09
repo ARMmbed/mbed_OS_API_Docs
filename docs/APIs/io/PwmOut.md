@@ -4,7 +4,7 @@ Use the PwmOut interface to control the frequency and mark-to-space ratio of a d
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/PwmOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/PwmOut_8h_source.html) 
 
 
 ## Hello World!
