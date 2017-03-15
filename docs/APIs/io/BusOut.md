@@ -4,8 +4,8 @@ Use the BusOut interface to create a number of [DigitalOut](DigitalOut.md) pins 
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classmbed_1_1BusOut.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classmbed_1_1BusOut.html) 
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/f979089a5ca0/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/BusOut_HelloWorld/file/6337070122f8/main.cpp) 

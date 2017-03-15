@@ -1,13 +1,13 @@
 # Wi-Fi
 
-The [WifiInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classWiFiInterface.html) provides a simple C++ API for connecting to the internet over a Wi-Fi device.
+The [WifiInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classWiFiInterface.html) provides a simple C++ API for connecting to the internet over a Wi-Fi device.
 
 There are multiple Wi-Fi components that implement the WiFiInterface class. For the example below,
 the [ESP8266Interface](https://github.com/armmbed/esp8266-driver) is used.
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classWiFiInterface.html)
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classWiFiInterface.html)
 
 ## Usage
 
@@ -21,4 +21,4 @@ To bring up the network interface:
 
 Here is an example of an HTTP client program. The program brings up an ESP8266 as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
-[![View code](https://www.mbed.com/embed/?url=https://github.com/ARMmbed/mbed-os-example-wifi/)](https://github.com/ARMmbed/mbed-os-example-wifi/blob/master/main.cpp)
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/)](https://developer.mbed.org/teams/mbed_example/code/TCPSocketWiFi_Example/file/6a4e57edc2b2/main.cpp)

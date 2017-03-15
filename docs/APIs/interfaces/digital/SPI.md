@@ -6,11 +6,11 @@ You can use this interface for communication with SPI slave devices, such as FLA
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/SPI_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/SPI_8h_source.html) 
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/SPI_HelloWorld_Mbed/)](https://developer.mbed.org/users/mbed_official/code/SPI_HelloWorld_Mbed/file/tip/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/SPI_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/SPI_HelloWorld/file/dd9e7d208cbd/main.cpp) 
 
 
 ## Interface

@@ -6,18 +6,17 @@ The network-socket API provides a common interface for using [sockets](https://e
 
 Here is an example of an HTTP client program. The program brings up Ethernet as the underlying network interface, and uses it to perform an HTTP transaction over a TCPSocket:
 
-[![View code](https://www.mbed.com/embed/?url=https://github.com/ARMmbed/mbed-os-example-sockets/)](https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp)
-
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/TCPSocket_Example/)](https://developer.mbed.org/teams/mbed_example/code/TCPSocket_Example/file/6b383744246e/main.cpp)
 
 ## The Socket classes
 
-You can use the [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
+You can use the [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
-- The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
+- The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
 
-- The [TCPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classTCPSocket.html) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol). TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
+- The [TCPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classTCPSocket.html) class provides the ability to send a stream of data over [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol). TCPSockets maintain a stateful connection that starts with the ``connect`` member function. After successfully connecting to a server, you can use the ``send`` and ``recv`` member functions to send and receive data (similar to writing or reading from a file).
 
-- The [TCPServer](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classTCPServer.html) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
+- The [TCPServer](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classTCPServer.html) class provides the ability to accept incoming TCP connections. The `listen` member function sets up the server to listen for incoming connections, and the `accept` member function sets up a stateful TCPSocket instance on an incoming connection.
 
 ## The NetworkInterface classes
 
@@ -30,7 +29,7 @@ Existing network interfaces:
 
 ## The SocketAddress class
 
-Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/classSocketAddress.html) class to represent the IP address and port of a network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
+Use the [SocketAddress](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classSocketAddress.html) class to represent the IP address and port pair of a unique network endpoint. Most network functions are also overloaded to accept string representations of IP addresses, but SocketAddress can be used to avoid the overhead of parsing IP addresses during repeated network transactions, and can be passed around as a first class object.
 
 ## Network errors
 
@@ -66,3 +65,11 @@ The network-socket API also supports nonblocking operations. The ``set_blocking`
 To allow efficient use of nonblocking operations, the socket classes provide an ``attach`` member function to register a callback on socket state changes. When the socket can successfully receive, send or accept, or when an error occurs, the system triggers a callback. It may call the callback spuriously without reason.
 
 The callback may be called in interrupt context and should not perform operations such as receiving and sending calls. Do not make any read or write calls until it is on a thread.
+
+## Example applications
+
+Here are example applications that are built on top of the network-socket API:
+
+* [HTTP and HTTPS](https://developer.mbed.org/teams/sandbox/code/http-example/).
+* [MQTT](https://developer.mbed.org/teams/mqtt/code/HelloMQTT/).
+* [CoAP](https://developer.mbed.org/teams/sandbox/code/coap-example/).

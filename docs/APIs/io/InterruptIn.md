@@ -4,7 +4,7 @@ Use the InterruptIn interface to trigger an event when a [digital input pin](Dig
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/InterruptIn_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/InterruptIn_8h_source.html) 
 
 **Warnings:**
 
@@ -14,44 +14,13 @@ Use the InterruptIn interface to trigger an event when a [digital input pin](Dig
 
 ## Hello World!
 
-[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/users/mbed_official/code/InterruptIn_HelloWorld/file/7a20a6aa1f5e/main.cpp) 
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_HelloWorld/file/f729f0421740/main.cpp) 
 
 ## Example
 
 Try the following example to count rising edges on a pin.
 
-```
-
-#include "mbed.h"
-
-class Counter {
-public:
-    Counter(PinName pin) : _interrupt(pin) {        // create the InterruptIn on the pin specified to Counter
-        _interrupt.rise(this, &Counter;::increment); // attach increment function of this counter instance
-    }
-
-    void increment() {
-        _count++;
-    }
-
-    int read() {
-        return _count;
-    }
-
-private:
-    InterruptIn _interrupt;
-    volatile int _count;
-};
-
-Counter counter(p5);
-
-int main() {
-    while(1) {
-        printf("Count so far: %d\n", counter.read());
-        wait(2);
-    }
-}
-```
+[![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/InterruptIn_ex_1/file/8c7b073576c5/main.cpp)
 
 ## Related
 
