@@ -14,7 +14,7 @@ The event loop offers a solution to these issues in the form of an API that can 
 
 In mbed OS, events are pointers to functions (and optionally function arguments). An event loop extracts events from a queue and executes them.
 
-The [mbed-events library](http://github.com/ARMmbed/mbed-os/tree/master/events) implements the mbed OS events queue. The [README of mbed-events](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows how to use the event queue.
+The [mbed-events library](http://github.com/ARMmbed/mbed-os/tree/master/events) implements the mbed OS events queue. The [usage documentation of mbed-events](events_usage.md) shows how to use the event queue.
 
 ## Creating an event loop
 
@@ -110,4 +110,4 @@ We used `InterruptIn` for the example above, but the same kind of code can be us
 
 ## Where to go from here
 
-We have discussed only a small part of how event queues work in mbed OS. The `EventQueue` and `Event` classes in the `mbed-events` library offer a lot of features that this document does not cover, including calling functions with arguments, queueing functions to be called after a delay or queueing functions to be called periodically. The [README of the mbed-events library](https://github.com/ARMmbed/mbed-os/blob/master/events/README.md) shows more ways to use events and event queues. For more details about how the events library is implemented, review [this file](https://github.com/ARMmbed/mbed-os/blob/master/events/equeue/README.md).
+We have discussed only a small part of how event queues work in mbed OS. The `EventQueue` and `Event` classes in the `mbed-events` library offer a lot of features that this document does not cover, including calling functions with arguments, queueing functions to be called after a delay or queueing functions to be called periodically. [The mbed-events usage documentation](events_usage.md) shows more ways to use events and event queues. For more details about how the events library is implemented, review [the mbed-events design documentation](events_design.md).
