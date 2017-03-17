@@ -73,3 +73,4 @@ Here are example applications that are built on top of the network-socket API:
 * [HTTP and HTTPS](https://developer.mbed.org/teams/sandbox/code/http-example/).
 * [MQTT](https://developer.mbed.org/teams/mqtt/code/HelloMQTT/).
 * [CoAP](https://developer.mbed.org/teams/sandbox/code/coap-example/).
+* [Websockets](https://developer.mbed.org/cookbook/Websockets-Server).
