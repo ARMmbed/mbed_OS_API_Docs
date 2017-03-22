@@ -2,26 +2,26 @@
 
 The flash in application programming provides an interface for access to MCU internal flash memory.
 
-FlashIAP devices have different sized blocks for different operations. They allow to read and program in defined-sized pages, but must be erased in defined-sized sectors. The sector size must be multiple of the page size.
+Flash IAP devices have different sized blocks for different operations. They allow you to read and program in defined-sized pages, but you must erase them in defined-sized sectors. The sector size must be a multiple of the page size.
 
-FlashIAP provides the following functionality:
+Flash IAP provides the following functionality:
 
-- Read from a flash device
-- Program data to flash device pages
-- Erase flash device sectors
-- Get sector/flash or page sizes
-- Get flash start
+- Read from a flash device.
+- Program data to flash device pages.
+- Erase flash device sectors.
+- Get sector/flash or page sizes.
+- Get the start address of the flash device.
 
-There are some requirements or limitations for flash devices based on the operation. Please read the documentation for each operation.
+Flash devices have some requirements and limitations based on the operation. Please read the documentation for each operation.
 
 This class is thread-safe.
 
 ## API
 
-You can find the full C++ API [here](https://github.com/ARMmbed/mbed-os/blob/mbed-os-5.4/drivers/FlashIAP.h).
+You can find the full C++ API [here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/FlashIAP_8h_source.html).
 
 ## Example 
 
-Here is an example that uses FlashIAP driver:
+Here is an example that uses the `FlashIAP` driver:
 
 [Bootloader example](https://github.com/ARMmbed/mbed-os-example-bootloader)
