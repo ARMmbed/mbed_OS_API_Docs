@@ -18,7 +18,9 @@ This class is thread-safe.
 
 ## API
 
-You can find the full C++ API [here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/FlashIAP_8h_source.html).
+View the full C++ API:
+
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/classrtos_1_1Thread.html)
 
 ## Example 
 
