@@ -45,6 +45,7 @@ pages:
 - ['APIs/storage/storage_index.md', 'Storage APIs', 'Storage APIs']
 - ['APIs/storage/filesystem.md', 'Storage APIs', 'File system']
 - ['APIs/storage/block_device.md', 'Storage APIs', 'Block devices']
+- ['APIs/storage/flashiap.md', 'Storage APIs', 'Flash IAP']
 - ['APIs/API_Documentation.md','API documentation', 'How to use the API documentation']
 - ['further_reading.md', 'Other sources', 'Further reading and examples']
 
