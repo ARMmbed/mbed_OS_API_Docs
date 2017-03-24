@@ -14,7 +14,7 @@ Flash IAP provides the following functionality:
 
 Flash devices have some requirements and limitations based on the operation. Please read the documentation for each operation.
 
-Be aware that FlashIAP might disable interrupts for a long time. This can affect the application latency. 
+Be aware that Flash IAP might disable interrupts for a long time. This can affect the application latency. 
 
 This class is thread-safe.
 
