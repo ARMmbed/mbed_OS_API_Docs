@@ -21,4 +21,4 @@ TYou can use the CAN interface to write data words out of a CAN port. It will re
 
 ## Additional resources
 
-  * [Wikipedia](http://en.wikipedia.org/wiki/Controllerarea_network).
+  * [Wikipedia](https://en.wikipedia.org/wiki/CAN_bus).
