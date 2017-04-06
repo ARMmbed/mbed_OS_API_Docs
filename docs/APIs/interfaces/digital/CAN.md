@@ -17,7 +17,7 @@ This example sends a counter from one CAN bus (can1) and listens for a packet on
 
 ## Details
 
-TYou can use the CAN interface to write data words out of a CAN port. It will return the data received from another CAN device. You can configure the CAN clock frequency.
+You can use the CAN interface to write data words out of a CAN port. It will return the data received from another CAN device. You can configure the CAN clock frequency.
 
 ## Additional resources
 
