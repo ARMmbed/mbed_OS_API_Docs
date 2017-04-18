@@ -7,7 +7,7 @@ Inputs and outputs on development boards are either analog or digital.
 These APIs read or set the voltage of analog pins:
 
 * [AnalogIn](AnalogIn.md) - read the voltage of an analog input pin.
-* [AnalogOut](AnalogOut.md) - set the voltage of an an along output pin.
+* [AnalogOut](AnalogOut.md) - set the voltage of an analog output pin.
 
 ## Digital I/O
 
