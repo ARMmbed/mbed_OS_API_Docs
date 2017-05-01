@@ -28,6 +28,14 @@ Block devices indicate their block sizes through the `get_read_size`, `get_progr
 
 As a rule of thumb, you can use the erase size for applications that use a single block size (for example, the FAT file system).
 
+## Utility block devices
+
+mbed OS contains several utility block devices to give you better control over how storage is allocated.
+
+- The [slicing block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/SlicingBlockDevice.h) allows you to partition storage into smaller block devices that you can use independentally.
+- The [chaining block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/ChainingBlockDevice.h) allows you to chain multiple block devices together and extend the usable amount of storage.
+- The [MBR block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/MBRBlockDevice.h) allows you to partition storage with a [Master Boot Record](https://en.wikipedia.org/wiki/Master_boot_record). The MBR allows the partitions to be configured seperately from outside the application.
+
 ## Example block devices
 
 - [SDBlockDevice](https://github.com/armmbed/sd-driver) - Block device for SD cards.
