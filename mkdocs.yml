@@ -39,6 +39,7 @@ pages:
 - ['APIs/communication/wifi.md', 'Communication APIs', 'Wi-Fi']
 - ['APIs/communication/mesh.md', 'Communication APIs', 'Mesh networking']
 - ['APIs/communication/ble.md', 'Communication APIs', 'BLE']
+- ['APIs/communication/cellular.md', 'Communication APIs', 'Cellular']
 - ['APIs/security/security.md', 'Security APIs', 'Securing devices and connections']
 - ['APIs/security/uvisor.md', 'Security APIs', 'mbed uVisor']
 - ['APIs/security/tls.md', 'Security APIs', 'mbed TLS']
