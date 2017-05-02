@@ -11,7 +11,7 @@ The APIs in this document are organized by the feature, or group of features, th
 * [Task management](APIs/tasks/tasks.md): handling tasks and events in mbed OS.
 * [Inputs and outputs](APIs/io/inputs_outputs.md): analog, digital, bus, port, PwmOut and interrupts.
 * [Digital interfaces](APIs/interfaces/interfaces.md): serial, SPI, I2C and CAN.
-* [Communication](APIs/communication/communication_index.md): network sockets, Ethernet, Wi-Fi, mesh networking and BLE.
+* [Communication](APIs/communication/communication_index.md): network sockets, Ethernet, Wi-Fi, mesh networking, BLE and Cellular.
 * [Security](APIs/security/security.md): working with mbed uVisor and mbed TLS in the context of mbed OS.
 
 We also provide guidelines [for using the API documentation in the mbed Online Compiler](APIs/API_Documentation.md). 
