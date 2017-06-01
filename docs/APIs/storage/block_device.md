@@ -30,11 +30,11 @@ As a rule of thumb, you can use the erase size for applications that use a singl
 
 ## Utility block devices
 
-mbed OS contains several utility block devices to give you better control over how storage is allocated.
+mbed OS contains several utility block devices to give you better control over the allocation of storage.
 
-- The [slicing block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/SlicingBlockDevice.h) allows you to partition storage into smaller block devices that you can use independentally.
-- The [chaining block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/ChainingBlockDevice.h) allows you to chain multiple block devices together and extend the usable amount of storage.
-- The [MBR block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/MBRBlockDevice.h) allows you to partition storage with a [Master Boot Record](https://en.wikipedia.org/wiki/Master_boot_record). The MBR allows the partitions to be configured seperately from outside the application.
+- With the [slicing block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/SlicingBlockDevice.h), you can partition storage into smaller block devices that you can use independentally.
+- With the [chaining block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/ChainingBlockDevice.h), you can chain multiple block devices together and extend the usable amount of storage.
+- mbed OS comes with support for storing partitions on disk with a [Master Boot Record (MBR)](https://en.wikipedia.org/wiki/Master_boot_record). The [MBR block device](https://github.com/ARMmbed/mbed-os/blob/master/features/filesystem/bd/MBRBlockDevice.h) provides this functionality and supports creating partitions at runtime or using preformatted partitions configured separately from outside the application.
 
 ## Example block devices
 
