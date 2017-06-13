@@ -7,7 +7,7 @@ Synchronization level: not protected.
 ## API
 
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/I2CSlave_8h_source.html)
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/I2CSlave_8h_source.html)
 
 ## Example
 
