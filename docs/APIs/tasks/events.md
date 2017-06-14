@@ -8,7 +8,7 @@ One of the optional mbed OS features is an event loop mechanism that you can use
 
 The event loop offers a solution to these issues in the form of an API that can defer execution of code from the interrupt context to the user context. More generally, the event loop can be used anywhere in a program (not necessarily in an interrupt handler) to defer code execution to a different context.
 
-<span class="tips">The full doxygen for events on mbed is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/group__events.html). The doxygen for ``Event.h`` is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/Event_8h_source.html).</span>
+<span class="tips">The full doxygen for events on mbed is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/group__events.html). The doxygen for ``Event.h`` is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.4/api/Event_8h_source.html).</span>
 
 ## Overview of the mbed OS event loop
 
