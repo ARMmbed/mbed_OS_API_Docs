@@ -1,6 +1,6 @@
 # Handling inputs and outputs
 
-Inputs and outputs on development boards are either analog or digital.
+Inputs and outputs on microcontrollers are either analog or digital.
 
 ## Analog I/O
 

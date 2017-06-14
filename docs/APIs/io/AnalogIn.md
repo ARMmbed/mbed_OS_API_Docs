@@ -1,6 +1,6 @@
 # AnalogIn
 
-Use the AnalogIn API to read an external voltage applied to an analog input pin. 
+Use the AnalogIn class to read an external voltage applied to an analog input pin. 
 
 **Tips:**
 
@@ -9,7 +9,7 @@ Use the AnalogIn API to read an external voltage applied to an analog input pin.
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/AnalogIn_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classmbed_1_1AnalogIn.html) 
 
 ## Hello World!
 

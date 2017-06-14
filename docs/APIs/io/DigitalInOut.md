@@ -1,6 +1,6 @@
 # DigitalInOut
 
-Use the DigitalInOut interface as a bidirectional digital pin:
+Use the DigitalInOut class as a bidirectional digital pin:
 
 * Read the value of a digital pin when set as an input.
 * Write the value when set as an output.

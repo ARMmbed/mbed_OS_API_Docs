@@ -1,10 +1,14 @@
 # PwmOut
 
-Use the PwmOut interface to control the frequency and mark-to-space ratio of a digital pulse train.
+Use the PwmOut class to control the period and pulse width (duty cycle) of digital signal.
+
+**Tips:**
+
+* For more information on what can be done using pulse width modulation, see [https://en.wikipedia.org/wiki/Pulse-width_modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation).   
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/PwmOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classmbed_1_1PwmOut.html) 
 
 
 ## Hello World!
@@ -17,13 +21,13 @@ This code example uses the default period of 0.020s and ramps the duty cycle fro
 
 The default period is 0.020s, and the default pulse width is 0.
 
-The PwmOut interface can express the pulse train in many ways to fit different use cases. You can express the period and pulse width directly in units of seconds, millisecond or microseconds. You can also express the pulse width as a percentage of the the period.
+The PwmOut class can express the pulse width in many ways to fit different use cases. You can express the period and pulse width directly in units of seconds, millisecond or microseconds. You can also express the pulse width as a percentage of the the period.
   
 ## Code Examples
 
 ### Example one
 
-This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0 to 1). The effect of this code snippet will be to blink LED2 over a four-second cycle, 50% on, for a pattern of two seconds on, two seconds off.
+This code example sets the period in seconds and the duty cycle as a percentage of the period in floating point (range: 0.0f to 1.0f). The effect of this code snippet will be to blink LED2 over a four-second cycle, 50% on, for a pattern of two seconds on, two seconds off.
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_1/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_1/file/07220dd760cc/main.cpp)
 
@@ -35,6 +39,6 @@ The following example does the same thing, but instead of specifying the duty cy
 
 ### Example three
 
-This code example is for an RC Servo. In RC Servos you set the position based on the PWM signal's duty cycle or pulse width. This example code uses a period of 0.020s and increases the pulse width by 0.0001s on each pass. This will cause an increase of .5% of the servo's range every .25s. In effect the servo will move 2% of its range per second, meaning after 50 seconds the servo will have gone from 0% to 100% of its range. 
+This code example is for an RC Servo. In RC Servos you set the position based on the PWM signal's pulse width or duty cycle. This example code uses a period of 0.020s and increases the pulse width by 0.0001s on each pass. This will cause an increase of 0.5% of the servo's range every 0.25s. In effect the servo will move 2% of its range per second, meaning after 50 seconds the servo will have gone from 0% to 100% of its range. 
 
 [![View code](https://www.mbed.com/embed/?url=https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_3/)](https://developer.mbed.org/teams/mbed_example/code/PwmOut_ex_3/file/465d882e6939/main.cpp)

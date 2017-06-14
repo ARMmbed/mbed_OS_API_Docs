@@ -1,12 +1,12 @@
 # PortOut
 
-Use the PortOut interface to write to an underlying GPIO port as one value. This is much faster than [BusOut](BusOut.md) because you can write a port in one go, but it is much less flexible because you are constrained by the port and bit layout of the underlying GPIO ports.
+Use the PortOut class to write to an underlying GPIO port as one value. This is much faster than [BusOut](BusOut.md) because you can write a port in one go, but it is much less flexible because you are constrained by the port and bit layout of the underlying GPIO ports.
 
-A mask can be supplied so only certain bits of a port are used, allowing other bits to be used for other interfaces. 
+A mask can be supplied so only certain bits of a port are used, allowing other bits to be used for other classes. 
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/PortOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classmbed_1_1PortOut.html) 
 
 ## Hello World!
 
