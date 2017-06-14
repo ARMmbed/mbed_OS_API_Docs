@@ -11,7 +11,7 @@ API summary
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/Serial_8h_source.html) 
 
 
-<span class="notes">**Note**: On a windows machine, you will need to install a USB serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.1/getting_started/what_need/).</span>
+<span class="notes">**Note**: On a windows machine, you will need to install a USB serial driver. See [Windows serial configuration](https://docs.mbed.com/docs/mbed-os-handbook/en/5.5/getting_started/what_need/).</span>
 
 Serial channels have a number of configurable parameters:
 
