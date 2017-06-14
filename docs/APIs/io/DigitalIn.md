@@ -1,4 +1,4 @@
-#DigitalIn
+# DigitalIn
 
 Use the DigitalIn interface to read the value of a digital input pin.
 
