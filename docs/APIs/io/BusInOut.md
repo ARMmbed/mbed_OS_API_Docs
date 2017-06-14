@@ -1,4 +1,4 @@
-#BusInOut
+# BusInOut
 
 Use the BusInOut interface as a bidirectional bus that collects a number of [DigitalInOut](DigitalInOut.md) pins that can be read and written as one value.
 
