@@ -4,7 +4,7 @@ mbed OS lets you write applications that run on embedded devices, by providing t
 
 Your application code is written in C++. It uses the application programing interfaces (APIs) that mbed OS provides. These APIs allow your code to work on different microcontrollers in a uniform way. This reduces a lot of the challenges in getting started with microcontrollers and integrating large amounts of software.
 
-<span class="tips">**Tip:** You can view [the full doxygen](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.3/api/index.html) on our site, or explore the [code on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.3).</span>
+<span class="tips">**Tip:** You can explore the [code on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.3).</span>
 
 The APIs in this document are organized by the feature, or group of features, they enable.
 
