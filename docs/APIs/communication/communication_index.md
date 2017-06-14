@@ -7,3 +7,4 @@ The main communication APIs in mbed OS are:
 * [Wi-Fi](wifi.md): API for connecting to the internet with a Wi-Fi device.
 * [Mesh networking](mesh.md): mbed OS provides two kinds of IPv6-based mesh networks - 6LoWPAN_ND and Thread.
 * [Bluetooth Low Energy (BLE)](ble.md): designed for small, energy-efficient BLE applications.
+* [Cellular](cellular.md): API for connecting to the internet using a cellular device.
