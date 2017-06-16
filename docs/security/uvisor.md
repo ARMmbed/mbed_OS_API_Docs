@@ -67,7 +67,7 @@ This application blinks an LED from the main thread, which the OS creates by def
 
 Compile the application:
 
->>>c
+>>> c
 $ mbed compile -m K64F -t GCC_ARM
 >>>
 
@@ -309,7 +309,7 @@ A few things to note in the code above:
 
 Compile the application again:
 
->>>c
+>>> c
 $ mbed compile -m K64F -t GCC_ARM
 >>>
 
