@@ -1,10 +1,10 @@
-# API Documentation
+## API Documentation
 
 API documentation tells you what you need to know to use a library or work with a program. It details functions, classes, return types and more.
 
-In mbed, API documentation for programs and libraries is fully supported both within the mbed Online Compiler and in the code listings on the public site. 
+In mbed, API documentation for programs and libraries is fully supported both within the mbed Online Compiler and in the code listings on the public site.
 
-## Browsing API documentation from within the mbed Compiler
+### Browsing API documentation from within the mbed Compiler
 
 <span class="images">![](images/docs_in_library_1.png)![](images/docs_in_library_2.png)</span>
 
@@ -20,7 +20,7 @@ Each documentation group contains only the documented definitions for that group
 
 <span class="notes">**Note:** Undocumented classes, methods, functions and so on that exist in the source code won't appear in the documentation.</span>
 
-## Viewing documentation
+### Viewing documentation
 
 The documentation preview contains references presented as standard links that point to subsections of the document or to other documents. They open inside the mbed Compiler when clicked:
 
@@ -34,11 +34,11 @@ Clicking one of the "Definition at line X of file source.c" links would open the
 **Note:** The documentation groups and individual documents **do not exist in your workspace**. They are meta navigation items that reflect the API documentation as present in the library's home page, so they cannot be moved, deleted, renamed and so on.
 </span>
 
-## New file from documentation example
+### New file from documentation example
 
 Another notable feature of the API documentation in the mbed Online Compiler is the ability to create new files from documentation examples, making it easier to try them. The mbed Compiler prompts for file name and may suggest ``main.cpp`` if that file doesn't already exist in the program root:
 
-## How to add documentation to your own programs and libraries
+### How to add documentation to your own programs and libraries
 
 The documentation is created out of comment blocks in your code, usually located above declarations and definitions. Let's take the following example:
 
@@ -50,7 +50,7 @@ class HelloWorld {
 };
 ```
 
-### Marking comments for documentation
+#### Marking comments for documentation
 
 The most important thing about code documentation is explicitly telling the system that a comment is intended for documenting (and isn't just an ordinary comment). To do that:
 
@@ -118,7 +118,7 @@ Here is an example of advanced documentation:
 * #include "HelloWorld.h"
 *
 * HelloWorld hw();
-* 
+*
 * int main() {
 *     hw.printIt(2);
 * }
@@ -149,7 +149,7 @@ Once the docs are generated, the navigation tree is refreshed, and you can see t
 
 <span class="images">![](images/docs_example.png)</span>
 
-## Additional notes
+### Additional notes
 
 Doxygen is the core of the documentation generation in the mbed ecosystem:
 

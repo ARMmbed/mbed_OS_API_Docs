@@ -1,10 +1,10 @@
-# Cellular
+### Cellular
 
 The [CellularBase](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classCellularBase.html) provides a C++ API for connecting to the internet over a Cellular device.
 
 ARM mbed OS provides a reference implementation of CellularBase, which you can find [here](https://github.com/ARMmbed/mbed-os/tree/master/features/netsocket/cellular/generic_modem_driver).
 
-## Getting started
+#### Getting started
 
 1. Choose an [mbed board that supports cellular](https://developer.mbed.org/platforms/?mbed-enabled=15&connectivity=1), such as the [UBLOX-C027](https://developer.mbed.org/platforms/u-blox-C027/) or [MTS-DRAGONFLY](https://developer.mbed.org/platforms/MTS-Dragonfly/).
 
@@ -12,26 +12,26 @@ ARM mbed OS provides a reference implementation of CellularBase, which you can f
 
     1. Compile the code.
     1. Flash the board.
-   
+
    You see output similar to the excerpt below:
-    
+
 ```
 
 mbed-os-example-cellular, Connecting...
-                                                                             
-                                                                             
+
+
 Connection Established.
 UDP: Sent 4 Bytes to echo.u-blox.com
 Received from echo server 4 Bytes
-                                                            
-                                                            
+
+
 Success. Exiting
 
 ```
 
-## Basic working principles
+#### Basic working principles
 
-You can use and extend a cellular interface and extended in various different ways. For example, 
+You can use and extend a cellular interface and extended in various different ways. For example,
 
 - Using AT commands to control sockets in an IP stack built into the cellular modem.
 
@@ -45,13 +45,13 @@ You can use and extend a cellular interface and extended in various different wa
 
 * It uses An external IP stack (for example, LWIP) instead of on-chip network stacks.
 * The generic modem driver uses standard 3GPP AT 27.007 AT commands to set up the cellular modem and registers to the network.
-* After registration, the driver opens up a PPP (Point-to-Point Protocol) pipe using LWIP with the cellular modem and connects to the internet. 
+* After registration, the driver opens up a PPP (Point-to-Point Protocol) pipe using LWIP with the cellular modem and connects to the internet.
 
-## CellularBase API
+#### CellularBase API
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classCellularBase.html)
 
-## Usage summary
+#### Usage summary
 
 To bring up the network interface:
 
@@ -59,9 +59,9 @@ To bring up the network interface:
 1. Call the `connect(pincode, apn)` function with a PIN code for your SIM card and an APN for your network.
 1. Once connected, you can use mbed OS [network sockets](network_sockets.md) as usual.
 
-## Examples
+#### Examples
 
-### Connection establishment
+##### Connection establishment
 
 This example establishes connection with the cellular network using mbed OS CellularInterface.
 
@@ -131,9 +131,9 @@ int main()
 }
 ```
 
-### TCP socket example
+##### TCP socket example
 
-This example opens a TCP socket with an echo server and undergoes a TCP transaction. Connection logic is the same as in the previous example. 
+This example opens a TCP socket with an echo server and undergoes a TCP transaction. Connection logic is the same as in the previous example.
 
 ```cpp
 #include "mbed.h"
@@ -150,7 +150,7 @@ This example opens a TCP socket with an echo server and undergoes a TCP transact
 // Number of retries /
 #define RETRY_COUNT 3
 
-// Cellular network interface object 
+// Cellular network interface object
 OnboardCellularInterface iface;
 
 // Echo server hostname
@@ -197,9 +197,9 @@ nsapi_error_t do_connect()
 nsapi_error_t test_send_recv()
 {
     nsapi_size_or_error_t retcode;
-    
+
     TCPSocket sock;
-    
+
     retcode = sock.open(&iface);
     if (retcode != NSAPI_ERROR_OK) {
         printf("TCPSocket.open() fails, code: %d\n", retcode);
@@ -276,11 +276,11 @@ int main()
 // EOF
 ```
 
-## Porting guide
+#### Porting guide
 
 This section provides guidelines and details for porting a cellular device driver to mbed OS. It first provides view of the pieces that compose your new cellular interface and then gives step-by-step instructions on how to port.
 
-### Quick peek
+##### Quick peek
 
 You can implement a cellular network interface in different ways based on your requirements and physical setup. For example:
 
@@ -293,7 +293,7 @@ You can implement a cellular network interface in different ways based on your r
 		* Heavier memory consumption.
 		* Bigger footprint on flash.
 		* Multiplexing command mode and data mode is not yet available.
-		  
+
 **Case 2: An implementation using on-chip network stacks (AT only mode)**
    * Pros
 		* Lighter memory footprint.
@@ -308,14 +308,14 @@ You can implement a cellular network interface in different ways based on your r
    * Target board must provide an implementation of the [onboard_modem_API](https://github.com/ARMmbed/mbed-os/blob/master/features/netsocket/cellular/onboard_modem_api.h). For example, the target port for u-blox C027 mbed Enabled IoT starter kit provides an implementation of `onboard_modem_api` [here](https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_NXP/TARGET_LPC176X/TARGET_UBLOX_C027/onboard_modem_api.c).
    * Following mbed OS conventions, drivers for on-board modules may become part of the mbed OS tree.
    * `OnboardCellularInterface` ties together `onboard_modem_api.h` with the generic `PPPCellularInterface` to provide a complete driver. At present, only UART connection type is handled.
- 	
+
 **Case 4: Modem attached as a daughter board (Arduino shield)**
    * This refers to the case when the cellular modem comes as a plug-in module or an external shield (for example, with an Arduino form factor).
-   * Following mbed OS conventions, drivers for plug-in modules come as a library with an application. For example, they are not part of the mbed OS tree. 
+   * Following mbed OS conventions, drivers for plug-in modules come as a library with an application. For example, they are not part of the mbed OS tree.
    * If the port inherits from the generic modem driver that ARM mbed OS, the structure might look like this:
-   
+
    <span class="images">![](Images/Cellular/inherit_from_generic_modem.png)</span>
-	 
+
 No matter your setup, mbed OS provides ample framework. You can list common infrastructure shared between above-mentioned cases as:
 
 **a) Onboard modem API**
@@ -339,7 +339,7 @@ void modem_init(modem_t *obj);
 FileHandle _fh;
 ```
 
-> In case of a UART type of device, mbed OS provides an implementation of serial device type `FileHandle` with software buffering. 
+> In case of a UART type of device, mbed OS provides an implementation of serial device type `FileHandle` with software buffering.
 
 ```CPP
 FileHandle * _fh = new UARTSerial(TX_PIN, RX_PIN, BAUDRATE);
@@ -390,7 +390,7 @@ The application activating the appropriate network stack feature, and ensuring i
 ### Step-by-step porting process
 #### Providing onboard modem API
 
-Only valid when **Case 3** is applicable. 
+Only valid when **Case 3** is applicable.
 
 1. **Update _mbed-os/targets/targets.json_** This file defines all the target platforms that mbed OS supports. If mbed OS supports your specific target, an entry for your target is in this file. Define a global macro in your target description that tells the build system that your target has a modem and the data connection type is attached with MCU.
 
@@ -406,12 +406,12 @@ For example,
             "modem_is_on_board": {
                 "help": "Value: Tells the build system that the modem is on-board as oppose to a plug-in shield/module.",
                 "value": 1,
-                "macro_name": "MODEM_ON_BOARD" 
+                "macro_name": "MODEM_ON_BOARD"
             },
             "modem_data_connection_type": {
                 "help": "Value: Defines how the modem is wired up to the MCU, e.g., data connection can be a UART or USB and so forth.",
                 "value": 1,
-                "macro_name": "MODEM_ON_BOARD_UART" 
+                "macro_name": "MODEM_ON_BOARD_UART"
             }
         },
         "macros": ["TARGET_007"],
@@ -420,7 +420,7 @@ For example,
         "device_name": "JamesBond"
     },
 ```
-2. **Use standard pin names**. A standard naming conventions for pin names is required for standard modem pins in your target's **_'targets/TARGET_FAMILY/YOUR_TARGET/PinNames.h'_**. An example is shown below for full UART capable modem. If any of these pins is not connected physically, mark it **_'NC'_**. Also indicate pin polarity. 
+2. **Use standard pin names**. A standard naming conventions for pin names is required for standard modem pins in your target's **_'targets/TARGET_FAMILY/YOUR_TARGET/PinNames.h'_**. An example is shown below for full UART capable modem. If any of these pins is not connected physically, mark it **_'NC'_**. Also indicate pin polarity.
 
 ```C
 typedef enum {
@@ -433,7 +433,7 @@ typedef enum {
 	MDMDTR = P0_20, // Data Terminal Ready
 	MDMRI  = P0_21, // Ring Indicator
 	MDMRTS = P0_22, // Request to Send
-	
+
 } PinName;
 
 #define ACTIVE_HIGH_POLARITY    1
@@ -448,9 +448,9 @@ The current implementation does not use all pins, but you must define all of the
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/onboard_modem_api.html)
 
-#### Providing module modem API
+###### Providing module modem API
 
-Only valid when **Case 4** is applicable. 
+Only valid when **Case 4** is applicable.
 
 * If the modem is already ready to use via the UART, it may be possible to use `UARTCellularInterface` directly. Just pass its constructor the necessary pin information for the module connected to your board.
 
@@ -458,7 +458,7 @@ Only valid when **Case 4** is applicable.
 
 * If using a different connection type, you must provide access to the connection by implementing the `FileHandle` API, and then you can pass your file handle for that connection to `PPPCellularInterface`. Either use it directly, or derive from it, and pass a file handle to its constructor in the same manner as `UARTCellularInterface`.
 
-#### Providing an implementation using on-chip network stacks (AT only mode)
+###### Providing an implementation using on-chip network stacks (AT only mode)
 
 Only valid when **Case 1** is applicable.
 
@@ -468,7 +468,7 @@ Only valid when **Case 1** is applicable.
 
 * An onboard implementation can use `onboard_modem_api.h` in the same manner as a PPP driver to access power controls - this could be shared with a PPP implementation.
 
-### Port verification testing
+##### Port verification testing
 
 Once you have your target and driver port ready, you can verify your implementation by running port verification tests on your system. You must have `mbed-greentea` installed for this.
 
@@ -478,14 +478,14 @@ Once you have your target and driver port ready, you can verify your implementat
  	1.  Make an empty test application with the fork of `mbed-os` where your implementation resides.
  	1.  Create a `.json` file in the root directory of your application, and copy the contents of `template_mbed_app.txt` into it.
  	1.  Now from the root of your application, enter this command:
-	
+
  	 ```
  	$ mbed test --compile-list
  	```
-	
+
  	1.  Look for the name of of your test suite matching to the directory path.
  	1.  Run tests with the command:
-	
+
  	```
  	mbed test -n YOUR_TEST_SUITE_NAME
  	```

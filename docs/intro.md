@@ -1,4 +1,4 @@
-# Introduction to the mbed OS API 
+## Introduction to the mbed OS API 
 
 mbed OS lets you write applications that run on embedded devices, by providing the layer that interprets your application's code in a way the hardware can understand.
 
@@ -14,4 +14,4 @@ The APIs in this document are organized by the feature, or group of features, th
 * [Communication](APIs/communication/communication_index.md): network sockets, Ethernet, Wi-Fi, mesh networking, BLE and Cellular.
 * [Security](APIs/security/security.md): working with mbed uVisor and mbed TLS in the context of mbed OS.
 
-We also provide guidelines [for using the API documentation in the mbed Online Compiler](APIs/API_Documentation.md). 
+We also provide guidelines [for using the API documentation in the mbed Online Compiler](APIs/API_Documentation.md).

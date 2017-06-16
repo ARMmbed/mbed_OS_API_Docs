@@ -1,8 +1,8 @@
-# Digital interfaces
+## Digital interfaces
 
 These APIs allow your board to interface with a computer or external devices.
 
-* [Serial](digital/Serial.md): generic asynchronous protocol. 
+* [Serial](digital/Serial.md): generic asynchronous protocol.
 * SPI: serial peripheral interface:
 	* [SPI](digital/SPI.md): master.
 	* [SPISlave](digital/SPISlave.md): slave.

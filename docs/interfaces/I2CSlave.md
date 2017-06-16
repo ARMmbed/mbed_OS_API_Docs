@@ -1,27 +1,26 @@
-# I2CSlave
+### I2CSlave
 
 Use I2C Slave to communicate with I2C Master.
 
 Synchronization level: not protected.
 
-## API
-
+#### API
 
 [![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/I2CSlave_8h_source.html)
 
-## Example
+#### Example
 
 Try this example to see how an I2C responder works.
 
 ```c++
 #include <mbed.h>
- 
+
 I2CSlave slave(p9, p10);
- 
+
 int main() {
    char buf[10];
    char msg[] = "Slave!";
- 
+
    slave.address(0xA0);
    while (1) {
        int i = slave.receive();
@@ -42,4 +41,3 @@ int main() {
    }
 }
 ```
-
