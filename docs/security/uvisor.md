@@ -25,7 +25,7 @@ You can use these instructions as guidelines in the case of other targets on oth
 
 Create a new mbed application called `uvisor-example` by running the following commands:
 
->>> c
+>>> C
 $ cd ~/code
 $ mbed new uvisor-example
 $ cd uvisor-example
@@ -37,13 +37,13 @@ The mbed CLI tools automatically fetch the mbed codebase. By default, Git tracks
 
 When the import process finishes, create a `source` folder:
 
->>> c
+>>> C
 $ mkdir ~/code/uvisor-example/source
 >>>
 
 Place a new file `main.cpp` in it:
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/main.cpp */
 
 #include "mbed.h"
@@ -67,13 +67,13 @@ This application blinks an LED from the main thread, which the OS creates by def
 
 Compile the application:
 
->>> c
+>>> C
 $ mbed compile -m K64F -t GCC_ARM
 >>>
 
 The resulting binary is located at:
 
->>> c
+>>> C
 ~/code/uvisor-example/BUILD/K64F/GCC_ARM/uvisor-example.bin
 >>>
 
@@ -85,7 +85,7 @@ Drag and drop it onto the USB device mounted on your computer to flash the devic
 
 To enable the uVisor on the app, add these lines to the beginning of the `main.cpp` file:
 
->>> c
+>>> C
 
 /* ~/code/uvisor-example/source/main.cpp */
 
@@ -123,7 +123,7 @@ In the code above, we specified two elements:
 
 Before compiling, you need to override the original `K64F` target to enable the uVisor feature. To do so, add the file `~/code/uvisor-example/mbed_app.json` with the following content:
 
->>> c
+>>> C
 {
     "target_overrides": {
         "*": {
@@ -147,14 +147,14 @@ The macros `FEATURE_UVISOR` and `TARGET_UVISOR_SUPPORTED` in the configuration f
 
 Compile the application again. This time, the `K64F` target includes the new features and labels you provided in `mbed_app.json`;
 
->>> c
+>>> C
 
 $ mbed compile -m K64F -t GCC_ARM
 >>>
 
 The binary is located at:
 
->>> c
+>>> C
 ~/code/uvisor-example/BUILD/K64F/GCC_ARM/uvisor-example.bin
 >>>
 
@@ -191,7 +191,7 @@ You want the box to have exclusive access to the following resources:
 
 Create a new source file, `~/code/uvisor-example/source/secure_box.cpp`. You will configure the secure box inside this file. The secure box name for this example is `private_button`.
 
->>> c
+>>> C
 
 /* ~/code/uvisor-example/source/secure_box.cpp */
 
@@ -233,7 +233,7 @@ In general, you can decide what to do in your box's main thread. You can run it 
 
 The `private_button_main_thread` function configures the push-button to trigger an interrupt when pressed, allocates the dynamic buffer to hold the thread count values and initializes its private static memory, `PrivateButtonStaticMemory`. A spinning loop updates the counter value every second.
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/secure_box.cpp */
 
 /* The previous code goes here. */
@@ -309,7 +309,7 @@ A few things to note in the code above:
 
 Compile the application again:
 
->>> c
+>>> C
 $ mbed compile -m K64F -t GCC_ARM
 >>>
 
@@ -330,7 +330,7 @@ You can define a public secure entry point to retrieve the index value from the 
 
 Create a new source file, `~/code/uvisor-example/source/secure_box.h`, where you will define the functions that you can call through RPC.
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/secure_box.h */
 
 #ifndef SECURE_BOX_H_
@@ -349,7 +349,7 @@ UVISOR_EXTERN int (*secure_get_index)(void);
 
 Now that you have defined the secure entry point, you can map the entry point to a function running in the secure box. You can do this through the `UVISOR_BOX_RPC_GATEWAY_SYNC` macro. Open `~/code/uvisor-example/source/secure_box.cpp`, and replace the line with `#define PRIVATE_BUTTON_BUFFER_COUNT 8` by:
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/secure_box.cpp */
 
 /* Function called through RPC */
@@ -369,7 +369,7 @@ UVISOR_BOX_RPC_GATEWAY_SYNC (private_button, secure_get_index, get_index, int, v
 
 To receive RPC messages, you need to spin up a new thread, running in the secure box context. You can do this in the main thread of the secure box. In `~/code/uvisor-example/source/secure_box.cpp`, replace the first five lines of `private_button_main_thread` with:
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/secure_box.cpp */
 
 static void listen_for_rpc() {
@@ -409,7 +409,7 @@ static void private_button_main_thread(const void *)
 
 To call the public secure entry point from any other box, you can use the `secure_get_index` function. It will automatically do an RPC call into the secure box and serialize the return value. You can try this out from the public box. In `~/code/uvisor-example/source/main.cpp`, first include the header file for the secure box:
 
->>> c
+>>> C
 /* ~/code/uvisor-example/source/main.cpp */
 
 #include "secure-box.h"
@@ -447,7 +447,7 @@ When the uVisor is enabled, all NVIC APIs are rerouted to the corresponding uVis
 
 Although this behavior is different from that of the original NVIC, it is backward compatible. Legacy code (such as a device HAL) still works after uVisor is enabled. The general use case is the following:
 
->>> c
+>>> C
 #define MY_IRQ 42
 
 /* Set the ISR for MY_IRQ at runtime.
@@ -471,7 +471,7 @@ The code samples in this guide provide a list of ACLs for the public box. The li
 
 To generate the ACLs list for a different target or a different app, use the code provided in the [Enable uVisor](#enable-uvisor) section, but start with an empty ACLs list:
 
->>> c
+>>> C
 static const UvisorBoxAclItem g_public_box_acls[] = {
 }
 >>>
@@ -482,7 +482,7 @@ Compile your application using uVisor in debug mode. This operation requires som
 
 Once the uVisor debug messages are enabled, your application fails. The failure is due to the first missing ACL being hit by the public box code. The message will look like:
 
->>> c
+>>> C
 ***********************************************************
                     BUS FAULT
 ***********************************************************
@@ -500,7 +500,7 @@ Once the uVisor debug messages are enabled, your application fails. The failure 
 
 Once you know which peripheral is causing the fault (the `SIM` peripheral, in this example), add its entry to the ACLs list:
 
->>> c
+>>> C
 static const UvisorBoxAclItem g_public_box_acls[] = {
     {SIM, sizeof(*SIM), UVISOR_TACLDEF_PERIPH},
 };
