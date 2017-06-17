@@ -1,11 +1,10 @@
 ### RTOS
 
-#### Overview
+<h4 id="rtos-overview">Overview</h4>
 
 The mbed RTOS is a C++ wrapper over the Keil RTX code. For more information about Keil RTX, check [the Keil CMSIS-RTOS tutorial](https://github.com/ARM-software/CMSIS/raw/master/CMSIS/Documentation/RTX/CMSIS_RTOS_Tutorial.pdf) and [the element14 introduction to Keil RTX](https://www.element14.com/community/docs/DOC-46650/l/arm-keil-rtx-real-time-operating-system-overview). You can use these resources as a general introduction to RTOS principles; it is important to be familiar with the concepts behind an RTOS in order to understand this guide.
 
 The code of the mbed RTOS can be found in the [mbed-os](https://github.com/ARMmbed/mbed-os) repository, in the [rtos subdirectory](https://github.com/ARMmbed/mbed-os/tree/master/rtos). The Doxygen is [available here](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/group__rtos.html).
-
 
 #### Thread
 
@@ -150,8 +149,7 @@ This code uses ``mail`` to manage measurement.
 
 #### RtosTimer
 
-<span class="warnings">**Warning**: DEPRECATED</br>
- The RtosTimer has been superseded by the EventQueue. The RtosTimer and EventQueue duplicate the functionality of timing events outside of interrupt context, however the EventQueue has additional features to handle deferring other events to multiple contexts.</span>
+<span class="warnings">**Deprecated**: The RtosTimer has been superseded by the EventQueue. The RtosTimer and EventQueue duplicate the functionality of timing events outside of interrupt context, however the EventQueue has additional features to handle deferring other events to multiple contexts.</span>
 
 Use the [``RtosTimer``](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classrtos_1_1RtosTimer.html) class to create and and control timer functions in the system. A timer function is called when a time period expires, so both one-shot and periodic timers are possible. A timer can be started, restarted or stopped.
 
@@ -171,14 +169,7 @@ Control the timing of four LEDs.
 
 #### Interrupt Service Routines
 
-The same RTOS API can be used in ISR. The only two warnings are:
-
-* You cannot use ``Mutex``.
-* Wait in ISR is not allowed; all the timeouts in method parameters have to be set to 0.
-
-#### Interrupt Service Routines
-
-The same RTOS API can be used in ISR. The only two warnings are:
+You can use the same RTOS API in ISR. The only two warnings are:
 
 * You cannot use ``Mutex``.
 * Wait in ISR is not allowed; all the timeouts in method parameters have to be set to 0.
