@@ -323,6 +323,9 @@ A few things to note in the code above:
 
 <span class="warnings">**Warning**: Instantiating an object in the `secure_box.cpp` global scope automatically maps it to the public box context, not the `private_button` one. If you want an object to be private to a box, you need to instantiate it inside the code that runs in the context of that box (such as the `InterruptIn` object), or alternatively statically initialize it in the box private static memory (such as the `buffer`, `index` and `counter` variables in `PrivateButtonStaticMemory`).</span>
 
+>>> C
+>>>
+
 **Checkpoint**
 
 
