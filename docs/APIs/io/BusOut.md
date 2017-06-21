@@ -1,6 +1,6 @@
 # BusOut
 
-Use the BusOut interface to create a number of [DigitalOut](DigitalOut.md) pins that you can write as one value.
+Use the BusOut class to create a number of [DigitalOut](DigitalOut.md) pins that you can write as one value.
 
 ## API
 

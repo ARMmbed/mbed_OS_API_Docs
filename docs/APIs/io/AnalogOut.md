@@ -1,6 +1,6 @@
 # AnalogOut
 
-Use the AnalogOut interface to set the voltage of an analog output pin in the range of VSS to VCC.
+Use the AnalogOut class to set the voltage of an analog output pin in the range of VSS to VCC.
 
 **Tips:**
 
@@ -10,7 +10,7 @@ Use the AnalogOut interface to set the voltage of an analog output pin in the ra
 
 ## API
 
-[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/AnalogOut_8h_source.html) 
+[![View code](https://www.mbed.com/embed/?type=library)](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classmbed_1_1AnalogOut.html) 
 
 ## Hello World!
 
