@@ -2,7 +2,7 @@
 
 Bluetooth low energy (BLE) is a very low power wireless technology standard for personal area networks. Typical applications of BLE are health care, fitness trackers, beacons, smart home, security, entertainment, proximity sensors, industrial and automotive.
 
-mbed BLE, also called BLE_API, is the Bluetooth Low Energy software solution for mbed. This thin abstraction runs on many targets and allows developers to create new BLE applications.
+mbed BLE, also called `BLE_API`, is the Bluetooth Low Energy software solution for mbed. Many targets support mbed BLE. Developers can use it to create new BLE applications.
 
 #### Getting started
 
