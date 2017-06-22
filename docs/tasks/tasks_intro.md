@@ -9,3 +9,7 @@ The task management APIs handle creation and destruction of threads in mbed OS 5
 * [Timeout](TimeOut.md): Raise interrupt after certain time.
 * [Timer](Timer.md): Measuring small times.
 * [Wait](wait.md): NOP-type wait capabilities.
+
+## Task management methods
+
+[A document comparing ticker, time, timeout, wait and others.]
