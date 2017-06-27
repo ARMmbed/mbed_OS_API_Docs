@@ -1,4 +1,4 @@
-## Storage
+## Storage APIs
 
 The storage APIs present in mbed OS are:
 

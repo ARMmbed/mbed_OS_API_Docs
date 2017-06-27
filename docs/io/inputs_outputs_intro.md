@@ -1,4 +1,4 @@
-## Handling inputs and outputs
+## Input and output APIs
 
 Inputs and outputs on development boards are either analog or digital.
 
