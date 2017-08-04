@@ -176,13 +176,6 @@ The same RTOS API can be used in ISR. The only two warnings are:
 * You cannot use ``Mutex``.
 * Wait in ISR is not allowed; all the timeouts in method parameters have to be set to 0.
 
-## Interrupt Service Routines
-
-The same RTOS API can be used in ISR. The only two warnings are:
-
-* You cannot use ``Mutex``.
-* Wait in ISR is not allowed; all the timeouts in method parameters have to be set to 0.
-
 ### ISR example
 
 This example uses a message from the queue to trigger an interrupt.
