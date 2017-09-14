@@ -10,7 +10,7 @@ Here is an example of an HTTP client program. The program brings up Ethernet as 
 
 ## The Socket classes
 
-You can use the [Socket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
+You can use the [Socket](https://docs.mbed.com/docs/mbed-os-api/en/latest/api/classSocket.html) classes are used for managing network sockets. Once opened, a socket provides a pipe through which data can be sent and received to a specific endpoint. The type of the instantiated socket indicates the underlying protocol to use:
 
 - The [UDPSocket](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.5/api/classUDPSocket.html) class provides the ability to send packets of data over [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol), using the ``sendto`` and ``recvfrom`` member functions. Packets can be lost or arrive out of order, so we suggest using a TCPSocket (described below) when guaranteed delivery is required.
 
