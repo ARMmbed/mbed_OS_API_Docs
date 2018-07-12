@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/busout.html)</span>
 # BusOut
 
 The BusOut interface is used to create a number of [DigitalOut](DigitalOut.md) pins that can be written as one value.
