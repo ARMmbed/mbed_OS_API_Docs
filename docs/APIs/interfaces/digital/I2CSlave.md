@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/i2cslave.html)</span>
 # I2CSlave
 
 An I2C Slave, used for communicating with an I2C Master device.

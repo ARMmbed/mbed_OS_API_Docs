@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/ethernet.html)</span>
 # Ethernet
 
 The [EthernetInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.1.0/api/features_2net_2FEATURE__IPV4_2lwip-interface_2EthernetInterface_8h_source.html) provides a simple C++ API for connecting to the internet over an Ethernet connection.

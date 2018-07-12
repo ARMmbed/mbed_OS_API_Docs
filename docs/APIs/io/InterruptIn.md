@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/interruptin.html)</span>
 # InterruptIn
 
 The InterruptIn interface is used to trigger an event when a [digital input pin](DigitalIn.md) changes.

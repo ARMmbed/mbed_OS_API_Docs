@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/spislave.html)</span>
 # SPISlave
 
 Use the SPISlave class to communicate with an SPI master device.
