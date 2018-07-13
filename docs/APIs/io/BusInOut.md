@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/businout.html)</span>
 # BusInOut
 
 Use the BusInOut class as a bidirectional bus that collects a number of [DigitalInOut](DigitalInOut.md) pins that can be read and written as one value.

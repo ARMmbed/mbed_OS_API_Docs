@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/analogin.html)</span>
 # AnalogIn
 
 Use the AnalogIn class to read an external voltage applied to an analog input pin. 

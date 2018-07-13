@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/portinout.html)</span>
 # PortInOut
 
 Use the PortInOut class to read and write an underlying GPIO port as one value. This is much faster than [BusInOut](BusInOut.md) because you can write a port in one go, but it is much less flexible because you are constrained by the port and bit layout of the underlying GPIO ports.

@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/drivers.html)</span>
 # Handling inputs and outputs
 
 Inputs and outputs on microcontrollers are either analog or digital.
