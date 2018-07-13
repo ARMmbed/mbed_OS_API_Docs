@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/analogout.html)</span>
 # AnalogOut
 
 Use the AnalogOut interface to set the voltage of an analog output pin in the range of VSS to VCC.

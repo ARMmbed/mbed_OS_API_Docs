@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/mesh-api.html)</span>
 # Mesh networking
 
 mbed OS provides two types of IPv6 based mesh networks:

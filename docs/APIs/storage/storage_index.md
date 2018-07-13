@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/storage.html)</span>
 # Storage APIs
 
 The storage APIs present in mbed OS are:
