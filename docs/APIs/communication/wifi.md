@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/wi-fi.html)</span>
 # WiFi
 
 The [WifiInterface](https://docs.mbed.com/docs/mbed-os-api/en/mbed-os-5.2/api/classWiFiInterface.html) provides a simple C++ API for connecting to the internet over a WiFi device.

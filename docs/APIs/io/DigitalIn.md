@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/digitalin.html)</span>
 #DigitalIn
 
 The DigitalIn interface is used to read the value of a digital input pin.
