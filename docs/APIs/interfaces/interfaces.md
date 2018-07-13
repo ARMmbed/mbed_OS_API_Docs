@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/drivers.html)</span>
 # Digital interfaces
 
 These APIs allow your board to interface with a computer or external devices.

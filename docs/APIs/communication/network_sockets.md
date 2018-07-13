@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/network-socket.html)</span>
 # Network Sockets
 
 The network-socket API provides a common interface for using [sockets](https://en.wikipedia.org/wiki/Network_socket) on network devices. It's a class-based interface, which should be familiar to users experienced with other socket APIs.

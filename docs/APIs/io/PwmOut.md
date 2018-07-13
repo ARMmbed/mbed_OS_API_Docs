@@ -1,3 +1,4 @@
+<span class="warnings">**Out of date**: This is not the most recent version of this page. Please see [the most recent version](https://os.mbed.com/docs/latest/reference/pwmout.html)</span>
 # PwmOut
 
 Use the PwmOut class to control the period and pulse width (duty cycle) of digital signal.
